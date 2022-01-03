@@ -1,0 +1,13 @@
+from item_mapping import LOCALATION
+
+
+PLACE = 0
+NAME = 1
+EXTENSION = 2
+LABEL = 4
+ICON = 5
+LOCALATION = 6
+GROUP1 = 7
+GROUP2 = 8
+GROUP3 = 9
+GROUP4 = 10
