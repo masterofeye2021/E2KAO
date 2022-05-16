@@ -37,7 +37,7 @@ def get_thing_by_uid(uid:str)-> dict:
         r.raise_for_status()
 
 def change_thing(uid, channel_config):
-        print(channel_config)
+
         r= requests.put(
         srv + thing_by_uid + uid["UID"], 
         headers={"Content-Type": "application/json"},

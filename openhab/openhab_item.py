@@ -1,5 +1,7 @@
 from dataclasses import dataclass
 
+from openhab.openhab_generic import OpenhabGeneric
+
 @dataclass 
 class ItemName:
     place : str
@@ -9,9 +11,23 @@ class ItemName:
     function : str 
     item_prefix : str 
 
+    def __init__(self, name) -> None:
+        self.name = name
+
+
+    def __init__(self, place:str, access:str, name:str, extention:str, function:str, item_prefix:str) -> None:
+        self.place = place
+        self.access = access
+        self.name = name
+        self.extention = extention
+        self.function = function
+        self.item_prefix = item_prefix
+
+
     def __post_init__(self):
         self.name = self.name.strip()
         self.name = self.name.replace(" ","_")
+  
 
         self.place = self.place.strip()
         self.place = self.place.replace(" ","_")
@@ -50,8 +66,8 @@ class ItemName:
             var += delimiter
             var += self.function
 
-        return var
-
+        var = var.replace("#","_")
+        return OpenhabGeneric.__remove_umlaut__(var)
 
 @dataclass
 class OpenhabItem:
@@ -66,6 +82,7 @@ class OpenhabItem:
     bound_to : str
     equipment : str
     item_prefix : str = "i"
+    transform : str = ""
 
     def __post_init__(self):
         if not self.type:
@@ -76,13 +93,30 @@ class OpenhabItem:
             raise ValueError("Datenfeld für das Label darf nicht leer sein!")
         if not self.group:
             raise ValueError("Datenfeld für die Gruppe darf nicht leer sein!")
+        else:
+             self.group = OpenhabGeneric.__remove_umlaut__(self.group)
+             self.group = self.group.replace(" ","_")
         if not self.icon:
             raise ValueError("Datenfeld für das Icon darf nicht leer sein!")
+        else:
+             self.icon = OpenhabGeneric.__remove_umlaut__(self.icon)
+             self.icon = self.icon.replace(" ","_")
         if not self.tag:
             raise ValueError("Datenfeld für deb Tag darf nicht leer sein!")
+        else:
+            self.tag = OpenhabGeneric.__remove_umlaut__(self.tag)
+
+        if self.equipment:
+            self.equipment = OpenhabGeneric.__remove_umlaut__(self.equipment)
 
 
-    def __set_bound_to__(self, channel_uid):
-        self.bound_to = "{channel=\""+channel_uid+"\"}"
+    def __set_bound_to__(self, channel_uid, transform):
+        if not transform:
+            self.bound_to = "{channel=\""+channel_uid+"\"}"
+        else:
+            self.bound_to = "{channel=\""+channel_uid+"\"[profile=\"transform:MAP\", function=\""+transform+"\"]}"
+
+    def add_group(self, group:str) :
+        self.group +="," + group
 
 

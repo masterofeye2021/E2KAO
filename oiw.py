@@ -20,11 +20,13 @@ class OpenhabItemWritter:
             item : OpenhabItem
             for item in list_of_items : 
                 if(item.equipment in equipment.name.get_name("l")):
+                    item.add_group(equipment.name.get_name("e"))
                     self.write_item(item)
 
         self.pid.close()
 
     def write_equipment(self, openhabequipment : OpenhabEquipment):
+        self.pid.write("\n")
         self.__write_type("Group")  
         self.__write_name(openhabequipment.name,"e")  
         self.__write_label(openhabequipment.label,"","")
@@ -33,6 +35,7 @@ class OpenhabItemWritter:
         self.__write_tag("Equipment")
 
         #Itemdefintion abgeschlossen. Das nächste Item startet in der nächsten Zeile
+        self.pid.write("\n")
         self.pid.write("\n")
 
 
