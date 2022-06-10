@@ -75,7 +75,7 @@ def xls2item(path :str):
    #Euipment Liste wird erstellt
    sheet = workbook[sheet_name_equipment]
    for row in sheet.iter_rows(min_row=2, values_only=True):
-      oe = OpenhabEquipment(ItemName(row[equipment_mapping.NAME]),row[equipment_mapping.LABEL],
+      oe = OpenhabEquipment(ItemName.create_by_name(row[equipment_mapping.NAME]),row[equipment_mapping.LABEL],
                   row[equipment_mapping.ICON],
                   row[equipment_mapping.LOCALATION],
                   OpenhabGeneric.__set_group__(

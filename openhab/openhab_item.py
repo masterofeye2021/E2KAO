@@ -11,19 +11,6 @@ class ItemName:
     function : str 
     item_prefix : str 
 
-    def __init__(self, name) -> None:
-        self.name = name
-
-
-    def __init__(self, place:str, access:str, name:str, extention:str, function:str, item_prefix:str) -> None:
-        self.place = place
-        self.access = access
-        self.name = name
-        self.extention = extention
-        self.function = function
-        self.item_prefix = item_prefix
-
-
     def __post_init__(self):
         self.name = self.name.strip()
         self.name = self.name.replace(" ","_")
@@ -68,6 +55,10 @@ class ItemName:
 
         var = var.replace("#","_")
         return OpenhabGeneric.__remove_umlaut__(var)
+
+    @classmethod
+    def create_by_name(cls, name):
+            return cls("","",name,"","","")
 
 @dataclass
 class OpenhabItem:

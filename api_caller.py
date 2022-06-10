@@ -3,7 +3,7 @@ from requests.auth import HTTPBasicAuth
 import json
 import re
 
-srv : str = "http://localhost:8080"
+srv : str = "http://192.168.178.42:8080"
 thing : str = "/rest/things?summary=false"
 thing_by_uid : str = "/rest/things/"
 username : str = "admin"
@@ -13,7 +13,7 @@ def get_knx_device_uid():
     filtered_thing = None
     r= requests.get(
         srv + thing, 
-        auth=HTTPBasicAuth(username, password))
+        auth=(username, password))
 
     if r.status_code == 200:   
         res = json.loads(r.text)
