@@ -1,8 +1,9 @@
 #Diese Klasse ist der Openhab Item Writer (kirz oiw)
 
 from openpyxl import load_workbook
-from openhab.openhab_equipment import OpenhabEquipment
-from openhab.openhab_item import ItemName, OpenhabItem
+from openhab.equipment.equipment import Equipment
+from openhab.items.item import OpenhabItem
+from openhab.items.knx_item import KnxItem
 
 class OpenhabItemWritter:
     def __init__(self) -> None:
@@ -14,24 +15,24 @@ class OpenhabItemWritter:
         #File öffnen
         self.pid = open(self.file, 'w',encoding="utf-8")
         
-        equipment : OpenhabEquipment
+        equipment : Equipment
         for equipment in list_of_equipment:
             self.write_equipment(equipment)
             item : OpenhabItem
             for item in list_of_items : 
-                if(item.equipment in equipment.name.get_name("l")):
-                    item.add_group(equipment.name.get_name("e"))
+                if(item.equipment in equipment.name):
+                    item.add_group(equipment.name)
                     self.write_item(item)
 
         self.pid.close()
 
-    def write_equipment(self, openhabequipment : OpenhabEquipment):
+    def write_equipment(self, equipment : Equipment):
         self.pid.write("\n")
         self.__write_type("Group")  
-        self.__write_name(openhabequipment.name,"e")  
-        self.__write_label(openhabequipment.label,"","")
-        self.__write_icon(openhabequipment.icon)
-        self.__write_group(openhabequipment.group)
+        self.__write_name(equipment.name,"e")  
+        self.__write_label(equipment.label,"","")
+        self.__write_icon(equipment.icon)
+        self.__write_group(equipment.group)
         self.__write_tag("Equipment")
 
         #Itemdefintion abgeschlossen. Das nächste Item startet in der nächsten Zeile
@@ -46,7 +47,8 @@ class OpenhabItemWritter:
         self.__write_icon(openhabitem.icon)
         self.__write_group(openhabitem.group)
         self.__write_tag(openhabitem.tag)
-        self.__write_bound_to(openhabitem.bound_to)
+        if type(openhabitem) == KnxItem:
+            self.__write_bound_to(openhabitem.bound_to)
 
         #Itemdefintion abgeschlossen. Das nächste Item startet in der nächsten Zeile
         self.pid.write("\n")
@@ -55,8 +57,8 @@ class OpenhabItemWritter:
         self.pid.write(type.strip())
         self.pid.write(self.delimiter)
     
-    def __write_name(self, name : ItemName, prefix : str = "i"):
-        self.pid.write(name.get_name(prefix).strip().replace(" ","_"))
+    def __write_name(self, name : str, prefix : str = "i"):
+        self.pid.write(name)
         self.pid.write(self.delimiter)
 
     def __write_label(self, label : str, format : str, einheit : str):
@@ -65,18 +67,22 @@ class OpenhabItemWritter:
         else:
             raise ValueError("Label nicht gesetzt")
 
-        if format and einheit:
+        if format:
             self.pid.write( " [" + format.strip())
-            self.pid.write(self.delimiter)
-            self.pid.write( einheit.strip() + "]")
+            if einheit:
+                self.pid.write(self.delimiter)
+                self.pid.write( einheit.strip())
+            self.pid.write("]")
 
         if label:
             self.pid.write("\"") 
             self.pid.write(self.delimiter) 
 
     def __write_icon(self, icon : str):
-        if icon:
-            self.pid.write("<ik" + icon.strip() + ">")
+        if icon and type(icon) == tuple:
+            self.pid.write("<ik" + icon[0].strip() + ">")
+        elif icon:
+            self.pid.write("<ik" + icon[0].strip() + ">")
             self.pid.write(self.delimiter)
     
     def __write_group(self, group : str):

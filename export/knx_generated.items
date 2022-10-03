@@ -1,595 +1,640 @@
 
-Group eWOZ_Rollladen_Nordfenster "Rollladen Nordfenster" <ikRollladen> (gRollladen) ["Equipment"] 
-
-Rollershutter iWOZ_RW_Rollladen_Nordfenster_Auf_Ab "Verfahren Rollladen" <ikRollladen> (gRollladen,eWOZ_Rollladen_Nordfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_Rollladen_Nordfenster_Auf_Ab"} 
-Switch iWOZ_RW_Rollladen_Nordfenster_Stop "Stop Rollladen" <ikRollladen> (gRollladen,eWOZ_Rollladen_Nordfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_Rollladen_Nordfenster_Stop"} 
-Switch iWOZ_R_Rollladen_Nordfenster_Aktuelle_Richtung "Anzeige der Verfahrrichtung" <ikRollladen> (gRollladen,eWOZ_Rollladen_Nordfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Rollladen_Nordfenster_Aktuelle_Richtung"} 
-Number iWOZ_RW_Rollladen_Nordfenster_Absolute_Position "Absolute Position" <ikRollladen> (gRollladen,eWOZ_Rollladen_Nordfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_Rollladen_Nordfenster_Absolute_Position"} 
-Switch iWOZ_R_Rollladen_Nordfenster_Status_aktuelle_Position "Status aktuelle Position" <ikRollladen> (gRollladen,eWOZ_Rollladen_Nordfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Rollladen_Nordfenster_Status_aktuelle_Position"} 
-Switch iWOZ_R_Rollladen_Nordfenster_Status_obere_Position "Status obere Position" <ikRollladen> (gRollladen,eWOZ_Rollladen_Nordfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Rollladen_Nordfenster_Status_obere_Position"} 
-Switch iWOZ_R_Rollladen_Nordfenster_Status_untere_Position "Status untere Position" <ikRollladen> (gRollladen,eWOZ_Rollladen_Nordfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Rollladen_Nordfenster_Status_untere_Position"} 
-Switch iWOZ_RW_Rollladen_Nordfenster_Sperre "Rollladen sperren" <ikRollladen> (gRollladen,eWOZ_Rollladen_Nordfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_Rollladen_Nordfenster_Sperre"} 
-String iWOZ_R_Rollladen_Nordfenster_Diagnosetext "Diagnosetext" <ikDiagnose> (gRollladen,eWOZ_Rollladen_Nordfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Rollladen_Nordfenster_Diagnosetext"} 
-
-Group eWOZ_Rollladen_Westfenster_star "Rollladen Westfenster Steg" <ikRollladen> (gRollladen) ["Equipment"] 
-
-
-Group eWOZ_Rollladen_Westfenster_kippbar "Rollladen Westfenster Kippbar" <ikRollladen> (gRollladen) ["Equipment"] 
-
-
-Group eWOZ_Rollladen_Suedfenster "Rollladen WOZ Südfenster" <ikRollladen> (gRollladen) ["Equipment"] 
-
-Rollershutter iWOZ_RW_Rollladen_Suedfenster_Auf_Ab "Auf_Ab" <ikRollladen> (gRollladen,eWOZ_Rollladen_Suedfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_Rollladen_Suedfenster_Auf_Ab"} 
-Switch iWOZ_RW_Rollladen_Suedfenster_Stop "Stop" <ikRollladen> (gRollladen,eWOZ_Rollladen_Suedfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_Rollladen_Suedfenster_Stop"} 
-Switch iWOZ_R_Rollladen_Suedfenster_Aktuelle_Richtung "Aktuelle Richtung" <ikRollladen> (gRollladen,eWOZ_Rollladen_Suedfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Rollladen_Suedfenster_Aktuelle_Richtung"} 
-Number iWOZ_RW_Rollladen_Suedfenster_Absolute_Position "Absolute Position" <ikRollladen> (gRollladen,eWOZ_Rollladen_Suedfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_Rollladen_Suedfenster_Absolute_Position"} 
-Switch iWOZ_R_Rollladen_Suedfenster_Status_aktuelle_Position "Status_aktuelle_Position" <ikRollladen> (gRollladen,eWOZ_Rollladen_Suedfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Rollladen_Suedfenster_Status_aktuelle_Position"} 
-Switch iWOZ_R_Rollladen_Suedfenster_Status_obere_Position "Status obere Position" <ikRollladen> (gRollladen,eWOZ_Rollladen_Suedfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Rollladen_Suedfenster_Status_obere_Position"} 
-Switch iWOZ_R_Rollladen_Suedfenster_Status_untere_Position "Status untere Position" <ikRollladen> (gRollladen,eWOZ_Rollladen_Suedfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Rollladen_Suedfenster_Status_untere_Position"} 
-Switch iWOZ_RW_Rollladen_Suedfenster_Sperre "Sperre" <ikRollladen> (gRollladen,eWOZ_Rollladen_Suedfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_Rollladen_Suedfenster_Sperre"} 
-String iWOZ_R_Rollladen_Suedfenster_Diagnosetext "Diagnosetext" <ikDiagnose> (gRollladen,eWOZ_Rollladen_Suedfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Rollladen_Suedfenster_Diagnosetext"} 
-
-Group eKUE_Rollladen_Suedfenster "Rollladen KUE Südfenster" <ikRollladen> (gRollladen) ["Equipment"] 
-
-Rollershutter iKUE_RW_Rollladen_Suedfenster_Auf_Ab "Verfahren Rollladen" <ikRollladen> (gRollladen,eKUE_Rollladen_Suedfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_RW_Rollladen_Suedfenster_Auf_Ab"} 
-Switch iKUE_RW_Rollladen_Suedfenster_Stop "Stop Rollladen" <ikRollladen> (gRollladen,eKUE_Rollladen_Suedfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_RW_Rollladen_Suedfenster_Stop"} 
-Switch iKUE_R_Rollladen_Suedfenster_Aktuelle_Richtung "Anzeige der Verfahrrichtung" <ikRollladen> (gRollladen,eKUE_Rollladen_Suedfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_R_Rollladen_Suedfenster_Aktuelle_Richtung"} 
-Number iKUE_RW_Rollladen_Suedfenster_Absolute_Position "Absolute Position" <ikRollladen> (gRollladen,eKUE_Rollladen_Suedfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_RW_Rollladen_Suedfenster_Absolute_Position"} 
-Switch iKUE_R_Rollladen_Suedfenster_Status_aktuelle_Position "Status aktuelle Position" <ikRollladen> (gRollladen,eKUE_Rollladen_Suedfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_R_Rollladen_Suedfenster_Status_aktuelle_Position"} 
-Switch iKUE_R_Rollladen_Suedfenster_Status_obere_Position "Status obere Position" <ikRollladen> (gRollladen,eKUE_Rollladen_Suedfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_R_Rollladen_Suedfenster_Status_obere_Position"} 
-Switch iKUE_R_Rollladen_Suedfenster_Status_untere_Position "Status untere Position" <ikRollladen> (gRollladen,eKUE_Rollladen_Suedfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_R_Rollladen_Suedfenster_Status_untere_Position"} 
-Switch iKUE_RW_Rollladen_Suedfenster_Sperre "Rollladen sperren" <ikRollladen> (gRollladen,eKUE_Rollladen_Suedfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_RW_Rollladen_Suedfenster_Sperre"} 
-String iKUE_R_Rollladen_Suedfenster_Diagnosetext "Diagnosetext" <ikDiagnose> (gRollladen,eKUE_Rollladen_Suedfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_R_Rollladen_Suedfenster_Diagnosetext"} 
-
-Group eHWR_Rollladen_Nordfenster "Rollladen HWR" <ikRollladen> (gRollladen) ["Equipment"] 
-
-Rollershutter iHWR_RW_Rollladen_Nordfenster_Auf_Ab "Verfahren Rollladen" <ikRollladen> (gRollladen,eHWR_Rollladen_Nordfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_RW_Rollladen_Nordfenster_Auf_Ab"} 
-Switch iHWR_RW_Rollladen_Nordfenster_Stop "Stop Rollladen" <ikRollladen> (gRollladen,eHWR_Rollladen_Nordfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_RW_Rollladen_Nordfenster_Stop"} 
-Switch iHWR_R_Rollladen_Nordfenster_Aktuelle_Richtung "Anzeige der Verfahrrichtung" <ikRollladen> (gRollladen,eHWR_Rollladen_Nordfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_R_Rollladen_Nordfenster_Aktuelle_Richtung"} 
-Number iHWR_RW_Rollladen_Nordfenster_Absolute_Position "Absolute Position" <ikRollladen> (gRollladen,eHWR_Rollladen_Nordfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_RW_Rollladen_Nordfenster_Absolute_Position"} 
-Switch iHWR_R_Rollladen_Nordfenster_Status_aktuelle_Position "Status aktuelle Position" <ikRollladen> (gRollladen,eHWR_Rollladen_Nordfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_R_Rollladen_Nordfenster_Status_aktuelle_Position"} 
-Switch iHWR_R_Rollladen_Nordfenster_Status_obere_Position "Status obere Position" <ikRollladen> (gRollladen,eHWR_Rollladen_Nordfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_R_Rollladen_Nordfenster_Status_obere_Position"} 
-Switch iHWR_R_Rollladen_Nordfenster_Status_untere_Position "Status untere Position" <ikRollladen> (gRollladen,eHWR_Rollladen_Nordfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_R_Rollladen_Nordfenster_Status_untere_Position"} 
-Switch iHWR_RW_Rollladen_Nordfenster_Sperre "Rollladen sperren" <ikRollladen> (gRollladen,eHWR_Rollladen_Nordfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_RW_Rollladen_Nordfenster_Sperre"} 
-String iHWR_R_Rollladen_Nordfenster_Diagnosetext "Diagnosetext" <ikDiagnose> (gRollladen,eHWR_Rollladen_Nordfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_R_Rollladen_Nordfenster_Diagnosetext"} 
+Group eWOZ_Rollladen_Nordfenster "Rollladen Nordfenster" <ikR> (gRollladen) ["Equipment"] 
 
-Group eGWC_Rollladen_Ostfenster "Rollladen GWC" <ikRollladen> (gRollladen) ["Equipment"] 
+Rollershutter iWohnzimmer_RW_Rollladen_Nordfenster_Auf_Ab "Verfahren Rollladen" <ikR> (gRollladeneWOZ_Rollladen_Nordfenster,) ["Point"] {channel=""} 
+Switch iWohnzimmer_RW_Rollladen_Nordfenster_Stop "Stop Rollladen" <ikR> (gRollladeneWOZ_Rollladen_Nordfenster,) ["Point"] {channel=""} 
+Switch iWohnzimmer_R_Rollladen_Nordfenster_Aktuelle Richtung "Anzeige der Verfahrrichtung" <ikR> (gRollladeneWOZ_Rollladen_Nordfenster,) ["Point"] {channel=""} 
+Number iWohnzimmer_RW_Rollladen_Nordfenster_Absolute Position "Absolute Position" <ikR> (gRollladeneWOZ_Rollladen_Nordfenster,) ["Point"] {channel=""} 
+Switch iWohnzimmer_R_Rollladen_Nordfenster_Status_aktuelle_Position "Status aktuelle Position" <ikR> (gRollladeneWOZ_Rollladen_Nordfenster,) ["Point"] {channel=""} 
+Switch iWohnzimmer_R_Rollladen_Nordfenster_Status obere Position "Status obere Position" <ikR> (gRollladeneWOZ_Rollladen_Nordfenster,) ["Point"] {channel=""} 
+Switch iWohnzimmer_R_Rollladen_Nordfenster_Status untere Position "Status untere Position" <ikR> (gRollladeneWOZ_Rollladen_Nordfenster,) ["Point"] {channel=""} 
+Switch iWohnzimmer_RW_Rollladen_Nordfenster_Sperre "Rollladen sperren" <ikR> (gRollladeneWOZ_Rollladen_Nordfenster,) ["Point"] {channel=""} 
+String iWohnzimmer_R_Rollladen_Nordfenster_Diagnosetext "Diagnosetext" <ikD> (gRollladeneWOZ_Rollladen_Nordfenster,) ["Point"] {channel=""} 
 
-Rollershutter iGWC_RW_Rollladen_Ostfenster_Auf_Ab "Verfahren Rollladen" <ikRollladen> (gRollladen,eGWC_Rollladen_Ostfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cGWC_RW_Rollladen_Ostfenster_Auf_Ab"} 
-Switch iGWC_RW_Rollladen_Ostfenster_Stop "Stop Rollladen" <ikRollladen> (gRollladen,eGWC_Rollladen_Ostfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cGWC_RW_Rollladen_Ostfenster_Stop"} 
-Switch iGWC_R_Rollladen_Ostfenster_Aktuelle_Richtung "Anzeige der Verfahrrichtung" <ikRollladen> (gRollladen,eGWC_Rollladen_Ostfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cGWC_R_Rollladen_Ostfenster_Aktuelle_Richtung"} 
-Number iGWC_RW_Rollladen_Ostfenster_Absolute_Position "Absolute Position" <ikRollladen> (gRollladen,eGWC_Rollladen_Ostfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cGWC_RW_Rollladen_Ostfenster_Absolute_Position"} 
-Switch iGWC_R_Rollladen_Ostfenster_Status_aktuelle_Position "Status aktuelle Position" <ikRollladen> (gRollladen,eGWC_Rollladen_Ostfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cGWC_R_Rollladen_Ostfenster_Status_aktuelle_Position"} 
-Switch iGWC_R_Rollladen_Ostfenster_Status_obere_Position "Status obere Position" <ikRollladen> (gRollladen,eGWC_Rollladen_Ostfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cGWC_R_Rollladen_Ostfenster_Status_obere_Position"} 
-Switch iGWC_R_Rollladen_Ostfenster_Status_untere_Position "Status untere Position" <ikRollladen> (gRollladen,eGWC_Rollladen_Ostfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cGWC_R_Rollladen_Ostfenster_Status_untere_Position"} 
-Switch iGWC_RW_Rollladen_Ostfenster_Sperre "Rollladen sperren" <ikRollladen> (gRollladen,eGWC_Rollladen_Ostfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cGWC_RW_Rollladen_Ostfenster_Sperre"} 
-String iGWC_R_Rollladen_Ostfenster_Diagnosetext "Diagnosetext" <ikDiagnose> (gRollladen,eGWC_Rollladen_Ostfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cGWC_R_Rollladen_Ostfenster_Diagnosetext"} 
+Group eWOZ_Rollladen_Westfenster_star "Rollladen Westfenster star" <ikR> (gRollladen) ["Equipment"] 
 
-Group eWOZ_Praesenzmelder_Couch "Präsenzmelder WOZ Couch" <ikPraesenzmelder> (gPraesenzmelder) ["Equipment"] 
+Rollershutter iWohnzimmer_RW_Rollladen_Westfenster star_Auf_Ab "Verfahren Rollladen" <ikR> (gRollladeneWOZ_Rollladen_Westfenster_star,) ["Point"] {channel=""} 
+Switch iWohnzimmer_RW_Rollladen_Westfenster star_Stop "Verfahren Rollladen" <ikR> (gRollladeneWOZ_Rollladen_Westfenster_star,) ["Point"] {channel=""} 
+Switch iWohnzimmer_R_Rollladen_Westfenster star_Aktuelle Richtung "Verfahren Rollladen" <ikR> (gRollladeneWOZ_Rollladen_Westfenster_star,) ["Point"] {channel=""} 
+Number iWohnzimmer_RW_Rollladen_Westfenster star_Absolute Position "Absolute Position" <ikR> (gRollladeneWOZ_Rollladen_Westfenster_star,) ["Point"] {channel=""} 
+Switch iWohnzimmer_R_Rollladen_Westfenster star_Status_aktuelle_Position "Status_aktuelle_Position" <ikR> (gRollladeneWOZ_Rollladen_Westfenster_star,) ["Point"] {channel=""} 
+Switch iWohnzimmer_R_Rollladen_Westfenster star_Status obere Position "Status obere Position" <ikR> (gRollladeneWOZ_Rollladen_Westfenster_star,) ["Point"] {channel=""} 
+Switch iWohnzimmer_R_Rollladen_Westfenster star_Status untere Position "Status untere Position" <ikR> (gRollladeneWOZ_Rollladen_Westfenster_star,) ["Point"] {channel=""} 
+Switch iWohnzimmer_RW_Rollladen_Westfenster star_Sperre "Sperre" <ikR> (gRollladeneWOZ_Rollladen_Westfenster_star,) ["Point"] {channel=""} 
+String iWohnzimmer_R_Rollladen_Westfenster star_Diagnosetext "Diagnosetext" <ikD> (gRollladeneWOZ_Rollladen_Westfenster_star,) ["Point"] {channel=""} 
 
-Switch iWOZ_R_Praesenzmelder_Couch_Praesenz "Präsenz im Wohnzimmer" <ikPraesenz> (gPraesenzmelder,eWOZ_Praesenzmelder_Couch) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Praesenzmelder_Couch_Praesenz"} 
-Switch iWOZ_R_Praesenzmelder_Couch_True_Praesenz "True Präsenz im Wohnzimmer" <ikTrue_Praesenz> (gPraesenzmelder,eWOZ_Praesenzmelder_Couch) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Praesenzmelder_Couch_True_Praesenz"} 
-Number iWOZ_R_Praesenzmelder_Couch_Temperatur "Temperatur im Wohnzimmer (Couch)" <ikTemperatur> (gTemperatur,eWOZ_Praesenzmelder_Couch) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Praesenzmelder_Couch_Temperatur"} 
-Number iWOZ_R_Praesenzmelder_Couch_Luftfeuchtigkeit "Luftfeuchtigkeit im Wohnzimmer (Couch)" <ikLuftfeuchtigkeit> (gLuftfeuchtigkeit,eWOZ_Praesenzmelder_Couch) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Praesenzmelder_Couch_Luftfeuchtigkeit"} 
-Number iWOZ_R_Praesenzmelder_Couch_Relativer_Luftdruck "Relativer Luftdruck im Wohnzimmer (Couch)" <ikLuftdruck> (gAbsoluter_Luftdruck,eWOZ_Praesenzmelder_Couch) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Praesenzmelder_Couch_Relativer_Luftdruck"} 
-Number iWOZ_R_Praesenzmelder_Couch_Absoluter_Luftdruck "Absoluter Luftdruck im Wohnzimmer (Couch)" <ikLuftdruck> (gRelativer_Luftdruck,eWOZ_Praesenzmelder_Couch) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Praesenzmelder_Couch_Absoluter_Luftdruck"} 
-Number iWOZ_R_Praesenzmelder_Couch_CO2 "CO2 Konzentration im Wohnzimmer (Couch)" <ikCO2> (gCO2,eWOZ_Praesenzmelder_Couch) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Praesenzmelder_Couch_CO2"} 
-Number iWOZ_R_Praesenzmelder_Couch_VOC "VOC Konzentration im Wohnzimmer (Couch)" <ikVOC> (gVOC,eWOZ_Praesenzmelder_Couch) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Praesenzmelder_Couch_VOC"} 
+Group eWOZ_Rollladen_Westfenster_kippbar "Rollladen Westfenster kippbar" <ikR> (gRollladen) ["Equipment"] 
 
-Group eWOZ_Praesenzmelder_Esstisch "Präsenzmelder Esstisch" <ikPraesenzmelder> (gPraesenzmelder) ["Equipment"] 
+Rollershutter iWohnzimmer_RW_Rollladen_Westfenster kippbar_Auf_Ab "Auf_Ab" <ikR> (gRollladeneWOZ_Rollladen_Westfenster_kippbar,) ["Point"] {channel=""} 
+Switch iWohnzimmer_RW_Rollladen_Westfenster kippbar_Stop "Stop" <ikR> (gRollladeneWOZ_Rollladen_Westfenster_kippbar,) ["Point"] {channel=""} 
+Switch iWohnzimmer_R_Rollladen_Westfenster kippbar_Aktuelle Richtung "Aktuelle Richtung" <ikR> (gRollladeneWOZ_Rollladen_Westfenster_kippbar,) ["Point"] {channel=""} 
+Number iWohnzimmer_RW_Rollladen_Westfenster kippbar_Absolute Position "Absolute Position" <ikR> (gRollladeneWOZ_Rollladen_Westfenster_kippbar,) ["Point"] {channel=""} 
+Switch iWohnzimmer_R_Rollladen_Westfenster kippbar_Status_aktuelle_Position "Status_aktuelle_Position" <ikR> (gRollladeneWOZ_Rollladen_Westfenster_kippbar,) ["Point"] {channel=""} 
+Switch iWohnzimmer_R_Rollladen_Westfenster kippbar_Status obere Position "Status obere Position" <ikR> (gRollladeneWOZ_Rollladen_Westfenster_kippbar,) ["Point"] {channel=""} 
+Switch iWohnzimmer_R_Rollladen_Westfenster kippbar_Status untere Position "Status untere Position" <ikR> (gRollladeneWOZ_Rollladen_Westfenster_kippbar,) ["Point"] {channel=""} 
+Switch iWohnzimmer_RW_Rollladen_Westfenster kippbar_Sperre "Sperre" <ikR> (gRollladeneWOZ_Rollladen_Westfenster_kippbar,) ["Point"] {channel=""} 
+String iWohnzimmer_R_Rollladen_Westfenster kippbar_Diagnosetext "Diagnosetext" <ikD> (gRollladeneWOZ_Rollladen_Westfenster_kippbar,) ["Point"] {channel=""} 
 
-Switch iWOZ_R_Praesenzmelder_Esszimmer_Praesenz "Präsenz im Wohnzimmer" <ikPraesenz> (gPraesenzmelder,eWOZ_Praesenzmelder_Esstisch) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Praesenzmelder_Esszimmer_Praesenz"} 
-Switch iWOZ_R_Praesenzmelder_Esszimmer_True_Praesenz "True Präsenz im Wohnzimmer" <ikTrue_Praesenz> (gPraesenzmelder,eWOZ_Praesenzmelder_Esstisch) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Praesenzmelder_Esszimmer_True_Praesenz"} 
-Number iWOZ_R_Praesenzmelder_Esszimmer_Temperatur "Temperatur im Wohnzimmer (Esszimmer)" <ikTemperatur> (gTemperatur,eWOZ_Praesenzmelder_Esstisch) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Praesenzmelder_Esszimmer_Temperatur"} 
-Number iWOZ_R_Praesenzmelder_Esszimmer_Luftfeuchtigkeit "Luftfeuchtigkeit im Wohnzimmer (Esszimmer)" <ikLuftfeuchtigkeit> (gLuftfeuchtigkeit,eWOZ_Praesenzmelder_Esstisch) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Praesenzmelder_Esszimmer_Luftfeuchtigkeit"} 
-Number iWOZ_R_Praesenzmelder_Esszimmer_Relativer_Luftdruck "Relativer Luftdruck im Wohnzimmer (Esszimmer)" <ikLuftdruck> (gAbsoluter_Luftdruck,eWOZ_Praesenzmelder_Esstisch) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Praesenzmelder_Esszimmer_Relativer_Luftdruck"} 
-Number iWOZ_R_Praesenzmelder_Esszimmer_Absoluter_Luftdruck "Absoluter Luftdruck im Wohnzimmer (Esszimmer)" <ikLuftdruck> (gRelativer_Luftdruck,eWOZ_Praesenzmelder_Esstisch) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Praesenzmelder_Esszimmer_Absoluter_Luftdruck"} 
-Number iWOZ_R_Praesenzmelder_Esszimmer_CO2 "CO2 Konzentration im Wohnzimmer (Esszimmer)" <ikCO2> (gCO2,eWOZ_Praesenzmelder_Esstisch) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Praesenzmelder_Esszimmer_CO2"} 
-Number iWOZ_R_Praesenzmelder_Esszimmer_VOC "VOC Konzentration im Wohnzimmer (Esszimmer)" <ikVOC> (gVOC,eWOZ_Praesenzmelder_Esstisch) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Praesenzmelder_Esszimmer_VOC"} 
+Group eWOZ_Rollladen_Südfenster "Rollladen WOZ Südfenster" <ikR> (gRollladen) ["Equipment"] 
 
-Group eKUE_Praesenzmelder_Kueche "Präsenzmelder Küche" <ikPraesenzmelder> (gPraesenzmelder) ["Equipment"] 
 
-Switch iKUE_R_Praesenzmelder_Kueche_Praesenz "Präsenz im Wohnzimmer" <ikPraesenz> (gPraesenzmelder,eKUE_Praesenzmelder_Kueche) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_R_Praesenzmelder_Kueche_Praesenz"} 
-Switch iKUE_R_Praesenzmelder_Kueche_True_Praesenz "True Präsenz im Wohnzimmer" <ikTrue_Praesenz> (gPraesenzmelder,eKUE_Praesenzmelder_Kueche) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_R_Praesenzmelder_Kueche_True_Praesenz"} 
-Number iKUE_R_Praesenzmelder_Kueche_Temperatur "Temperatur im Wohnzimmer (Küche)" <ikTemperatur> (gTemperatur,eKUE_Praesenzmelder_Kueche) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_R_Praesenzmelder_Kueche_Temperatur"} 
-Number iKUE_R_Praesenzmelder_Kueche_Luftfeuchtigkeit "Luftfeuchtigkeit im Wohnzimmer (Küche)" <ikLuftfeuchtigkeit> (gLuftfeuchtigkeit,eKUE_Praesenzmelder_Kueche) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_R_Praesenzmelder_Kueche_Luftfeuchtigkeit"} 
-Number iKUE_R_Praesenzmelder_Kueche_Relativer_Luftdruck "Relativer Luftdruck im Wohnzimmer (Küche)" <ikLuftdruck> (gAbsoluter_Luftdruck,eKUE_Praesenzmelder_Kueche) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_R_Praesenzmelder_Kueche_Relativer_Luftdruck"} 
-Number iKUE_R_Praesenzmelder_Kueche_Absoluter_Luftdruck "Absoluter Luftdruck im Wohnzimmer (Küche)" <ikLuftdruck> (gRelativer_Luftdruck,eKUE_Praesenzmelder_Kueche) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_R_Praesenzmelder_Kueche_Absoluter_Luftdruck"} 
-Number iKUE_R_Praesenzmelder_Kueche_CO2 "CO2 Konzentration im Wohnzimmer (Küche)" <ikCO2> (gCO2,eKUE_Praesenzmelder_Kueche) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_R_Praesenzmelder_Kueche_CO2"} 
-Number iKUE_R_Praesenzmelder_Kueche_VOC "VOC Konzentration im Wohnzimmer (Küche)" <ikVOC> (gVOC,eKUE_Praesenzmelder_Kueche) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_R_Praesenzmelder_Kueche_VOC"} 
+Group eKUE_Rollladen_Südfenster "Rollladen KUE Südfenster" <ikR> (gRollladen) ["Equipment"] 
 
-Group eFLUEG_Praesenzmelder_Flur "Präsenzmelder Flur EG" <ikPraesenzmelder> (gPraesenzmelder) ["Equipment"] 
 
-Switch iFLUEG_R_Praesenzmelder_FLUEG_Praesenz "Präsenz im Wohnzimmer" <ikPraesenz> (gPraesenzmelder,eFLUEG_Praesenzmelder_Flur) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cFLUEG_R_Praesenzmelder_FLUEG_Praesenz"} 
-Switch iFLUEG_R_Praesenzmelder_FLUEG_True_Praesenz "True Präsenz im Wohnzimmer" <ikTrue_Praesenz> (gPraesenzmelder,eFLUEG_Praesenzmelder_Flur) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cFLUEG_R_Praesenzmelder_FLUEG_True_Praesenz"} 
-Number iFLUEG_R_Praesenzmelder_FLUEG_Temperatur "Temperatur im Wohnzimmer (FLUEG)" <ikTemperatur> (gTemperatur,eFLUEG_Praesenzmelder_Flur) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cFLUEG_R_Praesenzmelder_FLUEG_Temperatur"} 
-Number iFLUEG_R_Praesenzmelder_FLUEG_Luftfeuchtigkeit "Luftfeuchtigkeit im Wohnzimmer (FLUEG)" <ikLuftfeuchtigkeit> (gLuftfeuchtigkeit,eFLUEG_Praesenzmelder_Flur) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cFLUEG_R_Praesenzmelder_FLUEG_Luftfeuchtigkeit"} 
-Number iFLUEG_R_Praesenzmelder_FLUEG_Relativer_Luftdruck "Relativer Luftdruck im Wohnzimmer (FLUEG)" <ikLuftdruck> (gAbsoluter_Luftdruck,eFLUEG_Praesenzmelder_Flur) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cFLUEG_R_Praesenzmelder_FLUEG_Relativer_Luftdruck"} 
-Number iFLUEG_R_Praesenzmelder_FLUEG_Absoluter_Luftdruck "Absoluter Luftdruck im Wohnzimmer (FLUEG)" <ikLuftdruck> (gRelativer_Luftdruck,eFLUEG_Praesenzmelder_Flur) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cFLUEG_R_Praesenzmelder_FLUEG_Absoluter_Luftdruck"} 
-Number iFLUEG_R_Praesenzmelder_FLUEG_CO2 "CO2 Konzentration im Wohnzimmer (FLUEG)" <ikCO2> (gCO2,eFLUEG_Praesenzmelder_Flur) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cFLUEG_R_Praesenzmelder_FLUEG_CO2"} 
-Number iFLUEG_R_Praesenzmelder_FLUEG_VOC "VOC Konzentration im Wohnzimmer (FLUEG)" <ikVOC> (gVOC,eFLUEG_Praesenzmelder_Flur) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cFLUEG_R_Praesenzmelder_FLUEG_VOC"} 
+Group eHWR_Rollladen_Nordfenster "Rollladen HWR" <ikR> (gRollladen) ["Equipment"] 
 
-Group eHWR_Praesenzmelder_Hauswirtschaftsraum "Präsenzmelder HWR" <ikPraesenzmelder> (gPraesenzmelder) ["Equipment"] 
+Rollershutter iHWR_RW_Rollladen_Nordfenster_Auf_Ab "Verfahren Rollladen" <ikR> (gRollladeneHWR_Rollladen_Nordfenster,) ["Point"] {channel=""} 
+Switch iHWR_RW_Rollladen_Nordfenster_Stop "Stop Rollladen" <ikR> (gRollladeneHWR_Rollladen_Nordfenster,) ["Point"] {channel=""} 
+Switch iHWR_R_Rollladen_Nordfenster_Aktuelle Richtung "Anzeige der Verfahrrichtung" <ikR> (gRollladeneHWR_Rollladen_Nordfenster,) ["Point"] {channel=""} 
+Number iHWR_RW_Rollladen_Nordfenster_Absolute Position "Absolute Position" <ikR> (gRollladeneHWR_Rollladen_Nordfenster,) ["Point"] {channel=""} 
+Switch iHWR_R_Rollladen_Nordfenster_Status_aktuelle_Position "Status aktuelle Position" <ikR> (gRollladeneHWR_Rollladen_Nordfenster,) ["Point"] {channel=""} 
+Switch iHWR_R_Rollladen_Nordfenster_Status obere Position "Status obere Position" <ikR> (gRollladeneHWR_Rollladen_Nordfenster,) ["Point"] {channel=""} 
+Switch iHWR_R_Rollladen_Nordfenster_Status untere Position "Status untere Position" <ikR> (gRollladeneHWR_Rollladen_Nordfenster,) ["Point"] {channel=""} 
+Switch iHWR_RW_Rollladen_Nordfenster_Sperre "Rollladen sperren" <ikR> (gRollladeneHWR_Rollladen_Nordfenster,) ["Point"] {channel=""} 
+String iHWR_R_Rollladen_Nordfenster_Diagnosetext "Diagnosetext" <ikD> (gRollladeneHWR_Rollladen_Nordfenster,) ["Point"] {channel=""} 
 
-Switch iHWR_R_Praesenzmelder_HWR_Praesenz "Präsenz im Wohnzimmer" <ikPraesenz> (gPraesenzmelder,eHWR_Praesenzmelder_Hauswirtschaftsraum) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_R_Praesenzmelder_HWR_Praesenz"} 
-Switch iHWR_R_Praesenzmelder_HWR_True_Praesenz "True Präsenz im Wohnzimmer" <ikTrue_Praesenz> (gPraesenzmelder,eHWR_Praesenzmelder_Hauswirtschaftsraum) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_R_Praesenzmelder_HWR_True_Praesenz"} 
-Number iHWR_R_Praesenzmelder_HWR_Temperatur "Temperatur im Wohnzimmer (HWR)" <ikTemperatur> (gTemperatur,eHWR_Praesenzmelder_Hauswirtschaftsraum) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_R_Praesenzmelder_HWR_Temperatur"} 
-Number iHWR_R_Praesenzmelder_HWR_Luftfeuchtigkeit "Luftfeuchtigkeit im Wohnzimmer (HWR)" <ikLuftfeuchtigkeit> (gLuftfeuchtigkeit,eHWR_Praesenzmelder_Hauswirtschaftsraum) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_R_Praesenzmelder_HWR_Luftfeuchtigkeit"} 
-Number iHWR_R_Praesenzmelder_HWR_Relativer_Luftdruck "Relativer Luftdruck im Wohnzimmer (HWR)" <ikLuftdruck> (gAbsoluter_Luftdruck,eHWR_Praesenzmelder_Hauswirtschaftsraum) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_R_Praesenzmelder_HWR_Relativer_Luftdruck"} 
-Number iHWR_R_Praesenzmelder_HWR_Absoluter_Luftdruck "Absoluter Luftdruck im Wohnzimmer (HWR)" <ikLuftdruck> (gRelativer_Luftdruck,eHWR_Praesenzmelder_Hauswirtschaftsraum) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_R_Praesenzmelder_HWR_Absoluter_Luftdruck"} 
-Number iHWR_R_Praesenzmelder_HWR_CO2 "CO2 Konzentration im Wohnzimmer (HWR)" <ikCO2> (gCO2,eHWR_Praesenzmelder_Hauswirtschaftsraum) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_R_Praesenzmelder_HWR_CO2"} 
-Number iHWR_R_Praesenzmelder_HWR_VOC "VOC Konzentration im Wohnzimmer (HWR)" <ikVOC> (gVOC,eHWR_Praesenzmelder_Hauswirtschaftsraum) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_R_Praesenzmelder_HWR_VOC"} 
+Group eGWC_Rollladen_Ostfenster "Rollladen GWC" <ikR> (gRollladen) ["Equipment"] 
 
-Group eGWC_Praesenzmelder_GWC "Präsenzmelder GWC" <ikPraesenzmelder> (gPraesenzmelder) ["Equipment"] 
-
-Switch iGWC_R_Praesenzmelder_GWC_Praesenz "Präsenz im Wohnzimmer" <ikPraesenz> (gPraesenzmelder,eGWC_Praesenzmelder_GWC) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cGWC_R_Praesenzmelder_GWC_Praesenz"} 
-Switch iGWC_R_Praesenzmelder_GWC_True_Praesenz "True Präsenz im Wohnzimmer" <ikTrue_Praesenz> (gPraesenzmelder,eGWC_Praesenzmelder_GWC) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cGWC_R_Praesenzmelder_GWC_True_Praesenz"} 
-Number iGWC_R_Praesenzmelder_GWC_Temperatur "Temperatur im Wohnzimmer (GWC)" <ikTemperatur> (gTemperatur,eGWC_Praesenzmelder_GWC) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cGWC_R_Praesenzmelder_GWC_Temperatur"} 
-Number iGWC_R_Praesenzmelder_GWC_Luftfeuchtigkeit "Luftfeuchtigkeit im Wohnzimmer (GWC)" <ikLuftfeuchtigkeit> (gLuftfeuchtigkeit,eGWC_Praesenzmelder_GWC) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cGWC_R_Praesenzmelder_GWC_Luftfeuchtigkeit"} 
-Number iGWC_R_Praesenzmelder_GWC_Relativer_Luftdruck "Relativer Luftdruck im Wohnzimmer (GWC)" <ikLuftdruck> (gAbsoluter_Luftdruck,eGWC_Praesenzmelder_GWC) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cGWC_R_Praesenzmelder_GWC_Relativer_Luftdruck"} 
-Number iGWC_R_Praesenzmelder_GWC_Absoluter_Luftdruck "Absoluter Luftdruck im Wohnzimmer (GWC)" <ikLuftdruck> (gRelativer_Luftdruck,eGWC_Praesenzmelder_GWC) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cGWC_R_Praesenzmelder_GWC_Absoluter_Luftdruck"} 
-Number iGWC_R_Praesenzmelder_GWC_CO2 "CO2 Konzentration im Wohnzimmer (GWC)" <ikCO2> (gCO2,eGWC_Praesenzmelder_GWC) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cGWC_R_Praesenzmelder_GWC_CO2"} 
-Number iGWC_R_Praesenzmelder_GWC_VOC "VOC Konzentration im Wohnzimmer (GWC)" <ikVOC> (gVOC,eGWC_Praesenzmelder_GWC) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cGWC_R_Praesenzmelder_GWC_VOC"} 
-
-Group eWOZ_Glasttaster_Nordfenster_TV "Glastaster neben dem TV" <ikGlastaster> (gGlastaster) ["Equipment"] 
-
-
-Group eWOZ_Glasttaster_Nordfenster_Couch "Glastaster neben der Couch" <ikGlastaster> (gGlastaster) ["Equipment"] 
-
-
-Group eWOZ_Glasttaster_Westfenster "Glastaster neben dem Westfenster" <ikGlastaster> (gGlastaster) ["Equipment"] 
-
-
-Group eWOZ_Glasttaster_Tuer "Glastaster neben der Wohnzimmertür" <ikGlastaster> (gGlastaster) ["Equipment"] 
-
-
-Group eKUE_Glasttaster "Glastaster in der Küche" <ikGlastaster> (gGlastaster) ["Equipment"] 
-
-
-Group eHWR_Glasttaster "Glastaster im Hauswirtschaftsraum" <ikGlastaster> (gGlastaster) ["Equipment"] 
-
-
-Group eGWC_Glasttaster "Glastaster im Gäste-WC" <ikGlastaster> (gGlastaster) ["Equipment"] 
-
-
-Group eFLUEG_Glasttaster "Glastaster im Flur (Erdgeschoss)" <ikGlastaster> (gGlastaster) ["Equipment"] 
-
-
-Group eBUR_Glasttaster "Glastaster im Büro" <ikGlastaster> (gGlastaster) ["Equipment"] 
-
-
-Group eBAD_Glasttaster "Glastaster im Bad" <ikGlastaster> (gGlastaster) ["Equipment"] 
-
-Number iBAD_R_Glasttaster_Temperatur "Temperatur Glastaster im Bad" <ikTemperatur> (gTemperatur,eBAD_Glasttaster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_R_Glasttaster_Temperatur"} 
-Contact iBAD_R_Glasttaster_Betriebsstatus "Status Glastaster im Bad" <ikState> (gStatus,eBAD_Glasttaster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_R_Glasttaster_Betriebsstatus"} 
-Contact iBAD_R_Glasttaster_Tastenbetaetigung "Tastenbetätigung Glastaster im Bad" <ikState> (gStatus,eBAD_Glasttaster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_R_Glasttaster_Tastenbetaetigung"} 
-String iBAD_RW_Glasttaster_Status_Text_1 "Statustext #1 für Glasttaster im Bad" <ikString> (gStatus,eBAD_Glasttaster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_Glasttaster_Status_Text_1"} 
-String iBAD_RW_Glasttaster_Status_Text_2 "Statustext #2 für Glasttaster im Bad" <ikString> (gStatus,eBAD_Glasttaster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_Glasttaster_Status_Text_2"} 
-
-Group eKIZ_Glasttaster "Glastaster im Kinderzimmer" <ikGlastaster> (gGlastaster) ["Equipment"] 
-
-
-Group eSLZ_Glasttaster "Glastaster im Schlafzimmer neben der Tür" <ikGlastaster> (gGlastaster) ["Equipment"] 
-
-
-Group eSLZ_Glasttaster_Bett_links "Glastaster neben dem Bett (links)" <ikGlastaster> (gGlastaster) ["Equipment"] 
-
-
-Group eSLZ_Glasttaster_Bett_rechts "Glastaster neben dem Bett (rechts)" <ikGlastaster> (gGlastaster) ["Equipment"] 
-
-
-Group eANK_Glasttaster "Glastaster in der Ankleide" <ikGlastaster> (gGlastaster) ["Equipment"] 
-
-
-Group eBUR_Rollladen_Dachfenster "Rollladen Büro" <ikRollladen> (gRollladen) ["Equipment"] 
-
-Rollershutter iBUR_RW_Rollladen_Dachfenster_Auf_Ab "Verfahren Rollladen" <ikRollladen> (gRollladen,eBUR_Rollladen_Dachfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBUR_RW_Rollladen_Dachfenster_Auf_Ab"} 
-Switch iBUR_RW_Rollladen_Dachfenster_Stop "Stop Rollladen" <ikRollladen> (gRollladen,eBUR_Rollladen_Dachfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBUR_RW_Rollladen_Dachfenster_Stop"} 
-Switch iBUR_R_Rollladen_Dachfenster_Aktuelle_Richtung "Anzeige der Verfahrrichtung" <ikRollladen> (gRollladen,eBUR_Rollladen_Dachfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBUR_R_Rollladen_Dachfenster_Aktuelle_Richtung"} 
-Number iBUR_RW_Rollladen_Dachfenster_Absolute_Position "Absolute Position" <ikRollladen> (gRollladen,eBUR_Rollladen_Dachfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBUR_RW_Rollladen_Dachfenster_Absolute_Position"} 
-Switch iBUR_R_Rollladen_Dachfenster_Status_aktuelle_Position "Status aktuelle Position" <ikRollladen> (gRollladen,eBUR_Rollladen_Dachfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBUR_R_Rollladen_Dachfenster_Status_aktuelle_Position"} 
-Switch iBUR_R_Rollladen_Dachfenster_Status_obere_Position "Status obere Position" <ikRollladen> (gRollladen,eBUR_Rollladen_Dachfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBUR_R_Rollladen_Dachfenster_Status_obere_Position"} 
-Switch iBUR_R_Rollladen_Dachfenster_Status_untere_Position "Status untere Position" <ikRollladen> (gRollladen,eBUR_Rollladen_Dachfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBUR_R_Rollladen_Dachfenster_Status_untere_Position"} 
-Switch iBUR_RW_Rollladen_Dachfenster_Sperre "Rollladen sperren" <ikRollladen> (gRollladen,eBUR_Rollladen_Dachfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBUR_RW_Rollladen_Dachfenster_Sperre"} 
-String iBUR_R_Rollladen_Dachfenster_Diagnosetext "Diagnosetext" <ikDiagnose> (gRollladen,eBUR_Rollladen_Dachfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBUR_R_Rollladen_Dachfenster_Diagnosetext"} 
-
-Group eKIZ_Rollladen_Unterlicht "Rollladen Kinderzimmer" <ikRollladen> (gRollladen) ["Equipment"] 
-
-Rollershutter iKIZ_RW_Rollladen_Westfenster_Auf_Ab "Verfahren Rollladen" <ikRollladen> (gRollladen,eKIZ_Rollladen_Unterlicht) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKIZ_RW_Rollladen_Westfenster_Auf_Ab"} 
-Switch iKIZ_RW_Rollladen_Westfenster_Stop "Stop Rollladen" <ikRollladen> (gRollladen,eKIZ_Rollladen_Unterlicht) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKIZ_RW_Rollladen_Westfenster_Stop"} 
-Switch iKIZ_R_Rollladen_Westfenster_Aktuelle_Richtung "Anzeige der Verfahrrichtung" <ikRollladen> (gRollladen,eKIZ_Rollladen_Unterlicht) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKIZ_R_Rollladen_Westfenster_Aktuelle_Richtung"} 
-Number iKIZ_RW_Rollladen_Westfenster_Absolute_Position "Absolute Position" <ikRollladen> (gRollladen,eKIZ_Rollladen_Unterlicht) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKIZ_RW_Rollladen_Westfenster_Absolute_Position"} 
-Switch iKIZ_R_Rollladen_Westfenster_Status_aktuelle_Position "Status aktuelle Position" <ikRollladen> (gRollladen,eKIZ_Rollladen_Unterlicht) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKIZ_R_Rollladen_Westfenster_Status_aktuelle_Position"} 
-Switch iKIZ_R_Rollladen_Westfenster_Status_obere_Position "Status obere Position" <ikRollladen> (gRollladen,eKIZ_Rollladen_Unterlicht) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKIZ_R_Rollladen_Westfenster_Status_obere_Position"} 
-Switch iKIZ_R_Rollladen_Westfenster_Status_untere_Position "Status untere Position" <ikRollladen> (gRollladen,eKIZ_Rollladen_Unterlicht) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKIZ_R_Rollladen_Westfenster_Status_untere_Position"} 
-Switch iKIZ_RW_Rollladen_Westfenster_Sperre "Rollladen sperren" <ikRollladen> (gRollladen,eKIZ_Rollladen_Unterlicht) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKIZ_RW_Rollladen_Westfenster_Sperre"} 
-String iKIZ_R_Rollladen_Westfenster_Diagnosetext "Diagnosetext" <ikDiagnose> (gRollladen,eKIZ_Rollladen_Unterlicht) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKIZ_R_Rollladen_Westfenster_Diagnosetext"} 
-
-Group eSLZ_Rollladen_Unterlicht "Rollladen Schlafzimmer" <ikRollladen> (gRollladen) ["Equipment"] 
-
-Rollershutter iSLZ_RW_Rollladen_Westfenster_Auf_Ab "Verfahren Rollladen" <ikRollladen> (gRollladen,eSLZ_Rollladen_Unterlicht) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cSLZ_RW_Rollladen_Westfenster_Auf_Ab"} 
-Switch iSLZ_RW_Rollladen_Westfenster_Stop "Stop Rollladen" <ikRollladen> (gRollladen,eSLZ_Rollladen_Unterlicht) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cSLZ_RW_Rollladen_Westfenster_Stop"} 
-Switch iSLZ_R_Rollladen_Westfenster_Aktuelle_Richtung "Anzeige der Verfahrrichtung" <ikRollladen> (gRollladen,eSLZ_Rollladen_Unterlicht) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cSLZ_R_Rollladen_Westfenster_Aktuelle_Richtung"} 
-Number iSLZ_RW_Rollladen_Westfenster_Absolute_Position "Absolute Position" <ikRollladen> (gRollladen,eSLZ_Rollladen_Unterlicht) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cSLZ_RW_Rollladen_Westfenster_Absolute_Position"} 
-Switch iSLZ_R_Rollladen_Westfenster_Status_aktuelle_Position "Status aktuelle Position" <ikRollladen> (gRollladen,eSLZ_Rollladen_Unterlicht) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cSLZ_R_Rollladen_Westfenster_Status_aktuelle_Position"} 
-Switch iSLZ_R_Rollladen_Westfenster_Status_obere_Position "Status obere Position" <ikRollladen> (gRollladen,eSLZ_Rollladen_Unterlicht) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cSLZ_R_Rollladen_Westfenster_Status_obere_Position"} 
-Switch iSLZ_R_Rollladen_Westfenster_Status_untere_Position "Status untere Position" <ikRollladen> (gRollladen,eSLZ_Rollladen_Unterlicht) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cSLZ_R_Rollladen_Westfenster_Status_untere_Position"} 
-Switch iSLZ_RW_Rollladen_Westfenster_Sperre "Rollladen sperren" <ikRollladen> (gRollladen,eSLZ_Rollladen_Unterlicht) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cSLZ_RW_Rollladen_Westfenster_Sperre"} 
-String iSLZ_R_Rollladen_Westfenster_Diagnosetext "Diagnosetext" <ikDiagnose> (gRollladen,eSLZ_Rollladen_Unterlicht) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cSLZ_R_Rollladen_Westfenster_Diagnosetext"} 
-
-Group eBAD_Rollladen_Dachfenster "Rollladen Bad Dachfenster" <ikRollladen> (gRollladen) ["Equipment"] 
-
-Rollershutter iBAD_RW_Rollladen_Dachfenster_Auf_Ab "Verfahren Rollladen" <ikRollladen> (gRollladen,eBAD_Rollladen_Dachfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_Rollladen_Dachfenster_Auf_Ab"} 
-Switch iBAD_RW_Rollladen_Dachfenster_Stop "Stop Rollladen" <ikRollladen> (gRollladen,eBAD_Rollladen_Dachfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_Rollladen_Dachfenster_Stop"} 
-Switch iBAD_R_Rollladen_Dachfenster_Aktuelle_Richtung "Anzeige der Verfahrrichtung" <ikRollladen> (gRollladen,eBAD_Rollladen_Dachfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_R_Rollladen_Dachfenster_Aktuelle_Richtung"} 
-Number iBAD_RW_Rollladen_Dachfenster_Absolute_Position "Absolute Position" <ikRollladen> (gRollladen,eBAD_Rollladen_Dachfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_Rollladen_Dachfenster_Absolute_Position"} 
-Switch iBAD_R_Rollladen_Dachfenster_Status_aktuelle_Position "Status aktuelle Position" <ikRollladen> (gRollladen,eBAD_Rollladen_Dachfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_R_Rollladen_Dachfenster_Status_aktuelle_Position"} 
-Switch iBAD_R_Rollladen_Dachfenster_Status_obere_Position "Status obere Position" <ikRollladen> (gRollladen,eBAD_Rollladen_Dachfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_R_Rollladen_Dachfenster_Status_obere_Position"} 
-Switch iBAD_R_Rollladen_Dachfenster_Status_untere_Position "Status untere Position" <ikRollladen> (gRollladen,eBAD_Rollladen_Dachfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_R_Rollladen_Dachfenster_Status_untere_Position"} 
-Switch iBAD_RW_Rollladen_Dachfenster_Sperre "Rollladen sperren" <ikRollladen> (gRollladen,eBAD_Rollladen_Dachfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_Rollladen_Dachfenster_Sperre"} 
-String iBAD_R_Rollladen_Dachfenster_Diagnosetext "Diagnosetext" <ikDiagnose> (gRollladen,eBAD_Rollladen_Dachfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_R_Rollladen_Dachfenster_Diagnosetext"} 
-
-Group eBAD_Rollladen_Ostfenster "Rollladen Bad Ostfenster" <ikRollladen> (gRollladen) ["Equipment"] 
-
-Rollershutter iBAD_RW_Rollladen_Ostfenster_Auf_Ab "Verfahren Rollladen" <ikRollladen> (gRollladen,eBAD_Rollladen_Ostfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_Rollladen_Ostfenster_Auf_Ab"} 
-Switch iBAD_RW_Rollladen_Ostfenster_Stop "Stop Rollladen" <ikRollladen> (gRollladen,eBAD_Rollladen_Ostfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_Rollladen_Ostfenster_Stop"} 
-Switch iBAD_R_Rollladen_Ostfenster_Aktuelle_Richtung "Anzeige der Verfahrrichtung" <ikRollladen> (gRollladen,eBAD_Rollladen_Ostfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_R_Rollladen_Ostfenster_Aktuelle_Richtung"} 
-Number iBAD_RW_Rollladen_Ostfenster_Absolute_Position "Absolute Position" <ikRollladen> (gRollladen,eBAD_Rollladen_Ostfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_Rollladen_Ostfenster_Absolute_Position"} 
-Switch iBAD_R_Rollladen_Ostfenster_Status_aktuelle_Position "Status aktuelle Position" <ikRollladen> (gRollladen,eBAD_Rollladen_Ostfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_R_Rollladen_Ostfenster_Status_aktuelle_Position"} 
-Switch iBAD_R_Rollladen_Ostfenster_Status_obere_Position "Status obere Position" <ikRollladen> (gRollladen,eBAD_Rollladen_Ostfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_R_Rollladen_Ostfenster_Status_obere_Position"} 
-Switch iBAD_R_Rollladen_Ostfenster_Status_untere_Position "Status untere Position" <ikRollladen> (gRollladen,eBAD_Rollladen_Ostfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_R_Rollladen_Ostfenster_Status_untere_Position"} 
-Switch iBAD_RW_Rollladen_Ostfenster_Sperre "Rollladen sperren" <ikRollladen> (gRollladen,eBAD_Rollladen_Ostfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_Rollladen_Ostfenster_Sperre"} 
-String iBAD_R_Rollladen_Ostfenster_Diagnosetext "Diagnosetext" <ikDiagnose> (gRollladen,eBAD_Rollladen_Ostfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_R_Rollladen_Ostfenster_Diagnosetext"} 
-
-Group eFLUDG_Rollladen_Ostfenster "Rollladen FLUDG Ostfenster" <ikRollladen> (gRollladen) ["Equipment"] 
-
-Rollershutter iFLUEG_RW_Rollladen_Ostfenster_Auf_Ab "Verfahren Rollladen" <ikRollladen> (gRollladen,eFLUDG_Rollladen_Ostfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cFLUEG_RW_Rollladen_Ostfenster_Auf_Ab"} 
-Switch iFLUEG_RW_Rollladen_Ostfenster_Stop "Stop Rollladen" <ikRollladen> (gRollladen,eFLUDG_Rollladen_Ostfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cFLUEG_RW_Rollladen_Ostfenster_Stop"} 
-Switch iFLUEG_R_Rollladen_Ostfenster_Aktuelle_Richtung "Anzeige der Verfahrrichtung" <ikRollladen> (gRollladen,eFLUDG_Rollladen_Ostfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cFLUEG_R_Rollladen_Ostfenster_Aktuelle_Richtung"} 
-Number iFLUEG_RW_Rollladen_Ostfenster_Absolute_Position "Absolute Position" <ikRollladen> (gRollladen,eFLUDG_Rollladen_Ostfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cFLUEG_RW_Rollladen_Ostfenster_Absolute_Position"} 
-Switch iFLUEG_R_Rollladen_Ostfenster_Status_aktuelle_Position "Status aktuelle Position" <ikRollladen> (gRollladen,eFLUDG_Rollladen_Ostfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cFLUEG_R_Rollladen_Ostfenster_Status_aktuelle_Position"} 
-Switch iFLUEG_R_Rollladen_Ostfenster_Status_obere_Position "Status obere Position" <ikRollladen> (gRollladen,eFLUDG_Rollladen_Ostfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cFLUEG_R_Rollladen_Ostfenster_Status_obere_Position"} 
-Switch iFLUEG_R_Rollladen_Ostfenster_Status_untere_Position "Status untere Position" <ikRollladen> (gRollladen,eFLUDG_Rollladen_Ostfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cFLUEG_R_Rollladen_Ostfenster_Status_untere_Position"} 
-Switch iFLUEG_RW_Rollladen_Ostfenster_Sperre "Rollladen sperren" <ikRollladen> (gRollladen,eFLUDG_Rollladen_Ostfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cFLUEG_RW_Rollladen_Ostfenster_Sperre"} 
-String iFLUEG_R_Rollladen_Ostfenster_Diagnosetext "Diagnosetext" <ikDiagnose> (gRollladen,eFLUDG_Rollladen_Ostfenster) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cFLUEG_R_Rollladen_Ostfenster_Diagnosetext"} 
-
-Group eDCH_Wetterstation_Dach "Wetterdaten Erfassung" <ikWetterstation> (gWetterstation) ["Equipment"] 
-
-Number iDCH_R_Wetterstation_Ost_Helligkeit "Helligkeitswert (Ost) [%.1f Lux]" <ikHelligkeit> (gHelligkeit,eDCH_Wetterstation_Dach) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cDCH_R_Wetterstation_Ost_Helligkeit"} 
-Number iDCH_R_Wetterstation_Sued_Helligkeit "Helligkeitswert (Süd) [%.1f Lux]" <ikHelligkeit> (gHelligkeit,eDCH_Wetterstation_Dach) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cDCH_R_Wetterstation_Sued_Helligkeit"} 
-Number iDCH_R_Wetterstation_West_Helligkeit "Helligkeitswert (West) [%.1f Lux]" <ikHelligkeit> (gHelligkeit,eDCH_Wetterstation_Dach) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cDCH_R_Wetterstation_West_Helligkeit"} 
-Number iDCH_R_Wetterstation_West_Daemmerung "Dämmerung [%.1f Lux]" <ikHelligkeit> (gHelligkeit,eDCH_Wetterstation_Dach) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cDCH_R_Wetterstation_West_Daemmerung"} 
-Number iDCH_R_Wetterstation_Aussenluft_Temperatur "Außenlufttemperatur [%.1f °C]" <ikTemperatur> (gTemperatur,eDCH_Wetterstation_Dach) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cDCH_R_Wetterstation_Aussenluft_Temperatur"} 
-Number iDCH_R_Wetterstation_Aussenluft_Wind "Windgeschwindigkeit [%.1f m/s]" <ikWindgeschwindigkeit> (gWindgeschwindigkeit,eDCH_Wetterstation_Dach) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cDCH_R_Wetterstation_Aussenluft_Wind"} 
-Contact iDCH_R_Wetterstation_Regensensor_Regen "Regen" <ikWetterstation> (gWetterstation,eDCH_Wetterstation_Dach) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cDCH_R_Wetterstation_Regensensor_Regen"} 
-Contact iDCH_R_Wetterstation_Regensensor_In_Betrieb "Regensensor in Betrieb" <ikWetterstation> (gWetterstation,eDCH_Wetterstation_Dach) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cDCH_R_Wetterstation_Regensensor_In_Betrieb"} 
-Contact iDCH_R_Wetterstation_Regensensor_Heizung "Heizung Aktiv" <ikWetterstation> (gWetterstation,eDCH_Wetterstation_Dach) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cDCH_R_Wetterstation_Regensensor_Heizung"} 
-Contact iDCH_R_Wetterstation_Wetterstation_In_Betrieb "Regensensor in Betrieb" <ikWetterstation> (gWetterstation,eDCH_Wetterstation_Dach) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cDCH_R_Wetterstation_Wetterstation_In_Betrieb"} 
-
-Group eTKR_Waermepumpe_Heizung "Außentemperatur Heizung" <ikHeizung> (gHeizung) ["Equipment"] 
-
-Number iTKR_R_Waermepumpe_Aussentemperatur "Außentemperaturfühler [%.1f °C]" <ikHeizung> (gWMP_Sensoren,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Aussentemperatur"} 
-Number iTKR_R_Waermepumpe_Stoernummer "Störnummer der Wärmepumpe" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Stoernummer"} 
-Number iTKR_RW_Waermepumpe_Systemmode "Modus der Wärmepumpe" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_RW_Waermepumpe_Systemmode"[profile="transform:MAP", function="wmp_modus.map"]} 
-Number iTKR_R_Waermepumpe_Waermespeichertemperatur "Wärmespeichertemperatur" <ikHeizung> (gWMP_Sensoren,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Waermespeichertemperatur"} 
-Number iTKR_R_Waermepumpe_Kaeltespeichertemperatur "Kältespeichertemperatur" <ikHeizung> (gWMP_Sensoren,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Kaeltespeichertemperatur"} 
-Number iTKR_R_Waermepumpe_Trinkwassererwaermertemp_Unten "Trinkwassererwärmertemp_Unten" <ikHeizung> (gWMP_Sensoren,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Trinkwassererwaermertemp_Unten"} 
-Number iTKR_R_Waermepumpe_Trinkwassererwaermertemp_Oben "Trinkwassererwärmertemp_Oben" <ikHeizung> (gWMP_Sensoren,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Trinkwassererwaermertemp_Oben"} 
-Number iTKR_R_Waermepumpe_Warmwasserzapftemperatur "Warmwasserzapftemperatur" <ikHeizung> (gWMP_Sensoren,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Warmwasserzapftemperatur"} 
-Number iTKR_RW_Waermepumpe_Warmwasser_Solltemperatur "Warmwasser Solltemperatur" <ikHeizung> (gWMP_Sensoren,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_RW_Waermepumpe_Warmwasser_Solltemperatur"} 
-Number iTKR_RW_Waermepumpe_Warmwasserladung_Einschalttemperatur "Warmwasserladung_Einschalttemperatur" <ikHeizung> (gWMP_Sensoren,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_RW_Waermepumpe_Warmwasserladung_Einschalttemperatur"} 
-Number iTKR_RW_Waermepumpe_Warmwasserladung_Ausschalttemperatur "Warmwasserladung_Ausschalttemperatur" <ikHeizung> (gWMP_Sensoren,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_RW_Waermepumpe_Warmwasserladung_Ausschalttemperatur"} 
-Number iTKR_R_Waermepumpe_Aktueller_Strompreis "Aktueller_Strompreis" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Aktueller_Strompreis"} 
-Number iTKR_R_Waermepumpe_Vorlauftemperatur "Vorlauftemperatur" <ikHeizung> (gWMP_Sensoren,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Vorlauftemperatur"} 
-Number iTKR_R_Waermepumpe_Ruecklauftemperatur "Rücklauftemperatur" <ikHeizung> (gWMP_Sensoren,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Ruecklauftemperatur"} 
-Number iTKR_R_Waermepumpe_HGL_Vorlauftemperatur "HGL_Vorlauftemperatur" <ikHeizung> (gWMP_Sensoren,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_HGL_Vorlauftemperatur"} 
-Number iTKR_R_Waermepumpe_Waermequelleneintrittstemperatur "Wärmequelleneintrittstemperatur" <ikHeizung> (gWMP_Sensoren,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Waermequelleneintrittstemperatur"} 
-Number iTKR_R_Waermepumpe_Waermequellenaustrittstemperatur "Wärmequellenaustrittstemperatur" <ikHeizung> (gWMP_Sensoren,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Waermequellenaustrittstemperatur"} 
-Number iTKR_R_Waermepumpe_Luftansaugtemperatur "Luftansaugtemperatur" <ikHeizung> (gWMP_Sensoren,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Luftansaugtemperatur"} 
-Number iTKR_R_Waermepumpe_Luftwaermetauschertemperatur "Luftwärmetauschertemperatur" <ikHeizung> (gWMP_Sensoren,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Luftwaermetauschertemperatur"} 
-Number iTKR_R_Waermepumpe_Luftansaugtemperatur2 "Luftansaugtemperatur2" <ikHeizung> (gWMP_Sensoren,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Luftansaugtemperatur2"[profile="transform:MAP", function="wmp_betriebsart.map"]} 
-String iTKR_R_Waermepumpe_Betriebsart_Waermepumpe "Betriebsart der Wärmepumpe" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Betriebsart_Waermepumpe"} 
-String iTKR_R_Waermepumpe_Summenstoerung_Waermepumpe "Summenstörung Wärmepumpe" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Summenstoerung_Waermepumpe"[profile="transform:MAP", function="wmp_stoerung.map"]} 
-String iTKR_R_Waermepumpe_Status_Verdichter_1 "Status Verdichter" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Status_Verdichter_1"[profile="transform:MAP", function="wmp_on_off.map"]} 
-Number iTKR_R_Waermepumpe_Status_Ladepumpe "Status der Ladepumpe" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Status_Ladepumpe"} 
-Number iTKR_R_Waermepumpe_Status_Solepumpe "Status Sole / Zwischenkreispumpe (M16)" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Status_Solepumpe"} 
-Number iTKR_R_Waermepumpe_Status_Waermequellen "Status Wärmequellen-/Grundwasserpumpe" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Status_Waermequellen"} 
-Number iTKR_R_Waermepumpe_Status_Kaeltespeicherpumpe "Status ISC Kältespeicherpumpe (M84)" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Status_Kaeltespeicherpumpe"} 
-Number iTKR_R_Waermepumpe_Status_Rueckkuehlpumpe "Status ISC Rückkühlpumpe (M17)" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Status_Rueckkuehlpumpe"} 
-Contact iTKR_R_Waermepumpe_Ventil_Heizen_Kuehlen "Umschaltventil Heizkreis Heizen/Kühlen" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Ventil_Heizen_Kuehlen"} 
-Contact iTKR_R_Waermepumpe_Ventil_Speicher_Heizen_Kuehlen "Umschaltventil Speicher Heizen/Kühlen" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Ventil_Speicher_Heizen_Kuehlen"} 
-Contact iTKR_R_Waermepumpe_Ventil_Heizen_Warmwasser "Umschaltventil Heizen/Warmwasser" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Ventil_Heizen_Warmwasser"} 
-Contact iTKR_R_Waermepumpe_Reserve_1 "Umschaltventil Wärmequelle Heizen/Kühlen" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Reserve_1"} 
-Contact iTKR_R_Waermepumpe_Reserve_2 "Umschaltventil Solar Heizen/Warmwasser" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Reserve_2"} 
-Contact iTKR_R_Waermepumpe_Reserve_3 "Umschaltventil Solar Speicher/Wärmequelle" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Reserve_3"} 
-Contact iTKR_R_Waermepumpe_Reserve_4 "Umschaltventil ISC Wärmequelle/Kältespeicher" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Reserve_4"} 
-Contact iTKR_R_Waermepumpe_Reserve_5 "Umschaltventil ISC Speicher/Bypass" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Reserve_5"} 
-Number iTKR_RW_Waermepumpe_Bivalentpunkt_1 "2. Wärmeerzeuger - Bivalenzpunkt 1" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_RW_Waermepumpe_Bivalentpunkt_1"} 
-Number iTKR_RW_Waermepumpe_Bivalentpunkt_2 "2. Wärmeerzeuger - Bivalenzpunkt 2" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_RW_Waermepumpe_Bivalentpunkt_2"} 
-Number iTKR_R_Waermepumpe_HZK_Vorlauftemperatur "Heizkreis A Vorlauftemperatur (B51)" <ikHeizung> (gHZK_Sensoren,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_HZK_Vorlauftemperatur"} 
-Number iTKR_R_Waermepumpe_HZK_Raumtemperatur "Heizkreis A Raumtemperatur (B61)" <ikHeizung> (gHZK_Sensoren,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_HZK_Raumtemperatur"} 
-Number iTKR_R_Waermepumpe_HZK_Sollvorlauftemperatur "Heizkreis A Sollvorlauftemperatur" <ikHeizung> (gHZK_Sensoren,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_HZK_Sollvorlauftemperatur"} 
-Number iTKR_R_Waermepumpe_Feuchtesensor "Feuchtesensor" <ikHeizung> (gHZK_Sensoren,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Feuchtesensor"} 
-Number iTKR_RW_Waermepumpe_HZK_Betriebsart "Betriebsart Heizkreis A" <ikHeizung> (gHZK_Sensoren,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_RW_Waermepumpe_HZK_Betriebsart"[profile="transform:MAP", function="wmp_betriebsart_hzk.map"]} 
-Number iTKR_RW_Waermepumpe_HZK_Raumsolltemperatur "Raumsolltemperatur Heizen Normal HK A" <ikHeizung> (gHZK_Sensoren,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_RW_Waermepumpe_HZK_Raumsolltemperatur"} 
-Number iTKR_RW_Waermepumpe_HZK_Raumsolltemperatur_Eco "Raumsolltemperatur Heizen Eco HK A" <ikHeizung> (gHZK_Sensoren,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_RW_Waermepumpe_HZK_Raumsolltemperatur_Eco"} 
-Number iTKR_RW_Waermepumpe_HZK_Heizkurve "Heizkurve HK A" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_RW_Waermepumpe_HZK_Heizkurve"} 
-Number iTKR_RW_Waermepumpe_HZK_Heizgrenze "Heizgrenze HK A" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_RW_Waermepumpe_HZK_Heizgrenze"} 
-Number iTKR_R_Waermepumpe_HZK_Sollvorlauftemperatur_HK "Sollvorlauftemperatur HK A (Konstant-HK)" <ikHeizung> (gHZK_Sensoren,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_HZK_Sollvorlauftemperatur_HK"} 
-Number iTKR_R_Waermepumpe_HZK_Raumsolltemperatur_Kuehlen_Normal "Raumsolltemperatur Kühlen Normal HK A" <ikHeizung> (gHZK_Sensoren,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_HZK_Raumsolltemperatur_Kuehlen_Normal"} 
-Number iTKR_R_Waermepumpe_HZK_Raumsolltemperatur_Kuehlen_Eco "Raumsolltemperatur Kühlen Eco HK A" <ikHeizung> (gHZK_Sensoren,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_HZK_Raumsolltemperatur_Kuehlen_Eco"} 
-Number iTKR_R_Waermepumpe_HZK_Kuehlgrenze "Kühlgrenze HK A" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_HZK_Kuehlgrenze"} 
-Number iTKR_R_Waermepumpe_HZK_Sollvorlauftemperatur_Kuehlen "Sollvorlauftemperatur Kühlen HK A" <ikHeizung> (gHZK_Sensoren,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_HZK_Sollvorlauftemperatur_Kuehlen"} 
-String iTKR_RW_Waermepumpe_HZK_Betriebsart_Aktiv "Aktive Betriebsart Heizkreis A" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_RW_Waermepumpe_HZK_Betriebsart_Aktiv"[profile="transform:MAP", function="wmp_hzk_betriebsart_aktiv.map"]} 
-Number iTKR_RW_Waermepumpe_Parallelverschiebung "Parallelverschiebung HK A" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_RW_Waermepumpe_Parallelverschiebung"} 
-Number iTKR_W_Waermepumpe_HZK_Raumtemperatur_Ext "Externe Raumtemperatur HK A" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_W_Waermepumpe_HZK_Raumtemperatur_Ext"} 
-Number iTKR_W_Waermepumpe_Aussentemperatur_Ext "Externe Außentemperatur" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_W_Waermepumpe_Aussentemperatur_Ext"} 
-Number iTKR_W_Waermepumpe_Feuchte_Ext "Externe Feuchte" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_W_Waermepumpe_Feuchte_Ext"} 
-Number iTKR_RW_Waermepumpe_Anforderungstemperatur_Heizeb_Ext "Externe Anforderungstemperatur Heizen" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_RW_Waermepumpe_Anforderungstemperatur_Heizeb_Ext"} 
-Number iTKR_RW_Waermepumpe_Anforderungstemperatur_Kuehlen_Ext "Externe Anforderungstemperatur Kühlen" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_RW_Waermepumpe_Anforderungstemperatur_Kuehlen_Ext"} 
-Switch iTKR_RW_Waermepumpe_Heizen_Anf "Anforderung Heizen" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_RW_Waermepumpe_Heizen_Anf"} 
-Switch iTKR_RW_Waermepumpe_Kuehlen_Anf "Anforderung Kühlen" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_RW_Waermepumpe_Kuehlen_Anf"} 
-Switch iTKR_RW_Waermepumpe_Warmwasser_Anf "Anforderung Warmwasserladung" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_RW_Waermepumpe_Warmwasser_Anf"} 
-Number iTKR_R_Waermepumpe_Waermemenge_Heizen "Wärmemenge Heizen" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Waermemenge_Heizen"} 
-Number iTKR_R_Waermepumpe_Waermemenge_Kuehlen "Wärmemenge Kühlen" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Waermemenge_Kuehlen"} 
-Number iTKR_R_Waermepumpe_Waermemenge_Warmwasser "Wärmemenge Warmwasser" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Waermemenge_Warmwasser"} 
-Number iTKR_R_Waermepumpe_Waermemenge_Abtauung "Wärmemenge Abtauung" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Waermemenge_Abtauung"} 
-Number iTKR_R_Waermepumpe_Waermemenge_Passive_Kuehlung "Wärmemenge Passive Kühlung" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Waermemenge_Passive_Kuehlung"} 
-Number iTKR_R_Waermepumpe_Waermemenge_Solar "Wärmemenge Solar" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Waermemenge_Solar"} 
-Number iTKR_R_Waermepumpe_Waermemenge_Heizstab "Wärmemenge Elektroheizeinsatz" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Waermemenge_Heizstab"} 
-Number iTKR_R_Waermepumpe_Momentanleistung "Momentanleistung" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Momentanleistung"} 
-Number iTKR_R_Waermepumpe_Momentanleistung_Solar "Momentanleistung Solar" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Momentanleistung_Solar"} 
-Number iTKR_R_Waermepumpe_Solar_Kollektortemperatur "Solar Kollektortemperatur" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Solar_Kollektortemperatur"} 
-Number iTKR_R_Waermepumpe_Solar_Kollektorruecklauftemperatur "Solar Kollektorrücklauftemperatur (B75)" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Solar_Kollektorruecklauftemperatur"} 
-Number iTKR_R_Waermepumpe_Solar_Ladetemperatur "Solar Ladetemperatur (B74)" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_Solar_Ladetemperatur"} 
-String iTKR_RW_Waermepumpe_Betriebsart_Solar "Betriebsart Solar" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_RW_Waermepumpe_Betriebsart_Solar"[profile="transform:MAP", function="wmp_betriebsart_solar.map"]} 
-Number iTKR_R_Waermepumpe_ISC_Ladetemperatur "ISC Ladetemperatur Kühlen (B44)" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_ISC_Ladetemperatur"} 
-Number iTKR_R_Waermepumpe_ISC_Rueckkuehltemperatur "ISC Rückkühltemperatur (B49)" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_ISC_Rueckkuehltemperatur"} 
-String iTKR_R_Waermepumpe_ISC_Modus "ISC Modus" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_R_Waermepumpe_ISC_Modus"} 
-Switch iTKR_W_Waermepumpe_Stoermeldung_quittieren "Störmeldungen quittieren" <ikHeizung> (gWMP_Status,eTKR_Waermepumpe_Heizung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cTKR_W_Waermepumpe_Stoermeldung_quittieren"} 
-
-Group eWOZ_Steckdosen_TV_Controller "Controller für die TV Steckdosen" <ikPower> (gSteckdosen) ["Equipment"] 
-
-Switch iWOZ_W_TV_1_EIN_AUS "Steckdose TV ein/aus" <ikTV> (gPower,eWOZ_Steckdosen_TV_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_W_TV_1_EIN_AUS"} 
-Contact iWOZ_R_TV_1_Status "Status TV Steckdose" <ikTV> (gPower,eWOZ_Steckdosen_TV_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_TV_1_Status"} 
-Switch iWOZ_RW_TV_1_Sperre "TV Steckdosen sperren" <ikTV> (gPower,eWOZ_Steckdosen_TV_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_TV_1_Sperre"} 
-Switch iWOZ_W_TV_2_EIN_AUS "Steckdose TV#2 ein/aus" <ikTV> (gPower,eWOZ_Steckdosen_TV_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_W_TV_2_EIN_AUS"} 
-Contact iWOZ_R_TV_2_Status "Status TV#2 Steckdose" <ikTV> (gPower,eWOZ_Steckdosen_TV_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_TV_2_Status"} 
-Switch iWOZ_RW_TV_2_Sperre "TV#2 Steckdosen sperren" <ikTV> (gPower,eWOZ_Steckdosen_TV_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_TV_2_Sperre"} 
-Switch iWOZ_W_TV_3_EIN_AUS "Steckdose TV#3 ein/aus" <ikTV> (gPower,eWOZ_Steckdosen_TV_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_W_TV_3_EIN_AUS"} 
-Contact iWOZ_R_TV_3_Status "Status TV#3 Steckdose" <ikTV> (gPower,eWOZ_Steckdosen_TV_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_TV_3_Status"} 
-Switch iWOZ_RW_TV_3_Sperre "TV#3 Steckdosen sperren" <ikTV> (gPower,eWOZ_Steckdosen_TV_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_TV_3_Sperre"} 
-
-Group eWOZ_Steckdosen_Couch_Controller "Controller für die Couch Steckdosen" <ikPower> (gSteckdosen) ["Equipment"] 
-
-Switch iWOZ_W_Couch_1_EIN_AUS "Steckdose Couch ein/aus" <ikCouch> (gPower,eWOZ_Steckdosen_Couch_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_W_Couch_1_EIN_AUS"} 
-Contact iWOZ_R_Couch_1_Status "Status Couch Steckdose" <ikCouch> (gPower,eWOZ_Steckdosen_Couch_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Couch_1_Status"} 
-Switch iWOZ_RW_Couch_1_Sperre "Couch Steckdosen sperren" <ikCouch> (gPower,eWOZ_Steckdosen_Couch_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_Couch_1_Sperre"} 
-Switch iWOZ_W_Couch_2_EIN_AUS "Steckdose Couch#2 ein/aus" <ikCouch> (gPower,eWOZ_Steckdosen_Couch_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_W_Couch_2_EIN_AUS"} 
-Contact iWOZ_R_Couch_2_Status "Status Couch#2 Steckdose" <ikCouch> (gPower,eWOZ_Steckdosen_Couch_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Couch_2_Status"} 
-Switch iWOZ_RW_Couch_2_Sperre "Couch#2 Steckdosen sperren" <ikCouch> (gPower,eWOZ_Steckdosen_Couch_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_Couch_2_Sperre"} 
-Switch iWOZ_W_Couch_3_EIN_AUS "Steckdose Couch#3 ein/aus" <ikCouch> (gPower,eWOZ_Steckdosen_Couch_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_W_Couch_3_EIN_AUS"} 
-Contact iWOZ_R_Couch_3_Status "Status Couch#3 Steckdose" <ikCouch> (gPower,eWOZ_Steckdosen_Couch_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Couch_3_Status"} 
-Switch iWOZ_RW_Couch_3_Sperre "Couch#3 Steckdosen sperren" <ikCouch> (gPower,eWOZ_Steckdosen_Couch_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_Couch_3_Sperre"} 
-
-Group eWOZ_Beleuchtung_Couch "Großraumbeleuchtung Wohnzimmer" <ikLicht> (gBeleuchtung) ["Equipment"] 
-
-Switch iWOZ_RW_Grossraumbeleuchtung_Schalten "Wohnzimmer Beleuchtung schalten" <ikLicht> (gBeleuchtung,eWOZ_Beleuchtung_Couch) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_Grossraumbeleuchtung_Schalten"} 
-Number iWOZ_RW_Grossraumbeleuchtung_absolut_FarbtemperaturP "Wohnzimmer Couch Farbtemperatur (%)" <ikLicht> (gBeleuchtung,eWOZ_Beleuchtung_Couch) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_Grossraumbeleuchtung_absolut_FarbtemperaturP"} 
-Number iWOZ_RW_Grossraumbeleuchtung_absolut_FarbtemperaturK "Wohnzimmer Couch Farbtemperatur (K)" <ikLicht> (gBeleuchtung,eWOZ_Beleuchtung_Couch) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_Grossraumbeleuchtung_absolut_FarbtemperaturK"} 
-Number iWOZ_RW_Grossraumbeleuchtung_absolut_Helligkeit "Wohnzimmer Couch Helligkeit" <ikLicht> (gBeleuchtung,eWOZ_Beleuchtung_Couch) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_Grossraumbeleuchtung_absolut_Helligkeit"} 
-Number iWOZ_RW_Grossraumbeleuchtung_relativ_FarbtemperaturP "Wohnzimmer Couch Farbtemperatur (%)" <ikLicht> (gBeleuchtung,eWOZ_Beleuchtung_Couch) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_Grossraumbeleuchtung_relativ_FarbtemperaturP"} 
-Number iWOZ_RW_Grossraumbeleuchtung_relativ_FarbtemperaturK "Wohnzimmer Couch Farbtemperatur (K)" <ikLicht> (gBeleuchtung,eWOZ_Beleuchtung_Couch) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_Grossraumbeleuchtung_relativ_FarbtemperaturK"} 
-Number iWOZ_RW_Grossraumbeleuchtung_relativ_Helligkeit "Wohnzimmer Couch Helligkeit" <ikLicht> (gBeleuchtung,eWOZ_Beleuchtung_Couch) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_Grossraumbeleuchtung_relativ_Helligkeit"} 
-Contact iWOZ_R_Grossraumbeleuchtung_Status_Schalten "Status Wohnzimmer Beleuchtung Couch" <ikLicht> (gBeleuchtung,eWOZ_Beleuchtung_Couch) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Grossraumbeleuchtung_Status_Schalten"} 
-Number iWOZ_R_Grossraumbeleuchtung_Status_FarbtemperaturP "Status Wohnzimmer Couch Farbtemperatur (%)" <ikLicht> (gBeleuchtung,eWOZ_Beleuchtung_Couch) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Grossraumbeleuchtung_Status_FarbtemperaturP"} 
-Number iWOZ_R_Grossraumbeleuchtung_Status_FarbtemperaturK "Status Wohnzimmer Couch Farbtemperatur (K)" <ikLicht> (gBeleuchtung,eWOZ_Beleuchtung_Couch) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Grossraumbeleuchtung_Status_FarbtemperaturK"} 
-Number iWOZ_R_Grossraumbeleuchtung_Status__Helligkeit "Status Wohnzimmer Helligkeit Couch" <ikLicht> (gBeleuchtung,eWOZ_Beleuchtung_Couch) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Grossraumbeleuchtung_Status__Helligkeit"} 
-Contact iWOZ_R_Grossraumbeleuchtung_Status__Sperre "Status Wohnzimmer Sperre" <ikLicht> (gBeleuchtung,eWOZ_Beleuchtung_Couch) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Grossraumbeleuchtung_Status__Sperre"} 
-Switch iWOZ_RW_Grossraumbeleuchtung_Sperre1 "Sperre1" <ikLicht> (gBeleuchtung,eWOZ_Beleuchtung_Couch) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_Grossraumbeleuchtung_Sperre1"} 
-Switch iWOZ_RW_Grossraumbeleuchtung_Sperre2 "Sperre2" <ikLicht> (gBeleuchtung,eWOZ_Beleuchtung_Couch) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_Grossraumbeleuchtung_Sperre2"} 
-
-Group eKUE_Beleuchtung_Hauptbeleuchtung "LED Spots Küche" <ikLicht> (gBeleuchtung) ["Equipment"] 
-
-
-Group eZEN_Geraete_Controller "Allgemeiner Geräte Controller" <ikController> (gZentral) ["Equipment"] 
-
-Contact iZEN_R_EG_AKD_1_Betriebsstatus "Betriebsstatus LED Controller AKD#1" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_EG_AKD_1_Betriebsstatus"} 
-Contact iZEN_R_EG_AKD_1_24V_Status "Status der 24V Betriebsspannung AKD#1" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_EG_AKD_1_24V_Status"} 
-Contact iZEN_R_EG_AKD_1_Uebertemperatur "Übertemperatur AKD#1" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_EG_AKD_1_Uebertemperatur"} 
-Contact iZEN_R_EG_AKD_1_Ueberstrom "Überstrom AKD#1" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_EG_AKD_1_Ueberstrom"} 
-Contact iZEN_R_EG_AKD_2_Betriebsstatus "Betriebsstatus LED Controller AKD#2" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_EG_AKD_2_Betriebsstatus"} 
-Contact iZEN_R_EG_AKD_2_24V_Status "Status der 24V Betriebsspannung AKD#2" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_EG_AKD_2_24V_Status"} 
-Contact iZEN_R_EG_AKD_2_Uebertemperatur "Übertemperatur AKD#2" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_EG_AKD_2_Uebertemperatur"} 
-Contact iZEN_R_EG_AKD_2_Ueberstrom "Überstrom AKD#2" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_EG_AKD_2_Ueberstrom"} 
-Contact iZEN_R_EG_AKD_3_Betriebsstatus "Betriebsstatus LED Controller AKD#3" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_EG_AKD_3_Betriebsstatus"} 
-Contact iZEN_R_EG_AKD_3_24V_Status "Status der 24V Betriebsspannung AKD#3" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_EG_AKD_3_24V_Status"} 
-Contact iZEN_R_EG_AKD_3_Uebertemperatur "Übertemperatur AKD#3" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_EG_AKD_3_Uebertemperatur"} 
-Contact iZEN_R_EG_AKD_3_Ueberstrom "Überstrom AKD#3" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_EG_AKD_3_Ueberstrom"} 
-Contact iZEN_R_EG_AKD_4_Betriebsstatus "Betriebsstatus LED Controller #4 EG" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_EG_AKD_4_Betriebsstatus"} 
-Contact iZEN_R_EG_AKD_4_24V_Status "Status der 24V Betriebsspannung AKD#4" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_EG_AKD_4_24V_Status"} 
-Contact iZEN_R_EG_AKD_4_Uebertemperatur "Übertemperatur AKD#4" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_EG_AKD_4_Uebertemperatur"} 
-Contact iZEN_R_EG_AKD_4_Ueberstrom "Überstrom AKD#4" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_EG_AKD_4_Ueberstrom"} 
-Contact iZEN_R_EG_AKD_5_Betriebsstatus "Betriebsstatus Dimmaktor EG" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_EG_AKD_5_Betriebsstatus"} 
-Contact iZEN_R_DG_AKD_1_Betriebsstatus "Betriebsstatus LED Controller AKD#1" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_DG_AKD_1_Betriebsstatus"} 
-Contact iZEN_R_DG_AKD_1_24V_Status "Status der 24V Betriebsspannung AKD#1" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_DG_AKD_1_24V_Status"} 
-Contact iZEN_R_DG_AKD_1_Uebertemperatur "Übertemperatur AKD#1" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_DG_AKD_1_Uebertemperatur"} 
-Contact iZEN_R_DG_AKD_1_Ueberstrom "Überstrom AKD#1" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_DG_AKD_1_Ueberstrom"} 
-Contact iZEN_R_DG_AKD_2_Betriebsstatus "Betriebsstatus LED Controller AKD#2" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_DG_AKD_2_Betriebsstatus"} 
-Contact iZEN_R_DG_AKD_2_24V_Status "Status der 24V Betriebsspannung AKD#2" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_DG_AKD_2_24V_Status"} 
-Contact iZEN_R_DG_AKD_2_Uebertemperatur "Übertemperatur AKD#2" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_DG_AKD_2_Uebertemperatur"} 
-Contact iZEN_R_DG_AKD_2_Ueberstrom "Überstrom AKD#2" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_DG_AKD_2_Ueberstrom"} 
-Contact iZEN_R_DG_AKD_3_Betriebsstatus "Betriebsstatus LED Controller #3 DG" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_DG_AKD_3_Betriebsstatus"} 
-Contact iZEN_R_DG_AKD_3_24V_Status "Status der 24V Betriebsspannung AKD#3" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_DG_AKD_3_24V_Status"} 
-Contact iZEN_R_DG_AKD_3_Uebertemperatur "Übertemperatur AKD#3" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_DG_AKD_3_Uebertemperatur"} 
-Contact iZEN_R_DG_AKD_3_Ueberstrom "Überstrom AKD#3" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_DG_AKD_3_Ueberstrom"} 
-Contact iZEN_R_DG_AKD_4_Betriebsstatus "Betriebsstatus LED Controller #4 DG" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_DG_AKD_4_Betriebsstatus"} 
-Contact iZEN_R_DG_AKD_4_24V_Status "Status der 24V Betriebsspannung AKD#4" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_DG_AKD_4_24V_Status"} 
-Contact iZEN_R_DG_AKD_4_Uebertemperatur "Übertemperatur AKD#4" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_DG_AKD_4_Uebertemperatur"} 
-Contact iZEN_R_DG_AKD_4_Ueberstrom "Überstrom AKD#4" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_DG_AKD_4_Ueberstrom"} 
-Contact iZEN_R_DG_AKD_5_Betriebsstatus "Betriebsstatus LED Controller #5 DG" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_DG_AKD_5_Betriebsstatus"} 
-Contact iZEN_R_DG_AKD_5_24V_Status "Status der 24V Betriebsspannung AKD#5" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_DG_AKD_5_24V_Status"} 
-Contact iZEN_R_DG_AKD_5_Uebertemperatur "Übertemperatur AKD#5" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_DG_AKD_5_Uebertemperatur"} 
-Contact iZEN_R_DG_AKD_5_Ueberstrom "Überstrom AKD#5" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_DG_AKD_5_Ueberstrom"} 
-Contact iZEN_R_DG_AKD_6_Betriebsstatus "Betriebsstatus Dimmaktor DG" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_DG_AKD_6_Betriebsstatus"} 
-Contact iZEN_R_EG_Rollladen_Aktor "Status des EG Rollladen" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_EG_Rollladen_Aktor"} 
-Contact iZEN_R_DG_Rollladen_Aktor "Status des DG Rollladen" <ikState> (gStatus,eZEN_Geraete_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_DG_Rollladen_Aktor"} 
-
-Group eZEN_Information_Controller "Liefert dem Bus allgemeine Informatioen" <ikController> (gZentral) ["Equipment"] 
-
-DateTime iZEN_R_Datum "Aktuelles Datum" <ikDatum> (gZentral,eZEN_Information_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_Datum"} 
-DateTime iZEN_R_Uhrzeit "Aktuelle Uhrzeit" <ikZeit> (gZentral,eZEN_Information_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_Uhrzeit"} 
-DateTime iZEN_R_Datum_Uhrzeit "Aktuelles Datum und Uhrzeit" <ikZeit> (gZentral,eZEN_Information_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_Datum_Uhrzeit"} 
-Switch iZEN_R_Tag_Nacht "Tag Nacht Objekt" <ikState> (gZentral,eZEN_Information_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_Tag_Nacht"} 
-
-Group eWOZ_Beleuchtung_TV "Wohnzimmer Spots über dem TV" <ikLicht> (gBeleuchtung) ["Equipment"] 
-
-Switch iWOZ_RW_TV_Spots_Schalten "Wohnzimmer TV Spots schalten" <ikLicht> (gBeleuchtung,eWOZ_Beleuchtung_TV) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_TV_Spots_Schalten"} 
-Number iWOZ_RW_TV_Spots_absolut_FarbtemperaturP "Wohnzimmer TV Farbtemperatur (%)" <ikLicht> (gBeleuchtung,eWOZ_Beleuchtung_TV) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_TV_Spots_absolut_FarbtemperaturP"} 
-Number iWOZ_RW_TV_Spots_absolut_FarbtemperaturK "Wohnzimmer TV Farbtemperatur (K)" <ikLicht> (gBeleuchtung,eWOZ_Beleuchtung_TV) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_TV_Spots_absolut_FarbtemperaturK"} 
-Number iWOZ_RW_TV_Spots_absolut_Helligkeit "Wohnzimmer TV Helligkeit" <ikLicht> (gBeleuchtung,eWOZ_Beleuchtung_TV) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_TV_Spots_absolut_Helligkeit"} 
-Number iWOZ_RW_TV_Spots_relativ_FarbtemperaturP "Wohnzimmer TV Farbtemperatur (%)" <ikLicht> (gBeleuchtung,eWOZ_Beleuchtung_TV) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_TV_Spots_relativ_FarbtemperaturP"} 
-Number iWOZ_RW_TV_Spots_relativ_FarbtemperaturK "Wohnzimmer TV Farbtemperatur (K)" <ikLicht> (gBeleuchtung,eWOZ_Beleuchtung_TV) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_TV_Spots_relativ_FarbtemperaturK"} 
-Number iWOZ_RW_TV_Spots_relativ_Helligkeit "Wohnzimmer TV Helligkeit" <ikLicht> (gBeleuchtung,eWOZ_Beleuchtung_TV) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_TV_Spots_relativ_Helligkeit"} 
-Contact iWOZ_R_TV_Spots_Status_Schalten "Status Wohnzimmer Beleuchtung TV" <ikLicht> (gBeleuchtung,eWOZ_Beleuchtung_TV) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_TV_Spots_Status_Schalten"} 
-Number iWOZ_R_TV_Spots_Status_FarbtemperaturP "Status Wohnzimmer TV Farbtemperatur (%)" <ikLicht> (gBeleuchtung,eWOZ_Beleuchtung_TV) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_TV_Spots_Status_FarbtemperaturP"} 
-Number iWOZ_R_TV_Spots_Status_FarbtemperaturK "Status Wohnzimmer TV Farbtemperatur (K)" <ikLicht> (gBeleuchtung,eWOZ_Beleuchtung_TV) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_TV_Spots_Status_FarbtemperaturK"} 
-Number iWOZ_R_TV_Spots_Status__Helligkeit "Status Wohnzimmer Helligkeit TV" <ikLicht> (gBeleuchtung,eWOZ_Beleuchtung_TV) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_TV_Spots_Status__Helligkeit"} 
-Contact iWOZ_R_TV_Spots_Status__Sperre "Status Wohnzimmer Sperre TV" <ikLicht> (gBeleuchtung,eWOZ_Beleuchtung_TV) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_TV_Spots_Status__Sperre"} 
-Switch iWOZ_RW_TV_Spots_Sperre1 "Sperre1" <ikLicht> (gBeleuchtung,eWOZ_Beleuchtung_TV) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_TV_Spots_Sperre1"} 
-Switch iWOZ_RW_TV_Spots_Sperre2 "Sperre2" <ikLicht> (gBeleuchtung,eWOZ_Beleuchtung_TV) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_TV_Spots_Sperre2"} 
-
-Group eWOZ_Beleuchtung_Esstischbeleuchtung "Wohnzimmerlampe über dem Esstisch" <ikLicht> (gBeleuchtung) ["Equipment"] 
-
-Switch iWOZ_RW_Esstisch_Schalten "Esstischbeleuchtung schalten" <ikLicht> (gBeleuchtung,eWOZ_Beleuchtung_Esstischbeleuchtung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_Esstisch_Schalten"} 
-Contact iWOZ_R_Esstisch_Status_Schalten "Status Esstischbeleuchtung" <ikLicht> (gBeleuchtung,eWOZ_Beleuchtung_Esstischbeleuchtung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Esstisch_Status_Schalten"} 
-Number iWOZ_RW_Esstisch_absolut_Dimmen "Esstischbeleuchtung absolut Dimmen" <ikLicht> (gBeleuchtung,eWOZ_Beleuchtung_Esstischbeleuchtung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_Esstisch_absolut_Dimmen"} 
-Number iWOZ_R_Esstisch_Status_Helligkeit "Esstischbeleuchtung Dimmwert" <ikLicht> (gBeleuchtung,eWOZ_Beleuchtung_Esstischbeleuchtung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_R_Esstisch_Status_Helligkeit"} 
-Number iWOZ_RW_Esstisch_relativ_Dimmen "Esstischbeleuchtung reltativ Dimmen" <ikLicht> (gBeleuchtung,eWOZ_Beleuchtung_Esstischbeleuchtung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cWOZ_RW_Esstisch_relativ_Dimmen"} 
-
-Group eFLUEG_Beleuchtung_Hauptbeleuchtung "Spots im EG Flur" <ikLicht> (gBeleuchtung) ["Equipment"] 
-
-
-Group eBAD_Beleuchtung_Hauptbeleuchtung "Spots im Badezimmer" <ikLicht> (gBeleuchtung) ["Equipment"] 
-
-Switch iBAD_RW_Hauptbeleuchtung_Schalten "Beleuchtung Hauptbeleuchtung schalten" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Hauptbeleuchtung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_Hauptbeleuchtung_Schalten"} 
-Number iBAD_RW_Hauptbeleuchtung_absolut_FarbtemperaturP "Farbtemperatur Hauptbeleuchtung (%)" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Hauptbeleuchtung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_Hauptbeleuchtung_absolut_FarbtemperaturP"} 
-Number iBAD_RW_Hauptbeleuchtung_absolut_FarbtemperaturK "Farbtemperatur Hauptbeleuchtung (K)" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Hauptbeleuchtung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_Hauptbeleuchtung_absolut_FarbtemperaturK"} 
-Number iBAD_RW_Hauptbeleuchtung_absolut_Helligkeit "Helligkeit Hauptbeleuchtung" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Hauptbeleuchtung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_Hauptbeleuchtung_absolut_Helligkeit"} 
-Number iBAD_RW_Hauptbeleuchtung_relativ_FarbtemperaturP "rel. Farbtemperatur Hauptbeleuchtung (%)" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Hauptbeleuchtung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_Hauptbeleuchtung_relativ_FarbtemperaturP"} 
-Number iBAD_RW_Hauptbeleuchtung_relativ_FarbtemperaturK "rel. Farbtemperatur Hauptbeleuchtung (K)" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Hauptbeleuchtung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_Hauptbeleuchtung_relativ_FarbtemperaturK"} 
-Number iBAD_RW_Hauptbeleuchtung_relativ_Helligkeit "Helligkeit Hauptbeleuchtung" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Hauptbeleuchtung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_Hauptbeleuchtung_relativ_Helligkeit"} 
-Contact iBAD_R_Hauptbeleuchtung_Status_Schalten "Status Beleuchtung Hauptbeleuchtung" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Hauptbeleuchtung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_R_Hauptbeleuchtung_Status_Schalten"} 
-Number iBAD_R_Hauptbeleuchtung_Status_FarbtemperaturP "Status Farbtemperatur Hauptbeleuchtung (%)" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Hauptbeleuchtung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_R_Hauptbeleuchtung_Status_FarbtemperaturP"} 
-Number iBAD_R_Hauptbeleuchtung_Status_FarbtemperaturK "Status Farbtemperatur Hauptbeleuchtung (K)" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Hauptbeleuchtung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_R_Hauptbeleuchtung_Status_FarbtemperaturK"} 
-Number iBAD_R_Hauptbeleuchtung_Status__Helligkeit "Status Helligkeit Hauptbeleuchtung" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Hauptbeleuchtung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_R_Hauptbeleuchtung_Status__Helligkeit"} 
-Contact iBAD_R_Hauptbeleuchtung_Status__Sperre "Status Sperre Hauptbeleuchtung" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Hauptbeleuchtung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_R_Hauptbeleuchtung_Status__Sperre"} 
-Switch iBAD_RW_Hauptbeleuchtung_Sperre1 "Sperre1" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Hauptbeleuchtung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_Hauptbeleuchtung_Sperre1"} 
-Switch iBAD_RW_Hauptbeleuchtung_Sperre2 "Sperre2" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Hauptbeleuchtung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_Hauptbeleuchtung_Sperre2"} 
-
-Group eBAD_Beleuchtung_Stripe "LED Stripe im Badezimmer" <ikLicht> (gBeleuchtung) ["Equipment"] 
-
-Switch iBAD_RW_LED_Stripe_Schalten "Beleuchtung Badewanne schalten" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Stripe) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_LED_Stripe_Schalten"} 
-Number iBAD_RW_LED_Stripe_absolut_FarbtemperaturP "Farbtemperatur Badewanne (%)" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Stripe) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_LED_Stripe_absolut_FarbtemperaturP"} 
-Number iBAD_RW_LED_Stripe_absolut_FarbtemperaturK "Farbtemperatur Badewanne (K)" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Stripe) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_LED_Stripe_absolut_FarbtemperaturK"} 
-Number iBAD_RW_LED_Stripe_absolut_Helligkeit "Helligkeit Badewanne" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Stripe) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_LED_Stripe_absolut_Helligkeit"} 
-Number iBAD_RW_LED_Stripe_relativ_FarbtemperaturP "rel. Farbtemperatur Badewanne (%)" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Stripe) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_LED_Stripe_relativ_FarbtemperaturP"} 
-Number iBAD_RW_LED_Stripe_relativ_FarbtemperaturK "rel. Farbtemperatur Badewanne (K)" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Stripe) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_LED_Stripe_relativ_FarbtemperaturK"} 
-Number iBAD_RW_LED_Stripe_relativ_Helligkeit "Helligkeit Badewanne" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Stripe) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_LED_Stripe_relativ_Helligkeit"} 
-Contact iBAD_R_LED_Stripe_Status_Schalten "Status Beleuchtung Badewanne" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Stripe) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_R_LED_Stripe_Status_Schalten"} 
-Number iBAD_R_LED_Stripe_Status_FarbtemperaturP "Status Farbtemperatur Badewanne (%)" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Stripe) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_R_LED_Stripe_Status_FarbtemperaturP"} 
-Number iBAD_R_LED_Stripe_Status_FarbtemperaturK "Status Farbtemperatur Badewanne (K)" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Stripe) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_R_LED_Stripe_Status_FarbtemperaturK"} 
-Number iBAD_R_LED_Stripe_Status_Helligkeit "Status Badewanne Helligkeit TV" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Stripe) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_R_LED_Stripe_Status_Helligkeit"} 
-Contact iBAD_R_LED_Stripe_Status_Sperre "Status Sperre Badewanne Spots" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Stripe) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_R_LED_Stripe_Status_Sperre"} 
-Switch iBAD_RW_LED_Stripe_Sperre1 "Sperre1" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Stripe) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_LED_Stripe_Sperre1"} 
-Switch iBAD_RW_LED_Stripe_Sperre2 "Sperre2" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Stripe) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_LED_Stripe_Sperre2"} 
-
-Group eBAD_Beleuchtung_Dusche "LED Stripe in der Dusche" <ikLicht> (gBeleuchtung) ["Equipment"] 
-
-Switch iBAD_RW_Dusche_Schalten "Beleuchtung Dusche schalten" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Dusche) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_Dusche_Schalten"} 
-Number iBAD_RW_Dusche_absolut_FarbtemperaturP "Farbtemperatur Dusche (%)" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Dusche) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_Dusche_absolut_FarbtemperaturP"} 
-Number iBAD_RW_Dusche_absolut_FarbtemperaturK "Farbtemperatur Dusche (K)" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Dusche) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_Dusche_absolut_FarbtemperaturK"} 
-Number iBAD_RW_Dusche_absolut_Helligkeit "Helligkeit Dusche" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Dusche) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_Dusche_absolut_Helligkeit"} 
-Number iBAD_RW_Dusche_relativ_FarbtemperaturP "rel. Farbtemperatur Dusche (%)" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Dusche) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_Dusche_relativ_FarbtemperaturP"} 
-Number iBAD_RW_Dusche_relativ_FarbtemperaturK "rel. Farbtemperatur Dusche (K)" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Dusche) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_Dusche_relativ_FarbtemperaturK"} 
-Number iBAD_RW_Dusche_relativ_Helligkeit "Helligkeit Dusche" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Dusche) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_Dusche_relativ_Helligkeit"} 
-Contact iBAD_R_Dusche_Status_Schalten "Status Beleuchtung Dusche" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Dusche) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_R_Dusche_Status_Schalten"} 
-Number iBAD_R_Dusche_Status_FarbtemperaturP "Status Farbtemperatur Dusche (%)" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Dusche) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_R_Dusche_Status_FarbtemperaturP"} 
-Number iBAD_R_Dusche_Status_FarbtemperaturK "Status Farbtemperatur Dusche (K)" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Dusche) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_R_Dusche_Status_FarbtemperaturK"} 
-Number iBAD_R_Dusche_Status__Helligkeit "Status Dusche Helligkeit TV" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Dusche) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_R_Dusche_Status__Helligkeit"} 
-Contact iBAD_R_Dusche_Status__Sperre "Status Sperre Dusche" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Dusche) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_R_Dusche_Status__Sperre"} 
-Switch iBAD_RW_Dusche_Sperre1 "Sperre1" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Dusche) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_Dusche_Sperre1"} 
-Switch iBAD_RW_Dusche_Sperre2 "Sperre2" <ikLicht> (gBeleuchtung,eBAD_Beleuchtung_Dusche) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cBAD_RW_Dusche_Sperre2"} 
-
-Group eZEN_Rollladen_Controller "Controller für alle Rollläden" <ikZentral> (gRolladen) ["Equipment"] 
-
-Rollershutter iZEN_RW_EG_Rollladen_Auf_Ab "Verfahren Rollladen" <ikRollladen> (gRollladen,eZEN_Rollladen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_RW_EG_Rollladen_Auf_Ab"} 
-Switch iZEN_RW_EG_Rollladen_Stop "Stop Rollladen" <ikRollladen> (gRollladen,eZEN_Rollladen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_RW_EG_Rollladen_Stop"} 
-Number iZEN_R_EG_Rollladen_Absolute_Position "Absolute Position" <ikRollladen> (gRollladen,eZEN_Rollladen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_EG_Rollladen_Absolute_Position"} 
-Rollershutter iZEN_RW_DG_Rollladen_Auf_Ab "Verfahren Rollladen" <ikRollladen> (gRollladen,eZEN_Rollladen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_RW_DG_Rollladen_Auf_Ab"} 
-Switch iZEN_RW_DG_Rollladen_Stop "Stop Rollladen" <ikRollladen> (gRollladen,eZEN_Rollladen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_RW_DG_Rollladen_Stop"} 
-Number iZEN_R_DG_Rollladen_Absolute_Position "Absolute Position" <ikRollladen> (gRollladen,eZEN_Rollladen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_DG_Rollladen_Absolute_Position"} 
-Rollershutter iZEN_RW_ALL_Rollladen_Auf_Ab "Verfahren Rollladen" <ikRollladen> (gRollladen,eZEN_Rollladen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_RW_ALL_Rollladen_Auf_Ab"} 
-Switch iZEN_RW_ALL_Rollladen_Stop "Stop Rollladen" <ikRollladen> (gRollladen,eZEN_Rollladen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_RW_ALL_Rollladen_Stop"} 
-Number iZEN_R_ALL_Rollladen_Absolute_Position "Absolute Position" <ikRollladen> (gRollladen,eZEN_Rollladen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cZEN_R_ALL_Rollladen_Absolute_Position"} 
-
-Group eGWC_Beleuchtung_Controller "Controller für GWC" <ikLicht> (gBeleuchtung) ["Equipment"] 
-
-Switch iGWC_RW_Hauptbeleuchtung_Schalten "Beleuchtung GWC" <ikLicht> (gBeleuchtung,eGWC_Beleuchtung_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cGWC_RW_Hauptbeleuchtung_Schalten"} 
-Contact iGWC_R_Hauptbeleuchtung_Status_Schalten "Beleuchtung GWC Status" <ikLicht> (gBeleuchtung,eGWC_Beleuchtung_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cGWC_R_Hauptbeleuchtung_Status_Schalten"} 
-
-Group eHWR_Beleuchtung_Controller "Controller für HWR" <ikLicht> (gBeleuchtung) ["Equipment"] 
-
-Switch iHWR_RW_Hauptbeleuchtung_Schalten "Beleuchtung HWR" <ikLicht> (gBeleuchtung,eHWR_Beleuchtung_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_RW_Hauptbeleuchtung_Schalten"} 
-Contact iHWR_R_Hauptbeleuchtung_Status_Schalten "Beleuchtung HWR Status" <ikLicht> (gBeleuchtung,eHWR_Beleuchtung_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_R_Hauptbeleuchtung_Status_Schalten"} 
-
-Group eKUE_Steckdosen_Controller "Controller für Küchensteckdosen" <ikPower> (gSteckdosen) ["Equipment"] 
-
-Switch iKUE_RW_Strom_Theke_Schalten "Steckdosen an der Küchentheke schalten" <ikPower> (gPower,eKUE_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_RW_Strom_Theke_Schalten"} 
-Contact iKUE_R_Strom_Theke_Status "Status der Steckdosen an der Küchentheke" <ikPower> (gPower,eKUE_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_R_Strom_Theke_Status"} 
-Switch iKUE_RW_Strom_Theke_Sperren "Steckdosen an der Küchentheke sperren" <ikPower> (gPower,eKUE_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_RW_Strom_Theke_Sperren"} 
-Switch iKUE_RW_Strom_Theke_Schwellwertschalter "Schwellwertschalter für die Steckdosen an der Küchentheke" <ikPower> (gPower,eKUE_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_RW_Strom_Theke_Schwellwertschalter"} 
-Number iKUE_R_Strom_Theke_Betriebsstundenzaehler "Betriebsstundenzähler Steckdosen an der Küchentheke" <ikPower> (gPower,eKUE_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_R_Strom_Theke_Betriebsstundenzaehler"} 
-Switch iKUE_RW_Strom_Kuehlschrank_Schalten "Steckdose der Waschmaschine schalten" <ikPower> (gPower,eKUE_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_RW_Strom_Kuehlschrank_Schalten"} 
-Contact iKUE_R_Strom_Kuehlschrank_Status "Status der Steckdosen der Waschmaschine" <ikPower> (gPower,eKUE_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_R_Strom_Kuehlschrank_Status"} 
-Switch iKUE_RW_Strom_Kuehlschrank_Sperren "Steckdose für die Waschmaschine sperren" <ikPower> (gPower,eKUE_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_RW_Strom_Kuehlschrank_Sperren"} 
-Number iKUE_R_Strom_Kuehlschrank_Betriebsstundenzaehler "Betriebsstundenzähler Steckdose für die Waschmaschine" <ikPower> (gPower,eKUE_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_R_Strom_Kuehlschrank_Betriebsstundenzaehler"} 
-Number iKUE_R_Strom_Kuehlschrank_Wirkleistung "Wirkleistung Steckdose für die Waschmaschine" <ikPower> (gPower,eKUE_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_R_Strom_Kuehlschrank_Wirkleistung"} 
-Number iKUE_R_Strom_Kuehlschrank_Strom "Strom Steckdose für die Waschmaschine" <ikPower> (gPower,eKUE_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_R_Strom_Kuehlschrank_Strom"} 
-Number iKUE_R_Strom_Kuehlschrank_Verbrauch "Verbrauch der Waschmaschine an el. Energe" <ikPower> (gPower,eKUE_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_R_Strom_Kuehlschrank_Verbrauch"} 
-Switch iKUE_RW_Strom_Spuelmaschine_Schalten "Steckdose der Waschmaschine schalten" <ikPower> (gPower,eKUE_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_RW_Strom_Spuelmaschine_Schalten"} 
-Contact iKUE_R_Strom_Spuelmaschine_Status "Status der Steckdosen der Waschmaschine" <ikPower> (gPower,eKUE_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_R_Strom_Spuelmaschine_Status"} 
-Switch iKUE_RW_Strom_Spuelmaschine_Sperren "Steckdose für die Waschmaschine sperren" <ikPower> (gPower,eKUE_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_RW_Strom_Spuelmaschine_Sperren"} 
-Number iKUE_R_Strom_Spuelmaschine_Betriebsstundenzaehler "Betriebsstundenzähler Steckdose für die Waschmaschine" <ikPower> (gPower,eKUE_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_R_Strom_Spuelmaschine_Betriebsstundenzaehler"} 
-Number iKUE_R_Strom_Spuelmaschine_Wirkleistung "Wirkleistung Steckdose für die Waschmaschine" <ikPower> (gPower,eKUE_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_R_Strom_Spuelmaschine_Wirkleistung"} 
-Number iKUE_R_Strom_Spuelmaschine_Strom "Strom Steckdose für die Waschmaschine" <ikPower> (gPower,eKUE_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_R_Strom_Spuelmaschine_Strom"} 
-Number iKUE_R_Strom_Spuelmaschine_Verbrauch "Verbrauch der Waschmaschine an el. Energe" <ikPower> (gPower,eKUE_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cKUE_R_Strom_Spuelmaschine_Verbrauch"} 
-
-Group eHWR_Steckdosen_Controller "Controller für die Steckdosen im HWR" <ikPower> (gSteckdosen) ["Equipment"] 
-
-Switch iHWR_RW_Strom_Waschmaschine_Schalten "Steckdose der Waschmaschine schalten" <ikPower> (gPower,eHWR_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_RW_Strom_Waschmaschine_Schalten"} 
-Contact iHWR_R_Strom_Waschmaschine_Status "Status der Steckdosen der Waschmaschine" <ikPower> (gPower,eHWR_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_R_Strom_Waschmaschine_Status"} 
-Switch iHWR_RW_Strom_Waschmaschine_Sperren "Steckdose für die Waschmaschine sperren" <ikPower> (gPower,eHWR_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_RW_Strom_Waschmaschine_Sperren"} 
-Number iHWR_R_Strom_Waschmaschine_Betriebsstundenzaehler "Betriebsstundenzähler Steckdose für die Waschmaschine" <ikPower> (gPower,eHWR_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_R_Strom_Waschmaschine_Betriebsstundenzaehler"} 
-Number iHWR_R_Strom_Waschmaschine_Wirkleistung "Wirkleistung Steckdose für die Waschmaschine" <ikPower> (gPower,eHWR_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_R_Strom_Waschmaschine_Wirkleistung"} 
-Number iHWR_R_Strom_Waschmaschine_Strom "Strom Steckdose für die Waschmaschine" <ikPower> (gPower,eHWR_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_R_Strom_Waschmaschine_Strom"} 
-Number iHWR_R_Strom_Waschmaschine_Verbrauch "Verbrauch der Waschmaschine an el. Energe" <ikPower> (gPower,eHWR_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_R_Strom_Waschmaschine_Verbrauch"} 
-Switch iHWR_RW_Strom_Trockner_Schalten "Steckdose der Waschmaschine schalten" <ikPower> (gPower,eHWR_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_RW_Strom_Trockner_Schalten"} 
-Contact iHWR_R_Strom_Trockner_Status "Status der Steckdosen der Waschmaschine" <ikPower> (gPower,eHWR_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_R_Strom_Trockner_Status"} 
-Switch iHWR_RW_Strom_Trockner_Sperren "Steckdose für die Waschmaschine sperren" <ikPower> (gPower,eHWR_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_RW_Strom_Trockner_Sperren"} 
-Number iHWR_R_Strom_Trockner_Betriebsstundenzaehler "Betriebsstundenzähler Steckdose für die Waschmaschine" <ikPower> (gPower,eHWR_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_R_Strom_Trockner_Betriebsstundenzaehler"} 
-Number iHWR_R_Strom_Trockner_Wirkleistung "Wirkleistung Steckdose für die Waschmaschine" <ikPower> (gPower,eHWR_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_R_Strom_Trockner_Wirkleistung"} 
-Number iHWR_R_Strom_Trockner_Strom "Strom Steckdose für die Waschmaschine" <ikPower> (gPower,eHWR_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_R_Strom_Trockner_Strom"} 
-Number iHWR_R_Strom_Trockner_Verbrauch "Verbrauch der Waschmaschine an el. Energe" <ikPower> (gPower,eHWR_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_R_Strom_Trockner_Verbrauch"} 
-Switch iHWR_RW_Strom_Kuehlschrank_Schalten "Steckdose der Waschmaschine schalten" <ikPower> (gPower,eHWR_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_RW_Strom_Kuehlschrank_Schalten"} 
-Contact iHWR_R_Strom_Kuehlschrank_Status "Status der Steckdosen der Waschmaschine" <ikPower> (gPower,eHWR_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_R_Strom_Kuehlschrank_Status"} 
-Switch iHWR_RW_Strom_Kuehlschrank_Sperren "Steckdose für die Waschmaschine sperren" <ikPower> (gPower,eHWR_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_RW_Strom_Kuehlschrank_Sperren"} 
-Number iHWR_R_Strom_Kuehlschrank_Betriebsstundenzaehler "Betriebsstundenzähler Steckdose für die Waschmaschine" <ikPower> (gPower,eHWR_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_R_Strom_Kuehlschrank_Betriebsstundenzaehler"} 
-Number iHWR_R_Strom_Kuehlschrank_Wirkleistung "Wirkleistung Steckdose für die Waschmaschine" <ikPower> (gPower,eHWR_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_R_Strom_Kuehlschrank_Wirkleistung"} 
-Number iHWR_R_Strom_Kuehlschrank_Strom "Strom Steckdose für die Waschmaschine" <ikPower> (gPower,eHWR_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_R_Strom_Kuehlschrank_Strom"} 
-Number iHWR_R_Strom_Kuehlschrank_Verbrauch "Verbrauch der Waschmaschine an el. Energe" <ikPower> (gPower,eHWR_Steckdosen_Controller) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cHWR_R_Strom_Kuehlschrank_Verbrauch"} 
-
-Group eANK_Beleuchtung_Hauptbeleuchtung "Hauptbeleuchtung der Ankleide" <ikLicht> (gBeleuchtung) ["Equipment"] 
-
-Switch iANK_RW_Hauptbeleuchtung_Schalten "Hauptbeleuchtung der Ankleide anschalten" <ikLicht> (gBeleuchtung,eANK_Beleuchtung_Hauptbeleuchtung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cANK_RW_Hauptbeleuchtung_Schalten"} 
-Contact iANK_RW_Hauptbeleuchtung_Status_Schalten "Status der Hauptbeleuchtung der Ankleide" <ikLicht> (gBeleuchtung,eANK_Beleuchtung_Hauptbeleuchtung) ["Point"] {channel="knx:device:cf4e8c0703:fa3792ba61:cANK_RW_Hauptbeleuchtung_Status_Schalten"} 
+Rollershutter iGWC_RW_Rollladen_Ostfenster_Auf_Ab "Verfahren Rollladen" <ikR> (gRollladeneGWC_Rollladen_Ostfenster,) ["Point"] {channel=""} 
+Switch iGWC_RW_Rollladen_Ostfenster_Stop "Stop Rollladen" <ikR> (gRollladeneGWC_Rollladen_Ostfenster,) ["Point"] {channel=""} 
+Switch iGWC_R_Rollladen_Ostfenster_Aktuelle Richtung "Anzeige der Verfahrrichtung" <ikR> (gRollladeneGWC_Rollladen_Ostfenster,) ["Point"] {channel=""} 
+Number iGWC_RW_Rollladen_Ostfenster_Absolute Position "Absolute Position" <ikR> (gRollladeneGWC_Rollladen_Ostfenster,) ["Point"] {channel=""} 
+Switch iGWC_R_Rollladen_Ostfenster_Status_aktuelle_Position "Status aktuelle Position" <ikR> (gRollladeneGWC_Rollladen_Ostfenster,) ["Point"] {channel=""} 
+Switch iGWC_R_Rollladen_Ostfenster_Status obere Position "Status obere Position" <ikR> (gRollladeneGWC_Rollladen_Ostfenster,) ["Point"] {channel=""} 
+Switch iGWC_R_Rollladen_Ostfenster_Status untere Position "Status untere Position" <ikR> (gRollladeneGWC_Rollladen_Ostfenster,) ["Point"] {channel=""} 
+Switch iGWC_RW_Rollladen_Ostfenster_Sperre "Rollladen sperren" <ikR> (gRollladeneGWC_Rollladen_Ostfenster,) ["Point"] {channel=""} 
+String iGWC_R_Rollladen_Ostfenster_Diagnosetext "Diagnosetext" <ikD> (gRollladeneGWC_Rollladen_Ostfenster,) ["Point"] {channel=""} 
+
+Group eWOZ_Präsenzmelder_Couch "Präsenzmelder WOZ Couch" <ikP> (gPraesenzmelder) ["Equipment"] 
+
+
+Group eWOZ_Präsenzmelder_Esstisch "Präsenzmelder Esstisch" <ikP> (gPraesenzmelder) ["Equipment"] 
+
+
+Group eKUE_Präsenzmelder_Küche "Präsenzmelder Küche" <ikP> (gPraesenzmelder) ["Equipment"] 
+
+
+Group eFLUEG_Präsenzmelder_Flur "Präsenzmelder Flur EG" <ikP> (gPraesenzmelder) ["Equipment"] 
+
+
+Group eHWR_Präsenzmelder_Hauswirtschaftsraum "Präsenzmelder HWR" <ikP> (gPraesenzmelder) ["Equipment"] 
+
+
+Group eGWC_Präsenzmelder_GWC "Präsenzmelder GWC" <ikP> (gPraesenzmelder) ["Equipment"] 
+
+
+Group eWOZ_Glasttaster_Tür "Glastaster neben der Wohnzimmertür" <ikG> (gGlastaster) ["Equipment"] 
+
+
+Group eBUR_Rollladen_Dachfenster "Rollladen Büro" <ikR> (gRollladen) ["Equipment"] 
+
+Rollershutter iBuero_RW_Rollladen_Dachfenster_Auf_Ab "Verfahren Rollladen" <ikR> (gRollladeneBUR_Rollladen_Dachfenster,) ["Point"] {channel=""} 
+Switch iBuero_RW_Rollladen_Dachfenster_Stop "Stop Rollladen" <ikR> (gRollladeneBUR_Rollladen_Dachfenster,) ["Point"] {channel=""} 
+Switch iBuero_R_Rollladen_Dachfenster_Aktuelle Richtung "Anzeige der Verfahrrichtung" <ikR> (gRollladeneBUR_Rollladen_Dachfenster,) ["Point"] {channel=""} 
+Number iBuero_RW_Rollladen_Dachfenster_Absolute Position "Absolute Position" <ikR> (gRollladeneBUR_Rollladen_Dachfenster,) ["Point"] {channel=""} 
+Switch iBuero_R_Rollladen_Dachfenster_Status_aktuelle_Position "Status aktuelle Position" <ikR> (gRollladeneBUR_Rollladen_Dachfenster,) ["Point"] {channel=""} 
+Switch iBuero_R_Rollladen_Dachfenster_Status obere Position "Status obere Position" <ikR> (gRollladeneBUR_Rollladen_Dachfenster,) ["Point"] {channel=""} 
+Switch iBuero_R_Rollladen_Dachfenster_Status untere Position "Status untere Position" <ikR> (gRollladeneBUR_Rollladen_Dachfenster,) ["Point"] {channel=""} 
+Switch iBuero_RW_Rollladen_Dachfenster_Sperre "Rollladen sperren" <ikR> (gRollladeneBUR_Rollladen_Dachfenster,) ["Point"] {channel=""} 
+String iBuero_R_Rollladen_Dachfenster_Diagnosetext "Diagnosetext" <ikD> (gRollladeneBUR_Rollladen_Dachfenster,) ["Point"] {channel=""} 
+
+Group eKIZ_Rollladen_Unterlicht "Rollladen Kinderzimmer" <ikR> (gRollladen) ["Equipment"] 
+
+Rollershutter iKinderzimmer_RW_Rollladen_Westfenster_Auf_Ab "Verfahren Rollladen" <ikR> (gRollladeneKIZ_Rollladen_Unterlicht,) ["Point"] {channel=""} 
+Switch iKinderzimmer_RW_Rollladen_Westfenster_Stop "Stop Rollladen" <ikR> (gRollladeneKIZ_Rollladen_Unterlicht,) ["Point"] {channel=""} 
+Switch iKinderzimmer_R_Rollladen_Westfenster_Aktuelle Richtung "Anzeige der Verfahrrichtung" <ikR> (gRollladeneKIZ_Rollladen_Unterlicht,) ["Point"] {channel=""} 
+Number iKinderzimmer_RW_Rollladen_Westfenster_Absolute Position "Absolute Position" <ikR> (gRollladeneKIZ_Rollladen_Unterlicht,) ["Point"] {channel=""} 
+Switch iKinderzimmer_R_Rollladen_Westfenster_Status_aktuelle_Position "Status aktuelle Position" <ikR> (gRollladeneKIZ_Rollladen_Unterlicht,) ["Point"] {channel=""} 
+Switch iKinderzimmer_R_Rollladen_Westfenster_Status obere Position "Status obere Position" <ikR> (gRollladeneKIZ_Rollladen_Unterlicht,) ["Point"] {channel=""} 
+Switch iKinderzimmer_R_Rollladen_Westfenster_Status untere Position "Status untere Position" <ikR> (gRollladeneKIZ_Rollladen_Unterlicht,) ["Point"] {channel=""} 
+Switch iKinderzimmer_RW_Rollladen_Westfenster_Sperre "Rollladen sperren" <ikR> (gRollladeneKIZ_Rollladen_Unterlicht,) ["Point"] {channel=""} 
+String iKinderzimmer_R_Rollladen_Westfenster_Diagnosetext "Diagnosetext" <ikD> (gRollladeneKIZ_Rollladen_Unterlicht,) ["Point"] {channel=""} 
+
+Group eSLZ_Rollladen_Unterlicht "Rollladen Schlafzimmer" <ikR> (gRollladen) ["Equipment"] 
+
+Rollershutter iSchlafzimmer_RW_Rollladen_Westfenster_Auf_Ab "Verfahren Rollladen" <ikR> (gRollladeneSLZ_Rollladen_Unterlicht,) ["Point"] {channel=""} 
+Switch iSchlafzimmer_RW_Rollladen_Westfenster_Stop "Stop Rollladen" <ikR> (gRollladeneSLZ_Rollladen_Unterlicht,) ["Point"] {channel=""} 
+Switch iSchlafzimmer_R_Rollladen_Westfenster_Aktuelle Richtung "Anzeige der Verfahrrichtung" <ikR> (gRollladeneSLZ_Rollladen_Unterlicht,) ["Point"] {channel=""} 
+Number iSchlafzimmer_RW_Rollladen_Westfenster_Absolute Position "Absolute Position" <ikR> (gRollladeneSLZ_Rollladen_Unterlicht,) ["Point"] {channel=""} 
+Switch iSchlafzimmer_R_Rollladen_Westfenster_Status_aktuelle_Position "Status aktuelle Position" <ikR> (gRollladeneSLZ_Rollladen_Unterlicht,) ["Point"] {channel=""} 
+Switch iSchlafzimmer_R_Rollladen_Westfenster_Status obere Position "Status obere Position" <ikR> (gRollladeneSLZ_Rollladen_Unterlicht,) ["Point"] {channel=""} 
+Switch iSchlafzimmer_R_Rollladen_Westfenster_Status untere Position "Status untere Position" <ikR> (gRollladeneSLZ_Rollladen_Unterlicht,) ["Point"] {channel=""} 
+Switch iSchlafzimmer_RW_Rollladen_Westfenster_Sperre "Rollladen sperren" <ikR> (gRollladeneSLZ_Rollladen_Unterlicht,) ["Point"] {channel=""} 
+String iSchlafzimmer_R_Rollladen_Westfenster_Diagnosetext "Diagnosetext" <ikD> (gRollladeneSLZ_Rollladen_Unterlicht,) ["Point"] {channel=""} 
+
+Group eBAD_Rollladen_Dachfenster "Rollladen Bad Dachfenster" <ikR> (gRollladen) ["Equipment"] 
+
+Rollershutter iBad_RW_Rollladen_Dachfenster_Auf_Ab "Verfahren Rollladen" <ikR> (gRollladeneBAD_Rollladen_Dachfenster,) ["Point"] {channel=""} 
+Switch iBad_RW_Rollladen_Dachfenster_Stop "Stop Rollladen" <ikR> (gRollladeneBAD_Rollladen_Dachfenster,) ["Point"] {channel=""} 
+Switch iBad_R_Rollladen_Dachfenster_Aktuelle Richtung "Anzeige der Verfahrrichtung" <ikR> (gRollladeneBAD_Rollladen_Dachfenster,) ["Point"] {channel=""} 
+Number iBad_RW_Rollladen_Dachfenster_Absolute Position "Absolute Position" <ikR> (gRollladeneBAD_Rollladen_Dachfenster,) ["Point"] {channel=""} 
+Switch iBad_R_Rollladen_Dachfenster_Status_aktuelle_Position "Status aktuelle Position" <ikR> (gRollladeneBAD_Rollladen_Dachfenster,) ["Point"] {channel=""} 
+Switch iBad_R_Rollladen_Dachfenster_Status obere Position "Status obere Position" <ikR> (gRollladeneBAD_Rollladen_Dachfenster,) ["Point"] {channel=""} 
+Switch iBad_R_Rollladen_Dachfenster_Status untere Position "Status untere Position" <ikR> (gRollladeneBAD_Rollladen_Dachfenster,) ["Point"] {channel=""} 
+Switch iBad_RW_Rollladen_Dachfenster_Sperre "Rollladen sperren" <ikR> (gRollladeneBAD_Rollladen_Dachfenster,) ["Point"] {channel=""} 
+String iBad_R_Rollladen_Dachfenster_Diagnosetext "Diagnosetext" <ikD> (gRollladeneBAD_Rollladen_Dachfenster,) ["Point"] {channel=""} 
+
+Group eBAD_Rollladen_Ostfenster "Rollladen Bad Ostfenster" <ikR> (gRollladen) ["Equipment"] 
+
+Rollershutter iBad_RW_Rollladen_Ostfenster_Auf_Ab "Verfahren Rollladen" <ikR> (gRollladeneBAD_Rollladen_Ostfenster,) ["Point"] {channel=""} 
+Switch iBad_RW_Rollladen_Ostfenster_Stop "Stop Rollladen" <ikR> (gRollladeneBAD_Rollladen_Ostfenster,) ["Point"] {channel=""} 
+Switch iBad_R_Rollladen_Ostfenster_Aktuelle Richtung "Anzeige der Verfahrrichtung" <ikR> (gRollladeneBAD_Rollladen_Ostfenster,) ["Point"] {channel=""} 
+Number iBad_RW_Rollladen_Ostfenster_Absolute Position "Absolute Position" <ikR> (gRollladeneBAD_Rollladen_Ostfenster,) ["Point"] {channel=""} 
+Switch iBad_R_Rollladen_Ostfenster_Status_aktuelle_Position "Status aktuelle Position" <ikR> (gRollladeneBAD_Rollladen_Ostfenster,) ["Point"] {channel=""} 
+Switch iBad_R_Rollladen_Ostfenster_Status obere Position "Status obere Position" <ikR> (gRollladeneBAD_Rollladen_Ostfenster,) ["Point"] {channel=""} 
+Switch iBad_R_Rollladen_Ostfenster_Status untere Position "Status untere Position" <ikR> (gRollladeneBAD_Rollladen_Ostfenster,) ["Point"] {channel=""} 
+Switch iBad_RW_Rollladen_Ostfenster_Sperre "Rollladen sperren" <ikR> (gRollladeneBAD_Rollladen_Ostfenster,) ["Point"] {channel=""} 
+String iBad_R_Rollladen_Ostfenster_Diagnosetext "Diagnosetext" <ikD> (gRollladeneBAD_Rollladen_Ostfenster,) ["Point"] {channel=""} 
+
+Group eFLUDG_Rollladen_Ostfenster "Rollladen FLUDG Ostfenster" <ikR> (gRollladen) ["Equipment"] 
+
+Rollershutter iFlur DG_RW_Rollladen_Ostfenster_Auf_Ab "Verfahren Rollladen" <ikR> (gRollladeneFLUDG_Rollladen_Ostfenster,) ["Point"] {channel=""} 
+Switch iFlur DG_RW_Rollladen_Ostfenster_Stop "Stop Rollladen" <ikR> (gRollladeneFLUDG_Rollladen_Ostfenster,) ["Point"] {channel=""} 
+Switch iFlur DG_R_Rollladen_Ostfenster_Aktuelle Richtung "Anzeige der Verfahrrichtung" <ikR> (gRollladeneFLUDG_Rollladen_Ostfenster,) ["Point"] {channel=""} 
+Number iFlur DG_RW_Rollladen_Ostfenster_Absolute Position "Absolute Position" <ikR> (gRollladeneFLUDG_Rollladen_Ostfenster,) ["Point"] {channel=""} 
+Switch iFlur DG_R_Rollladen_Ostfenster_Status_aktuelle_Position "Status aktuelle Position" <ikR> (gRollladeneFLUDG_Rollladen_Ostfenster,) ["Point"] {channel=""} 
+Switch iFlur DG_R_Rollladen_Ostfenster_Status obere Position "Status obere Position" <ikR> (gRollladeneFLUDG_Rollladen_Ostfenster,) ["Point"] {channel=""} 
+Switch iFlur DG_R_Rollladen_Ostfenster_Status untere Position "Status untere Position" <ikR> (gRollladeneFLUDG_Rollladen_Ostfenster,) ["Point"] {channel=""} 
+Switch iFlur DG_RW_Rollladen_Ostfenster_Sperre "Rollladen sperren" <ikR> (gRollladeneFLUDG_Rollladen_Ostfenster,) ["Point"] {channel=""} 
+String iFlur DG_R_Rollladen_Ostfenster_Diagnosetext "Diagnosetext" <ikD> (gRollladeneFLUDG_Rollladen_Ostfenster,) ["Point"] {channel=""} 
+
+Group eDCH_Wetterstation_Dach "Wetterdaten Erfassung" <ikW> (gWetterstation) ["Equipment"] 
+
+Number iDach_R_Wetterstation_Ost_Helligkeit "Helligkeitswert (Ost) [%.1f Lux]" <ikH> (gHelligkeiteDCH_Wetterstation_Dach,) ["Point"] {channel=""} 
+Number iDach_R_Wetterstation_Sued_Helligkeit "Helligkeitswert (Süd) [%.1f Lux]" <ikH> (gHelligkeiteDCH_Wetterstation_Dach,) ["Point"] {channel=""} 
+Number iDach_R_Wetterstation_West_Helligkeit "Helligkeitswert (West) [%.1f Lux]" <ikH> (gHelligkeiteDCH_Wetterstation_Dach,) ["Point"] {channel=""} 
+Number iDach_R_Wetterstation_West_Daemmerung "Dämmerung [%.1f Lux]" <ikH> (gHelligkeiteDCH_Wetterstation_Dach,) ["Point"] {channel=""} 
+Number iDach_R_Wetterstation_Aussenluft_Temperatur "Außenlufttemperatur [%.1f °C]" <ikT> (gTemperatureDCH_Wetterstation_Dach,) ["Point"] {channel=""} 
+Number iDach_R_Wetterstation_Aussenluft_Wind "Windgeschwindigkeit [%.1f m/s]" <ikW> (gWindgeschwindigkeiteDCH_Wetterstation_Dach,) ["Point"] {channel=""} 
+Contact iDach_R_Wetterstation_Regensensor_Regen "Regen" <ikW> (gWetterstationeDCH_Wetterstation_Dach,) ["Point"] {channel=""} 
+Contact iDach_R_Wetterstation_Regensensor_In_Betrieb "Regensensor in Betrieb" <ikW> (gWetterstationeDCH_Wetterstation_Dach,) ["Point"] {channel=""} 
+Contact iDach_R_Wetterstation_Regensensor_Heizung "Heizung Aktiv" <ikW> (gWetterstationeDCH_Wetterstation_Dach,) ["Point"] {channel=""} 
+Contact iDach_R_Wetterstation_Wetterstation_In_Betrieb "Regensensor in Betrieb" <ikW> (gWetterstationeDCH_Wetterstation_Dach,) ["Point"] {channel=""} 
+
+Group eTKR_Waermepumpe_Heizung "Außentemperatur Heizung" <ikH> (gHeizung) ["Equipment"] 
+
+Number iTechnikraum_R_Waermepumpe_Aussentemperatur "Außentemperaturfühler [%.1f °C]" <ikH> (gWMP_SensoreneTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_gemittelte_Aussentemperatur "gemittelter Außentemperaturfühler [%.1f °C]" <ikH> (gWMP_SensoreneTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_Stoernummer "Störnummer der Wärmepumpe" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_RW_Waermepumpe_Systemmode "Modus der Wärmepumpe" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""[profile="transform:MAP", function="wmp_modus.map"]} 
+Number iTechnikraum_R_Waermepumpe_Waermespeichertemperatur "Wärmespeichertemperatur [%.1f °C]" <ikH> (gWMP_SensoreneTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_Kaeltespeichertemperatur "Kältespeichertemperatur [%.1f °C]" <ikH> (gWMP_SensoreneTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_Trinkwassererwaermertemp_Unten "Trinkwassererwärmertemp_Unten [%.1f °C]" <ikH> (gWMP_SensoreneTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_Trinkwassererwaermertemp_Oben "Trinkwassererwärmertemp_Oben [%.1f °C]" <ikH> (gWMP_SensoreneTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_Warmwasserzapftemperatur "Warmwasserzapftemperatur [%.1f °C]" <ikH> (gWMP_SensoreneTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_RW_Waermepumpe_Warmwasser_Solltemperatur "Warmwasser Solltemperatur [%.1f °C]" <ikH> (gWMP_SensoreneTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_RW_Waermepumpe_Warmwasserladung_Einschalttemperatur "Warmwasserladung_Einschalttemperatur [%.1f °C]" <ikH> (gWMP_SensoreneTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_RW_Waermepumpe_Warmwasserladung_Ausschalttemperatur "Warmwasserladung_Ausschalttemperatur [%.1f °C]" <ikH> (gWMP_SensoreneTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_Aktueller_Strompreis "Aktueller_Strompreis [%.1f °C]" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_Vorlauftemperatur "Vorlauftemperatur [%.1f °C]" <ikH> (gWMP_SensoreneTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_Ruecklauftemperatur "Rücklauftemperatur [%.1f °C]" <ikH> (gWMP_SensoreneTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_HGL_Vorlauftemperatur "HGL_Vorlauftemperatur [%.1f °C]" <ikH> (gWMP_SensoreneTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_Waermequelleneintrittstemperatur "Wärmequelleneintrittstemperatur [%.1f °C]" <ikH> (gWMP_SensoreneTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_Waermequellenaustrittstemperatur "Wärmequellenaustrittstemperatur [%.1f °C]" <ikH> (gWMP_SensoreneTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_Luftansaugtemperatur "Luftansaugtemperatur [%.1f °C]" <ikH> (gWMP_SensoreneTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_Luftwaermetauschertemperatur "Luftwärmetauschertemperatur [%.1f °C]" <ikH> (gWMP_SensoreneTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_Luftansaugtemperatur2 "Luftansaugtemperatur2 [%.1f °C]" <ikH> (gWMP_SensoreneTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+String iTechnikraum_R_Waermepumpe_Betriebsart_Waermepumpe "Betriebsart der Wärmepumpe" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""[profile="transform:MAP", function="wmp_betriebsart.map"]} 
+String iTechnikraum_R_Waermepumpe_Summenstoerung_Waermepumpe "Summenstörung Wärmepumpe" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""[profile="transform:MAP", function="wmp_stoerung.map"]} 
+String iTechnikraum_R_Waermepumpe_Status_Verdichter_1 "Status Verdichter" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""[profile="transform:MAP", function="wmp_on_off.map"]} 
+Number iTechnikraum_R_Waermepumpe_Status_Ladepumpe "Status der Ladepumpe [%.2f %]" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_Status_Solepumpe "Status Sole / Zwischenkreispumpe (M16)" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_Status_Waermequellen "Status Wärmequellen-/Grundwasserpumpe" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_Status_Kaeltespeicherpumpe "Status ISC Kältespeicherpumpe (M84)" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_Status_Rueckkuehlpumpe "Status ISC Rückkühlpumpe (M17)" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Contact iTechnikraum_R_Waermepumpe_Ventil_Heizen_Kuehlen "Umschaltventil Heizkreis Heizen/Kühlen" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Contact iTechnikraum_R_Waermepumpe_Ventil_Speicher_Heizen_Kuehlen "Umschaltventil Speicher Heizen/Kühlen" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Contact iTechnikraum_R_Waermepumpe_Ventil_Heizen_Warmwasser "Umschaltventil Heizen/Warmwasser" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Contact iTechnikraum_R_Waermepumpe_Reserve_1 "Umschaltventil Wärmequelle Heizen/Kühlen" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Contact iTechnikraum_R_Waermepumpe_Reserve_2 "Umschaltventil Solar Heizen/Warmwasser" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Contact iTechnikraum_R_Waermepumpe_Reserve_3 "Umschaltventil Solar Speicher/Wärmequelle" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Contact iTechnikraum_R_Waermepumpe_Reserve_4 "Umschaltventil ISC Wärmequelle/Kältespeicher" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Contact iTechnikraum_R_Waermepumpe_Reserve_5 "Umschaltventil ISC Speicher/Bypass" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_RW_Waermepumpe_Bivalentpunkt_1 "2. Wärmeerzeuger - Bivalenzpunkt 1" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_RW_Waermepumpe_Bivalentpunkt_2 "2. Wärmeerzeuger - Bivalenzpunkt 2" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_HZK_Vorlauftemperatur "Heizkreis A Vorlauftemperatur (B51)" <ikH> (gHZK_SensoreneTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_HZK_Raumtemperatur "Heizkreis A Raumtemperatur (B61)" <ikH> (gHZK_SensoreneTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_HZK_Sollvorlauftemperatur "Heizkreis A Sollvorlauftemperatur" <ikH> (gHZK_SensoreneTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_Feuchtesensor "Feuchtesensor [%.1f %]" <ikH> (gHZK_SensoreneTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_RW_Waermepumpe_HZK_Betriebsart "Betriebsart Heizkreis A [%d]" <ikH> (gHZK_SensoreneTKR_Waermepumpe_Heizung,) ["Point"] {channel=""[profile="transform:MAP", function="wmp_betriebsart_hzk.map"]} 
+Number iTechnikraum_RW_Waermepumpe_HZK_Raumsolltemperatur "Raumsolltemperatur Heizen Normal HK A [%.1f °C]" <ikH> (gHZK_SensoreneTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_RW_Waermepumpe_HZK_Raumsolltemperatur_Eco "Raumsolltemperatur Heizen Eco HK A [%.1f °C]" <ikH> (gHZK_SensoreneTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_RW_Waermepumpe_HZK_Heizkurve "Heizkurve HK A" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_RW_Waermepumpe_HZK_Heizgrenze "Heizgrenze HK A" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_HZK_Sollvorlauftemperatur_HK "Sollvorlauftemperatur HK A (Konstant-HK) [%.1f °C]" <ikH> (gHZK_SensoreneTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_HZK_Raumsolltemperatur_Kuehlen_Normal "Raumsolltemperatur Kühlen Normal HK A [%.1f °C]" <ikH> (gHZK_SensoreneTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_HZK_Raumsolltemperatur_Kuehlen_Eco "Raumsolltemperatur Kühlen Eco HK A [%.1f °C]" <ikH> (gHZK_SensoreneTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_HZK_Kuehlgrenze "Kühlgrenze HK A" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_HZK_Sollvorlauftemperatur_Kuehlen "Sollvorlauftemperatur Kühlen HK A [%.1f °C]" <ikH> (gHZK_SensoreneTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+String iTechnikraum_RW_Waermepumpe_HZK_Betriebsart_Aktiv "Aktive Betriebsart Heizkreis A" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""[profile="transform:MAP", function="wmp_hzk_betriebsart_aktiv.map"]} 
+Number iTechnikraum_RW_Waermepumpe_Parallelverschiebung "Parallelverschiebung HK A" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_W_Waermepumpe_HZK_Raumtemperatur_Ext "Externe Raumtemperatur HK A [%.1f °C]" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_W_Waermepumpe_Aussentemperatur_Ext "Externe Außentemperatur [%.1f °C]" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_W_Waermepumpe_Feuchte_Ext "Externe Feuchte [%.1f %]" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_RW_Waermepumpe_Anforderungstemperatur_Heizeb_Ext "Externe Anforderungstemperatur Heizen [%.1f °C]" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_RW_Waermepumpe_Anforderungstemperatur_Kuehlen_Ext "Externe Anforderungstemperatur Kühlen [%.1f °C]" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Switch iTechnikraum_RW_Waermepumpe_Heizen_Anf "Anforderung Heizen" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Switch iTechnikraum_RW_Waermepumpe_Kuehlen_Anf "Anforderung Kühlen" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Switch iTechnikraum_RW_Waermepumpe_Warmwasser_Anf "Anforderung Warmwasserladung" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_Waermemenge_Heizen "Wärmemenge Heizen [%.1f kWh]" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_Waermemenge_Kuehlen "Wärmemenge Kühlen [%.1f kWh]" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_Waermemenge_Warmwasser "Wärmemenge Warmwasser [%.1f kWh]" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_Waermemenge_Abtauung "Wärmemenge Abtauung [%.1f kWh]" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_Waermemenge_Passive_Kuehlung "Wärmemenge Passive Kühlung [%.1f kWh]" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_Waermemenge_Solar "Wärmemenge Solar [%.1f kWh]" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_Waermemenge_Heizstab "Wärmemenge Elektroheizeinsatz [%.1f kWh]" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_Momentanleistung "Momentanleistung [%.1f kW]" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_Momentanleistung_Solar "Momentanleistung Solar [%.1f kW]" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_Solar_Kollektortemperatur "Solar Kollektortemperatur [%.1f °C]" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_Solar_Kollektorruecklauftemperatur "Solar Kollektorrücklauftemperatur (B75) [%.1f °C]" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_Solar_Ladetemperatur "Solar Ladetemperatur (B74) [%.1f °C]" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+String iTechnikraum_RW_Waermepumpe_Betriebsart_Solar "Betriebsart Solar [%.1f °C]" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""[profile="transform:MAP", function="wmp_betriebsart_solar.map"]} 
+Number iTechnikraum_R_Waermepumpe_ISC_Ladetemperatur "ISC Ladetemperatur Kühlen (B44) [%.1f °C]" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Number iTechnikraum_R_Waermepumpe_ISC_Rueckkuehltemperatur "ISC Rückkühltemperatur (B49) [%.1f °C]" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+String iTechnikraum_R_Waermepumpe_ISC_Modus "ISC Modus" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+Switch iTechnikraum_W_Waermepumpe_Stoermeldung_quittieren "Störmeldungen quittieren" <ikH> (gWMP_StatuseTKR_Waermepumpe_Heizung,) ["Point"] {channel=""} 
+
+Group eWOZ_Steckdosen_TV_Controller "Controller für die TV Steckdosen" <ikP> (gSteckdosen) ["Equipment"] 
+
+Switch iWohnzimmer_W_TV_1_EIN_AUS "Steckdose TV ein/aus" <ikT> (gPowereWOZ_Steckdosen_TV_Controller,) ["Point"] {channel=""} 
+Contact iWohnzimmer_R_TV_1_Status "Status TV Steckdose" <ikT> (gPowereWOZ_Steckdosen_TV_Controller,) ["Point"] {channel=""} 
+Switch iWohnzimmer_RW_TV_1_Sperre "TV Steckdosen sperren" <ikT> (gPowereWOZ_Steckdosen_TV_Controller,) ["Point"] {channel=""} 
+Switch iWohnzimmer_W_TV_2_EIN_AUS "Steckdose TV#2 ein/aus" <ikT> (gPowereWOZ_Steckdosen_TV_Controller,) ["Point"] {channel=""} 
+Contact iWohnzimmer_R_TV_2_Status "Status TV#2 Steckdose" <ikT> (gPowereWOZ_Steckdosen_TV_Controller,) ["Point"] {channel=""} 
+Switch iWohnzimmer_RW_TV_2_Sperre "TV#2 Steckdosen sperren" <ikT> (gPowereWOZ_Steckdosen_TV_Controller,) ["Point"] {channel=""} 
+Switch iWohnzimmer_W_TV_3_EIN_AUS "Steckdose TV#3 ein/aus" <ikT> (gPowereWOZ_Steckdosen_TV_Controller,) ["Point"] {channel=""} 
+Contact iWohnzimmer_R_TV_3_Status "Status TV#3 Steckdose" <ikT> (gPowereWOZ_Steckdosen_TV_Controller,) ["Point"] {channel=""} 
+Switch iWohnzimmer_RW_TV_3_Sperre "TV#3 Steckdosen sperren" <ikT> (gPowereWOZ_Steckdosen_TV_Controller,) ["Point"] {channel=""} 
+
+Group eWOZ_Steckdosen_Couch_Controller "Controller für die Couch Steckdosen" <ikP> (gSteckdosen) ["Equipment"] 
+
+Switch iWohnzimmer_W_Couch_1_EIN_AUS "Steckdose Couch ein/aus" <ikC> (gPowereWOZ_Steckdosen_Couch_Controller,) ["Point"] {channel=""} 
+Contact iWohnzimmer_R_Couch_1_Status "Status Couch Steckdose" <ikC> (gPowereWOZ_Steckdosen_Couch_Controller,) ["Point"] {channel=""} 
+Switch iWohnzimmer_RW_Couch_1_Sperre "Couch Steckdosen sperren" <ikC> (gPowereWOZ_Steckdosen_Couch_Controller,) ["Point"] {channel=""} 
+Switch iWohnzimmer_W_Couch_2_EIN_AUS "Steckdose Couch#2 ein/aus" <ikC> (gPowereWOZ_Steckdosen_Couch_Controller,) ["Point"] {channel=""} 
+Contact iWohnzimmer_R_Couch_2_Status "Status Couch#2 Steckdose" <ikC> (gPowereWOZ_Steckdosen_Couch_Controller,) ["Point"] {channel=""} 
+Switch iWohnzimmer_RW_Couch_2_Sperre "Couch#2 Steckdosen sperren" <ikC> (gPowereWOZ_Steckdosen_Couch_Controller,) ["Point"] {channel=""} 
+Switch iWohnzimmer_W_Couch_3_EIN_AUS "Steckdose Couch#3 ein/aus" <ikC> (gPowereWOZ_Steckdosen_Couch_Controller,) ["Point"] {channel=""} 
+Contact iWohnzimmer_R_Couch_3_Status "Status Couch#3 Steckdose" <ikC> (gPowereWOZ_Steckdosen_Couch_Controller,) ["Point"] {channel=""} 
+Switch iWohnzimmer_RW_Couch_3_Sperre "Couch#3 Steckdosen sperren" <ikC> (gPowereWOZ_Steckdosen_Couch_Controller,) ["Point"] {channel=""} 
+
+Group eWOZ_Beleuchtung_Couch "Großraumbeleuchtung Wohnzimmer" <ikL> (gBeleuchtung) ["Equipment"] 
+
+Switch iWohnzimmer_RW_Grossraumbeleuchtung_Schalten "Wohnzimmer Beleuchtung schalten" <ikL> (gBeleuchtungeWOZ_Beleuchtung_Couch,) ["Point"] {channel=""} 
+Number iWohnzimmer_RW_Grossraumbeleuchtung_absolut_FarbtemperaturP "Wohnzimmer Couch Farbtemperatur (%)" <ikL> (gBeleuchtungeWOZ_Beleuchtung_Couch,) ["Point"] {channel=""} 
+Number iWohnzimmer_RW_Grossraumbeleuchtung_absolut_FarbtemperaturK "Wohnzimmer Couch Farbtemperatur (K)" <ikL> (gBeleuchtungeWOZ_Beleuchtung_Couch,) ["Point"] {channel=""} 
+Number iWohnzimmer_RW_Grossraumbeleuchtung_absolut_Helligkeit "Wohnzimmer Couch Helligkeit" <ikL> (gBeleuchtungeWOZ_Beleuchtung_Couch,) ["Point"] {channel=""} 
+Number iWohnzimmer_RW_Grossraumbeleuchtung_relativ_FarbtemperaturP "Wohnzimmer Couch Farbtemperatur (%)" <ikL> (gBeleuchtungeWOZ_Beleuchtung_Couch,) ["Point"] {channel=""} 
+Number iWohnzimmer_RW_Grossraumbeleuchtung_relativ_FarbtemperaturK "Wohnzimmer Couch Farbtemperatur (K)" <ikL> (gBeleuchtungeWOZ_Beleuchtung_Couch,) ["Point"] {channel=""} 
+Number iWohnzimmer_RW_Grossraumbeleuchtung_relativ_Helligkeit "Wohnzimmer Couch Helligkeit" <ikL> (gBeleuchtungeWOZ_Beleuchtung_Couch,) ["Point"] {channel=""} 
+Contact iWohnzimmer_R_Grossraumbeleuchtung_Status_Schalten "Status Wohnzimmer Beleuchtung Couch" <ikL> (gBeleuchtungeWOZ_Beleuchtung_Couch,) ["Point"] {channel=""} 
+Number iWohnzimmer_R_Grossraumbeleuchtung_Status_FarbtemperaturP "Status Wohnzimmer Couch Farbtemperatur (%)" <ikL> (gBeleuchtungeWOZ_Beleuchtung_Couch,) ["Point"] {channel=""} 
+Number iWohnzimmer_R_Grossraumbeleuchtung_Status_FarbtemperaturK "Status Wohnzimmer Couch Farbtemperatur (K)" <ikL> (gBeleuchtungeWOZ_Beleuchtung_Couch,) ["Point"] {channel=""} 
+Number iWohnzimmer_R_Grossraumbeleuchtung_Status _Helligkeit "Status Wohnzimmer Helligkeit Couch" <ikL> (gBeleuchtungeWOZ_Beleuchtung_Couch,) ["Point"] {channel=""} 
+Contact iWohnzimmer_R_Grossraumbeleuchtung_Status _Sperre "Status Wohnzimmer Sperre" <ikL> (gBeleuchtungeWOZ_Beleuchtung_Couch,) ["Point"] {channel=""} 
+Switch iWohnzimmer_RW_Grossraumbeleuchtung_Sperre1 "Sperre1" <ikL> (gBeleuchtungeWOZ_Beleuchtung_Couch,) ["Point"] {channel=""} 
+Switch iWohnzimmer_RW_Grossraumbeleuchtung_Sperre2 "Sperre2" <ikL> (gBeleuchtungeWOZ_Beleuchtung_Couch,) ["Point"] {channel=""} 
+
+Group eKUE_Beleuchtung_Hauptbeleuchtung "LED Spots Küche" <ikL> (gBeleuchtung) ["Equipment"] 
+
+
+Group eZEN_Geräte_Controller "Allgemeiner Geräte Controller" <ikC> (gZentral) ["Equipment"] 
+
+
+Group eZEN_Information_Controller "Liefert dem Bus allgemeine Informatioen" <ikC> (gZentral) ["Equipment"] 
+
+DateTime iZentral_RW_Datum "Aktuelles Datum" <ikD> (gZentraleZEN_Information_Controller,) ["Point"] {channel="" [profile="follow"],channel="ntp:ntp:local:dateTime"} 
+DateTime iZentral_RW_Uhrzeit "Aktuelle Uhrzeit" <ikZ> (gZentraleZEN_Information_Controller,) ["Point"] {channel="" [profile="follow"],channel="ntp:ntp:local:dateTime"} 
+DateTime iZentral_RW_Datum_Uhrzeit "Aktuelles Datum und Uhrzeit" <ikZ> (gZentraleZEN_Information_Controller,) ["Point"] {channel="" [profile="follow"],channel="ntp:ntp:local:dateTime"} 
+Switch iZentral_RW_Tag_Nacht "Tag Nacht Objekt" <ikS> (gZentraleZEN_Information_Controller,) ["Point"] {channel=""} 
+
+Group eWOZ_Beleuchtung_TV "Wohnzimmer Spots über dem TV" <ikL> (gBeleuchtung) ["Equipment"] 
+
+Switch iWohnzimmer_RW_TV_Spots_Schalten "Wohnzimmer TV Spots schalten" <ikL> (gBeleuchtungeWOZ_Beleuchtung_TV,) ["Point"] {channel=""} 
+Number iWohnzimmer_RW_TV_Spots_absolut_FarbtemperaturP "Wohnzimmer TV Farbtemperatur (%)" <ikL> (gBeleuchtungeWOZ_Beleuchtung_TV,) ["Point"] {channel=""} 
+Number iWohnzimmer_RW_TV_Spots_absolut_FarbtemperaturK "Wohnzimmer TV Farbtemperatur (K)" <ikL> (gBeleuchtungeWOZ_Beleuchtung_TV,) ["Point"] {channel=""} 
+Number iWohnzimmer_RW_TV_Spots_absolut_Helligkeit "Wohnzimmer TV Helligkeit" <ikL> (gBeleuchtungeWOZ_Beleuchtung_TV,) ["Point"] {channel=""} 
+Number iWohnzimmer_RW_TV_Spots_relativ_FarbtemperaturP "Wohnzimmer TV Farbtemperatur (%)" <ikL> (gBeleuchtungeWOZ_Beleuchtung_TV,) ["Point"] {channel=""} 
+Number iWohnzimmer_RW_TV_Spots_relativ_FarbtemperaturK "Wohnzimmer TV Farbtemperatur (K)" <ikL> (gBeleuchtungeWOZ_Beleuchtung_TV,) ["Point"] {channel=""} 
+Number iWohnzimmer_RW_TV_Spots_relativ_Helligkeit "Wohnzimmer TV Helligkeit" <ikL> (gBeleuchtungeWOZ_Beleuchtung_TV,) ["Point"] {channel=""} 
+Contact iWohnzimmer_R_TV_Spots_Status_Schalten "Status Wohnzimmer Beleuchtung TV" <ikL> (gBeleuchtungeWOZ_Beleuchtung_TV,) ["Point"] {channel=""} 
+Number iWohnzimmer_R_TV_Spots_Status_FarbtemperaturP "Status Wohnzimmer TV Farbtemperatur (%)" <ikL> (gBeleuchtungeWOZ_Beleuchtung_TV,) ["Point"] {channel=""} 
+Number iWohnzimmer_R_TV_Spots_Status_FarbtemperaturK "Status Wohnzimmer TV Farbtemperatur (K)" <ikL> (gBeleuchtungeWOZ_Beleuchtung_TV,) ["Point"] {channel=""} 
+Number iWohnzimmer_R_TV_Spots_Status _Helligkeit "Status Wohnzimmer Helligkeit TV" <ikL> (gBeleuchtungeWOZ_Beleuchtung_TV,) ["Point"] {channel=""} 
+Contact iWohnzimmer_R_TV_Spots_Status _Sperre "Status Wohnzimmer Sperre TV" <ikL> (gBeleuchtungeWOZ_Beleuchtung_TV,) ["Point"] {channel=""} 
+Switch iWohnzimmer_RW_TV_Spots_Sperre1 "Sperre1" <ikL> (gBeleuchtungeWOZ_Beleuchtung_TV,) ["Point"] {channel=""} 
+Switch iWohnzimmer_RW_TV_Spots_Sperre2 "Sperre2" <ikL> (gBeleuchtungeWOZ_Beleuchtung_TV,) ["Point"] {channel=""} 
+
+Group eWOZ_Beleuchtung_Esstischbeleuchtung "Wohnzimmerlampe über dem Esstisch" <ikL> (gBeleuchtung) ["Equipment"] 
+
+Switch iWohnzimmer_RW_Esstisch_Schalten "Esstischbeleuchtung schalten" <ikL> (gBeleuchtungeWOZ_Beleuchtung_Esstischbeleuchtung,) ["Point"] {channel=""} 
+Contact iWohnzimmer_R_Esstisch_Status_Schalten "Status Esstischbeleuchtung" <ikL> (gBeleuchtungeWOZ_Beleuchtung_Esstischbeleuchtung,) ["Point"] {channel=""} 
+Number iWohnzimmer_RW_Esstisch_absolut_Dimmen "Esstischbeleuchtung absolut Dimmen" <ikL> (gBeleuchtungeWOZ_Beleuchtung_Esstischbeleuchtung,) ["Point"] {channel=""} 
+Number iWohnzimmer_R_Esstisch_Status_Helligkeit "Esstischbeleuchtung Dimmwert" <ikL> (gBeleuchtungeWOZ_Beleuchtung_Esstischbeleuchtung,) ["Point"] {channel=""} 
+Number iWohnzimmer_RW_Esstisch_relativ_Dimmen "Esstischbeleuchtung reltativ Dimmen" <ikL> (gBeleuchtungeWOZ_Beleuchtung_Esstischbeleuchtung,) ["Point"] {channel=""} 
+
+Group eFLUEG_Beleuchtung_Hauptbeleuchtung "Spots im EG Flur" <ikL> (gBeleuchtung) ["Equipment"] 
+
+
+Group eBAD_Beleuchtung_Beleuchtung "Spots im Badezimmer" <ikL> (gBeleuchtung) ["Equipment"] 
+
+
+Group eBAD_Beleuchtung_Stripe "LED Stripe im Badezimmer" <ikL> (gBeleuchtung) ["Equipment"] 
+
+Switch iBad_RW_LED_Stripe_Schalten "Beleuchtung Badewanne schalten" <ikL> (gBeleuchtungeBAD_Beleuchtung_Stripe,) ["Point"] {channel=""} 
+Number iBad_RW_LED_Stripe_absolut_FarbtemperaturP "Farbtemperatur Badewanne (%)" <ikL> (gBeleuchtungeBAD_Beleuchtung_Stripe,) ["Point"] {channel=""} 
+Number iBad_RW_LED_Stripe_absolut_FarbtemperaturK "Farbtemperatur Badewanne (K)" <ikL> (gBeleuchtungeBAD_Beleuchtung_Stripe,) ["Point"] {channel=""} 
+Number iBad_RW_LED_Stripe_absolut_Helligkeit "Helligkeit Badewanne" <ikL> (gBeleuchtungeBAD_Beleuchtung_Stripe,) ["Point"] {channel=""} 
+Number iBad_RW_LED_Stripe_relativ_FarbtemperaturP "rel. Farbtemperatur Badewanne (%)" <ikL> (gBeleuchtungeBAD_Beleuchtung_Stripe,) ["Point"] {channel=""} 
+Number iBad_RW_LED_Stripe_relativ_FarbtemperaturK "rel. Farbtemperatur Badewanne (K)" <ikL> (gBeleuchtungeBAD_Beleuchtung_Stripe,) ["Point"] {channel=""} 
+Number iBad_RW_LED_Stripe_relativ_Helligkeit "Helligkeit Badewanne" <ikL> (gBeleuchtungeBAD_Beleuchtung_Stripe,) ["Point"] {channel=""} 
+Contact iBad_R_LED_Stripe_Status_Schalten "Status Beleuchtung Badewanne" <ikL> (gBeleuchtungeBAD_Beleuchtung_Stripe,) ["Point"] {channel=""} 
+Number iBad_R_LED_Stripe_Status_FarbtemperaturP "Status Farbtemperatur Badewanne (%)" <ikL> (gBeleuchtungeBAD_Beleuchtung_Stripe,) ["Point"] {channel=""} 
+Number iBad_R_LED_Stripe_Status_FarbtemperaturK "Status Farbtemperatur Badewanne (K)" <ikL> (gBeleuchtungeBAD_Beleuchtung_Stripe,) ["Point"] {channel=""} 
+Number iBad_R_LED_Stripe_Status_Helligkeit "Status Badewanne Helligkeit TV" <ikL> (gBeleuchtungeBAD_Beleuchtung_Stripe,) ["Point"] {channel=""} 
+Contact iBad_R_LED_Stripe_Status_Sperre "Status Sperre Badewanne Spots" <ikL> (gBeleuchtungeBAD_Beleuchtung_Stripe,) ["Point"] {channel=""} 
+Switch iBad_RW_LED_Stripe_Sperre1 "Sperre1" <ikL> (gBeleuchtungeBAD_Beleuchtung_Stripe,) ["Point"] {channel=""} 
+Switch iBad_RW_LED_Stripe_Sperre2 "Sperre2" <ikL> (gBeleuchtungeBAD_Beleuchtung_Stripe,) ["Point"] {channel=""} 
+
+Group eBAD_Beleuchtung_Dusche "LED Stripe in der Dusche" <ikL> (gBeleuchtung) ["Equipment"] 
+
+Switch iBad_RW_Dusche_Schalten "Beleuchtung Dusche schalten" <ikL> (gBeleuchtungeBAD_Beleuchtung_Dusche,) ["Point"] {channel=""} 
+Number iBad_RW_Dusche_absolut_FarbtemperaturP "Farbtemperatur Dusche (%)" <ikL> (gBeleuchtungeBAD_Beleuchtung_Dusche,) ["Point"] {channel=""} 
+Number iBad_RW_Dusche_absolut_FarbtemperaturK "Farbtemperatur Dusche (K)" <ikL> (gBeleuchtungeBAD_Beleuchtung_Dusche,) ["Point"] {channel=""} 
+Number iBad_RW_Dusche_absolut_Helligkeit "Helligkeit Dusche" <ikL> (gBeleuchtungeBAD_Beleuchtung_Dusche,) ["Point"] {channel=""} 
+Number iBad_RW_Dusche_relativ_FarbtemperaturP "rel. Farbtemperatur Dusche (%)" <ikL> (gBeleuchtungeBAD_Beleuchtung_Dusche,) ["Point"] {channel=""} 
+Number iBad_RW_Dusche_relativ_FarbtemperaturK "rel. Farbtemperatur Dusche (K)" <ikL> (gBeleuchtungeBAD_Beleuchtung_Dusche,) ["Point"] {channel=""} 
+Number iBad_RW_Dusche_relativ_Helligkeit "Helligkeit Dusche" <ikL> (gBeleuchtungeBAD_Beleuchtung_Dusche,) ["Point"] {channel=""} 
+Contact iBad_R_Dusche_Status_Schalten "Status Beleuchtung Dusche" <ikL> (gBeleuchtungeBAD_Beleuchtung_Dusche,) ["Point"] {channel=""} 
+Number iBad_R_Dusche_Status_FarbtemperaturP "Status Farbtemperatur Dusche (%)" <ikL> (gBeleuchtungeBAD_Beleuchtung_Dusche,) ["Point"] {channel=""} 
+Number iBad_R_Dusche_Status_FarbtemperaturK "Status Farbtemperatur Dusche (K)" <ikL> (gBeleuchtungeBAD_Beleuchtung_Dusche,) ["Point"] {channel=""} 
+Number iBad_R_Dusche_Status _Helligkeit "Status Dusche Helligkeit TV" <ikL> (gBeleuchtungeBAD_Beleuchtung_Dusche,) ["Point"] {channel=""} 
+Contact iBad_R_Dusche_Status _Sperre "Status Sperre Dusche" <ikL> (gBeleuchtungeBAD_Beleuchtung_Dusche,) ["Point"] {channel=""} 
+Switch iBad_RW_Dusche_Sperre1 "Sperre1" <ikL> (gBeleuchtungeBAD_Beleuchtung_Dusche,) ["Point"] {channel=""} 
+Switch iBad_RW_Dusche_Sperre2 "Sperre2" <ikL> (gBeleuchtungeBAD_Beleuchtung_Dusche,) ["Point"] {channel=""} 
+
+Group eZEN_Rollladen_Controller "Controller für alle Rollläden" <ikZ> (gRolladen) ["Equipment"] 
+
+Rollershutter iZentral_RW_ALL_Rollladen_Auf_Ab "Verfahren Rollladen" <ikR> (gRollladeneZEN_Rollladen_Controller,) ["Point"] {channel=""} 
+Switch iZentral_RW_ALL_Rollladen_Stop "Stop Rollladen" <ikR> (gRollladeneZEN_Rollladen_Controller,) ["Point"] {channel=""} 
+Number iZentral_R_ALL_Rollladen_Absolute Position "Absolute Position" <ikR> (gRollladeneZEN_Rollladen_Controller,) ["Point"] {channel=""} 
+
+Group eGWC_Beleuchtung_Controller "Controller für GWC" <ikL> (gBeleuchtung) ["Equipment"] 
+
+Switch iGWC_RW_Hauptbeleuchtung_Schalten "Beleuchtung GWC" <ikL> (gBeleuchtungeGWC_Beleuchtung_Controller,) ["Point"] {channel=""} 
+Contact iGWC_R_Hauptbeleuchtung_Status_Schalten "Beleuchtung GWC Status" <ikL> (gBeleuchtungeGWC_Beleuchtung_Controller,) ["Point"] {channel=""} 
+
+Group eHWR_Beleuchtung_Controller "Controller für HWR" <ikL> (gBeleuchtung) ["Equipment"] 
+
+Switch iHWR_RW_Hauptbeleuchtung_Schalten "Beleuchtung HWR" <ikL> (gBeleuchtungeHWR_Beleuchtung_Controller,) ["Point"] {channel=""} 
+Contact iHWR_R_Hauptbeleuchtung_Status_Schalten "Beleuchtung HWR Status" <ikL> (gBeleuchtungeHWR_Beleuchtung_Controller,) ["Point"] {channel=""} 
+
+Group eKUE_Steckdosen_Controller "Controller für Küchensteckdosen" <ikP> (gSteckdosen) ["Equipment"] 
+
+Switch iKueche_RW_Strom_Theke_Schalten "Steckdosen an der Küchentheke schalten" <ikP> (gPowereKUE_Steckdosen_Controller,) ["Point"] {channel=""} 
+Contact iKueche_R_Strom_Theke_Status "Status der Steckdosen an der Küchentheke" <ikP> (gPowereKUE_Steckdosen_Controller,) ["Point"] {channel=""} 
+Switch iKueche_RW_Strom_Theke_Sperren "Steckdosen an der Küchentheke sperren" <ikP> (gPowereKUE_Steckdosen_Controller,) ["Point"] {channel=""} 
+Switch iKueche_RW_Strom_Theke_Schwellwertschalter "Schwellwertschalter für die Steckdosen an der Küchentheke" <ikP> (gPowereKUE_Steckdosen_Controller,) ["Point"] {channel=""} 
+Number iKueche_R_Strom_Theke_Betriebsstundenzaehler "Betriebsstundenzähler Steckdosen an der Küchentheke" <ikP> (gPowereKUE_Steckdosen_Controller,) ["Point"] {channel=""} 
+Switch iKueche_RW_Strom_Kuehlschrank_Schalten "Steckdose der Waschmaschine schalten" <ikP> (gPowereKUE_Steckdosen_Controller,) ["Point"] {channel=""} 
+Contact iKueche_R_Strom_Kuehlschrank_Status "Status der Steckdosen der Waschmaschine" <ikP> (gPowereKUE_Steckdosen_Controller,) ["Point"] {channel=""} 
+Switch iKueche_RW_Strom_Kuehlschrank_Sperren "Steckdose für die Waschmaschine sperren" <ikP> (gPowereKUE_Steckdosen_Controller,) ["Point"] {channel=""} 
+Number iKueche_R_Strom_Kuehlschrank_Betriebsstundenzaehler "Betriebsstundenzähler Steckdose für die Waschmaschine" <ikP> (gPowereKUE_Steckdosen_Controller,) ["Point"] {channel=""} 
+Number iKueche_R_Strom_Kuehlschrank_Wirkleistung "Wirkleistung Steckdose für die Waschmaschine" <ikP> (gPowereKUE_Steckdosen_Controller,) ["Point"] {channel=""} 
+Number iKueche_R_Strom_Kuehlschrank_Strom "Strom Steckdose für die Waschmaschine" <ikP> (gPowereKUE_Steckdosen_Controller,) ["Point"] {channel=""} 
+Number iKueche_R_Strom_Kuehlschrank_Verbrauch "Verbrauch der Waschmaschine an el. Energe" <ikP> (gPowereKUE_Steckdosen_Controller,) ["Point"] {channel=""} 
+Switch iKueche_RW_Strom_Spuelmaschine_Schalten "Steckdose der Waschmaschine schalten" <ikP> (gPowereKUE_Steckdosen_Controller,) ["Point"] {channel=""} 
+Contact iKueche_R_Strom_Spuelmaschine_Status "Status der Steckdosen der Waschmaschine" <ikP> (gPowereKUE_Steckdosen_Controller,) ["Point"] {channel=""} 
+Switch iKueche_RW_Strom_Spuelmaschine_Sperren "Steckdose für die Waschmaschine sperren" <ikP> (gPowereKUE_Steckdosen_Controller,) ["Point"] {channel=""} 
+Number iKueche_R_Strom_Spuelmaschine_Betriebsstundenzaehler "Betriebsstundenzähler Steckdose für die Waschmaschine" <ikP> (gPowereKUE_Steckdosen_Controller,) ["Point"] {channel=""} 
+Number iKueche_R_Strom_Spuelmaschine_Wirkleistung "Wirkleistung Steckdose für die Waschmaschine" <ikP> (gPowereKUE_Steckdosen_Controller,) ["Point"] {channel=""} 
+Number iKueche_R_Strom_Spuelmaschine_Strom "Strom Steckdose für die Waschmaschine" <ikP> (gPowereKUE_Steckdosen_Controller,) ["Point"] {channel=""} 
+Number iKueche_R_Strom_Spuelmaschine_Verbrauch "Verbrauch der Waschmaschine an el. Energe" <ikP> (gPowereKUE_Steckdosen_Controller,) ["Point"] {channel=""} 
+
+Group eHWR_Steckdosen_Controller "Controller für die Steckdosen im HWR" <ikP> (gSteckdosen) ["Equipment"] 
+
+Switch iHWR_RW_Strom_Waschmaschine_Schalten "Steckdose der Waschmaschine schalten" <ikP> (gPowereHWR_Steckdosen_Controller,) ["Point"] {channel=""} 
+Contact iHWR_R_Strom_Waschmaschine_Status "Status der Steckdosen der Waschmaschine" <ikP> (gPowereHWR_Steckdosen_Controller,) ["Point"] {channel=""} 
+Switch iHWR_RW_Strom_Waschmaschine_Sperren "Steckdose für die Waschmaschine sperren" <ikP> (gPowereHWR_Steckdosen_Controller,) ["Point"] {channel=""} 
+Number iHWR_R_Strom_Waschmaschine_Betriebsstundenzaehler "Betriebsstundenzähler Steckdose für die Waschmaschine" <ikP> (gPowereHWR_Steckdosen_Controller,) ["Point"] {channel=""} 
+Number iHWR_R_Strom_Waschmaschine_Wirkleistung "Wirkleistung Steckdose für die Waschmaschine" <ikP> (gPowereHWR_Steckdosen_Controller,) ["Point"] {channel=""} 
+Number iHWR_R_Strom_Waschmaschine_Strom "Strom Steckdose für die Waschmaschine" <ikP> (gPowereHWR_Steckdosen_Controller,) ["Point"] {channel=""} 
+Number iHWR_R_Strom_Waschmaschine_Verbrauch "Verbrauch der Waschmaschine an el. Energe" <ikP> (gPowereHWR_Steckdosen_Controller,) ["Point"] {channel=""} 
+Switch iHWR_RW_Strom_Trockner_Schalten "Steckdose der Waschmaschine schalten" <ikP> (gPowereHWR_Steckdosen_Controller,) ["Point"] {channel=""} 
+Contact iHWR_R_Strom_Trockner_Status "Status der Steckdosen der Waschmaschine" <ikP> (gPowereHWR_Steckdosen_Controller,) ["Point"] {channel=""} 
+Switch iHWR_RW_Strom_Trockner_Sperren "Steckdose für die Waschmaschine sperren" <ikP> (gPowereHWR_Steckdosen_Controller,) ["Point"] {channel=""} 
+Number iHWR_R_Strom_Trockner_Betriebsstundenzaehler "Betriebsstundenzähler Steckdose für die Waschmaschine" <ikP> (gPowereHWR_Steckdosen_Controller,) ["Point"] {channel=""} 
+Number iHWR_R_Strom_Trockner_Wirkleistung "Wirkleistung Steckdose für die Waschmaschine" <ikP> (gPowereHWR_Steckdosen_Controller,) ["Point"] {channel=""} 
+Number iHWR_R_Strom_Trockner_Strom "Strom Steckdose für die Waschmaschine" <ikP> (gPowereHWR_Steckdosen_Controller,) ["Point"] {channel=""} 
+Number iHWR_R_Strom_Trockner_Verbrauch "Verbrauch der Waschmaschine an el. Energe" <ikP> (gPowereHWR_Steckdosen_Controller,) ["Point"] {channel=""} 
+Switch iHWR_RW_Strom_Kuehlschrank_Schalten "Steckdose der Waschmaschine schalten" <ikP> (gPowereHWR_Steckdosen_Controller,) ["Point"] {channel=""} 
+Contact iHWR_R_Strom_Kuehlschrank_Status "Status der Steckdosen der Waschmaschine" <ikP> (gPowereHWR_Steckdosen_Controller,) ["Point"] {channel=""} 
+Switch iHWR_RW_Strom_Kuehlschrank_Sperren "Steckdose für die Waschmaschine sperren" <ikP> (gPowereHWR_Steckdosen_Controller,) ["Point"] {channel=""} 
+Number iHWR_R_Strom_Kuehlschrank_Betriebsstundenzaehler "Betriebsstundenzähler Steckdose für die Waschmaschine" <ikP> (gPowereHWR_Steckdosen_Controller,) ["Point"] {channel=""} 
+Number iHWR_R_Strom_Kuehlschrank_Wirkleistung "Wirkleistung Steckdose für die Waschmaschine" <ikP> (gPowereHWR_Steckdosen_Controller,) ["Point"] {channel=""} 
+Number iHWR_R_Strom_Kuehlschrank_Strom "Strom Steckdose für die Waschmaschine" <ikP> (gPowereHWR_Steckdosen_Controller,) ["Point"] {channel=""} 
+Number iHWR_R_Strom_Kuehlschrank_Verbrauch "Verbrauch der Waschmaschine an el. Energe" <ikP> (gPowereHWR_Steckdosen_Controller,) ["Point"] {channel=""} 
+
+Group eANK_Beleuchtung_Hauptbeleuchtung "Hauptbeleuchtung der Ankleide" <ikL> (gBeleuchtung) ["Equipment"] 
+
+Switch iAnkleide_RW_Hauptbeleuchtung_Schalten "Hauptbeleuchtung der Ankleide anschalten" <ikL> (gBeleuchtungeANK_Beleuchtung_Hauptbeleuchtung,) ["Point"] {channel=""} 
+Contact iAnkleide_RW_Hauptbeleuchtung_Status_Schalten "Status der Hauptbeleuchtung der Ankleide" <ikL> (gBeleuchtungeANK_Beleuchtung_Hauptbeleuchtung,) ["Point"] {channel=""} 
+
+Group eWOZ_Glasttaster_Tuer "Glastaster im Wohnzimmer neben der Tür" <ikG> (gGlastaster) ["Equipment"] 
+
+Number iWohnzimmer_R_Glasttaster_Tuer_Temperatur "Temperatur Glastaster im WOZ Tür [%.1f °C]" <ikT> (gTemperatureWOZ_Glasttaster_Tuer,) ["Point"] {channel=""} 
+Contact iWohnzimmer_R_Glasttaster_Tuer_Betriebsstatus "Status Glastaster im WOZ Tür" <ikS> (gStatuseWOZ_Glasttaster_Tuer,) ["Point"] {channel=""} 
+Contact iWohnzimmer_R_Glasttaster_Tuer_Tastenbetaetigung "Tastenbetätigung Glastaster im WOZ Tür" <ikS> (gStatuseWOZ_Glasttaster_Tuer,) ["Point"] {channel=""} 
+String iWohnzimmer_RW_Glasttaster_Tuer_Status_Text_1 "Statustext #1 für Glasttaster im WOZ Tür" <ikS> (gStatuseWOZ_Glasttaster_Tuer,) ["Point"] {channel=""} 
+String iWohnzimmer_RW_Glasttaster_Tuer_Status_Text_2 "Statustext #2 für Glasttaster im WOZ Tür" <ikS> (gStatuseWOZ_Glasttaster_Tuer,) ["Point"] {channel=""} 
+
+Group eFLUDG_Beleuchtung_Hauptbeleuchtung "Hauptbeleuchtung Flur DG" <ikL> (gBeleuchtung) ["Equipment"] 
+
+Switch iFlur DG_RW_Hauptbeleuchtung_Schalten "Beleuchtung Flur DG schalten" <ikL> (gBeleuchtungeFLUDG_Beleuchtung_Hauptbeleuchtung,) ["Point"] {channel=""} 
+Number iFlur DG_RW_Hauptbeleuchtung_absolut_FarbtemperaturP "Farbtemperatur Flur DG (%)" <ikL> (gBeleuchtungeFLUDG_Beleuchtung_Hauptbeleuchtung,) ["Point"] {channel=""} 
+Number iFlur DG_RW_Hauptbeleuchtung_absolut_FarbtemperaturK "Farbtemperatur Flur DG (K)" <ikL> (gBeleuchtungeFLUDG_Beleuchtung_Hauptbeleuchtung,) ["Point"] {channel=""} 
+Number iFlur DG_RW_Hauptbeleuchtung_absolut_Helligkeit "Helligkeit Flur DG" <ikL> (gBeleuchtungeFLUDG_Beleuchtung_Hauptbeleuchtung,) ["Point"] {channel=""} 
+Number iFlur DG_RW_Hauptbeleuchtung_relativ_FarbtemperaturP "rel. Farbtemperatur Flur DG (%)" <ikL> (gBeleuchtungeFLUDG_Beleuchtung_Hauptbeleuchtung,) ["Point"] {channel=""} 
+Number iFlur DG_RW_Hauptbeleuchtung_relativ_FarbtemperaturK "rel. Farbtemperatur Flur DG (K)" <ikL> (gBeleuchtungeFLUDG_Beleuchtung_Hauptbeleuchtung,) ["Point"] {channel=""} 
+Number iFlur DG_RW_Hauptbeleuchtung_relativ_Helligkeit "Helligkeit Flur DG" <ikL> (gBeleuchtungeFLUDG_Beleuchtung_Hauptbeleuchtung,) ["Point"] {channel=""} 
+Contact iFlur DG_R_Hauptbeleuchtung_Status_Schalten "Status Beleuchtung Flur DG" <ikL> (gBeleuchtungeFLUDG_Beleuchtung_Hauptbeleuchtung,) ["Point"] {channel=""} 
+Number iFlur DG_R_Hauptbeleuchtung_Status_FarbtemperaturP "Status Farbtemperatur Flur DG (%)" <ikL> (gBeleuchtungeFLUDG_Beleuchtung_Hauptbeleuchtung,) ["Point"] {channel=""} 
+Number iFlur DG_R_Hauptbeleuchtung_Status_FarbtemperaturK "Status Farbtemperatur Flur DG (K)" <ikL> (gBeleuchtungeFLUDG_Beleuchtung_Hauptbeleuchtung,) ["Point"] {channel=""} 
+Number iFlur DG_R_Hauptbeleuchtung_Status _Helligkeit "Status Flur DG Helligkeit TV" <ikL> (gBeleuchtungeFLUDG_Beleuchtung_Hauptbeleuchtung,) ["Point"] {channel=""} 
+Contact iFlur DG_R_Hauptbeleuchtung_Status _Sperre "Status Sperre Flur DG" <ikL> (gBeleuchtungeFLUDG_Beleuchtung_Hauptbeleuchtung,) ["Point"] {channel=""} 
+Switch iFlur DG_RW_Hauptbeleuchtung_Sperre1 "Sperre1" <ikL> (gBeleuchtungeFLUDG_Beleuchtung_Hauptbeleuchtung,) ["Point"] {channel=""} 
+Switch iFlur DG_RW_Hauptbeleuchtung_Sperre2 "Sperre2" <ikL> (gBeleuchtungeFLUDG_Beleuchtung_Hauptbeleuchtung,) ["Point"] {channel=""} 
+
+Group eKIZ_Beleuchtung_Stripe "LED Stripe Kinderzimmer" <ikL> (gBeleuchtung) ["Equipment"] 
+
+Switch iKinderzimmer_RW_LED_Stripe_Schalten "Beleuchtung KIZ Stripe schalten" <ikL> (gBeleuchtungeKIZ_Beleuchtung_Stripe,) ["Point"] {channel=""} 
+Number iKinderzimmer_RW_LED_Stripe_absolut_FarbtemperaturP "Farbtemperatur KIZ Stripe (%)" <ikL> (gBeleuchtungeKIZ_Beleuchtung_Stripe,) ["Point"] {channel=""} 
+Number iKinderzimmer_RW_LED_Stripe_absolut_FarbtemperaturK "Farbtemperatur KIZ Stripe (K)" <ikL> (gBeleuchtungeKIZ_Beleuchtung_Stripe,) ["Point"] {channel=""} 
+Number iKinderzimmer_RW_LED_Stripe_absolut_Helligkeit "Helligkeit KIZ Stripe" <ikL> (gBeleuchtungeKIZ_Beleuchtung_Stripe,) ["Point"] {channel=""} 
+Number iKinderzimmer_RW_LED_Stripe_relativ_FarbtemperaturP "rel. Farbtemperatur KIZ Stripe (%)" <ikL> (gBeleuchtungeKIZ_Beleuchtung_Stripe,) ["Point"] {channel=""} 
+Number iKinderzimmer_RW_LED_Stripe_relativ_FarbtemperaturK "rel. Farbtemperatur KIZ Stripe (K)" <ikL> (gBeleuchtungeKIZ_Beleuchtung_Stripe,) ["Point"] {channel=""} 
+Number iKinderzimmer_RW_LED_Stripe_relativ_Helligkeit "Helligkeit KIZ Stripe" <ikL> (gBeleuchtungeKIZ_Beleuchtung_Stripe,) ["Point"] {channel=""} 
+Contact iKinderzimmer_R_LED_Stripe_Status_Schalten "Status Beleuchtung KIZ Stripe" <ikL> (gBeleuchtungeKIZ_Beleuchtung_Stripe,) ["Point"] {channel=""} 
+Number iKinderzimmer_R_LED_Stripe_Status_FarbtemperaturP "Status Farbtemperatur KIZ Stripe (%)" <ikL> (gBeleuchtungeKIZ_Beleuchtung_Stripe,) ["Point"] {channel=""} 
+Number iKinderzimmer_R_LED_Stripe_Status_FarbtemperaturK "Status Farbtemperatur KIZ Stripe (K)" <ikL> (gBeleuchtungeKIZ_Beleuchtung_Stripe,) ["Point"] {channel=""} 
+Number iKinderzimmer_R_LED_Stripe_Status _Helligkeit "Status KIZ Stripe Helligkeit TV" <ikL> (gBeleuchtungeKIZ_Beleuchtung_Stripe,) ["Point"] {channel=""} 
+Contact iKinderzimmer_R_LED_Stripe_Status _Sperre "Status Sperre KIZ Stripe" <ikL> (gBeleuchtungeKIZ_Beleuchtung_Stripe,) ["Point"] {channel=""} 
+Switch iKinderzimmer_RW_LED_Stripe_Sperre1 "Sperre1" <ikL> (gBeleuchtungeKIZ_Beleuchtung_Stripe,) ["Point"] {channel=""} 
+Switch iKinderzimmer_RW_LED_Stripe_Sperre2 "Sperre2" <ikL> (gBeleuchtungeKIZ_Beleuchtung_Stripe,) ["Point"] {channel=""} 
+
+Group eKIZ_Beleuchtung_Hauptbeleuchtung "Hauptbeleuchtung Kinderzimmer" <ikL> (gBeleuchtung) ["Equipment"] 
+
+Switch iKinderzimmer_RW_Hauptbeleuchtung_Schalten "Beleuchtung KIZ Hauptbeleuchtung schalten" <ikL> (gBeleuchtungeKIZ_Beleuchtung_Hauptbeleuchtung,) ["Point"] {channel=""} 
+Number iKinderzimmer_RW_Hauptbeleuchtung_absolut_FarbtemperaturP "Farbtemperatur KIZ Hauptbeleuchtung (%)" <ikL> (gBeleuchtungeKIZ_Beleuchtung_Hauptbeleuchtung,) ["Point"] {channel=""} 
+Number iKinderzimmer_RW_Hauptbeleuchtung_absolut_FarbtemperaturK "Farbtemperatur KIZ Hauptbeleuchtung (K)" <ikL> (gBeleuchtungeKIZ_Beleuchtung_Hauptbeleuchtung,) ["Point"] {channel=""} 
+Number iKinderzimmer_RW_Hauptbeleuchtung_absolut_Helligkeit "Helligkeit KIZ Hauptbeleuchtung" <ikL> (gBeleuchtungeKIZ_Beleuchtung_Hauptbeleuchtung,) ["Point"] {channel=""} 
+Number iKinderzimmer_RW_Hauptbeleuchtung_relativ_FarbtemperaturP "rel. Farbtemperatur KIZ Hauptbeleuchtung (%)" <ikL> (gBeleuchtungeKIZ_Beleuchtung_Hauptbeleuchtung,) ["Point"] {channel=""} 
+Number iKinderzimmer_RW_Hauptbeleuchtung_relativ_FarbtemperaturK "rel. Farbtemperatur KIZ Hauptbeleuchtung (K)" <ikL> (gBeleuchtungeKIZ_Beleuchtung_Hauptbeleuchtung,) ["Point"] {channel=""} 
+Number iKinderzimmer_RW_Hauptbeleuchtung_relativ_Helligkeit "Helligkeit KIZ Hauptbeleuchtung" <ikL> (gBeleuchtungeKIZ_Beleuchtung_Hauptbeleuchtung,) ["Point"] {channel=""} 
+Contact iKinderzimmer_R_Hauptbeleuchtung_Status_Schalten "Status Beleuchtung KIZ Hauptbeleuchtung" <ikL> (gBeleuchtungeKIZ_Beleuchtung_Hauptbeleuchtung,) ["Point"] {channel=""} 
+Number iKinderzimmer_R_Hauptbeleuchtung_Status_FarbtemperaturP "Status Farbtemperatur KIZ Hauptbeleuchtung (%)" <ikL> (gBeleuchtungeKIZ_Beleuchtung_Hauptbeleuchtung,) ["Point"] {channel=""} 
+Number iKinderzimmer_R_Hauptbeleuchtung_Status_FarbtemperaturK "Status Farbtemperatur KIZ Hauptbeleuchtung (K)" <ikL> (gBeleuchtungeKIZ_Beleuchtung_Hauptbeleuchtung,) ["Point"] {channel=""} 
+Number iKinderzimmer_R_Hauptbeleuchtung_Status _Helligkeit "Status KIZ Hauptbeleuchtung Helligkeit TV" <ikL> (gBeleuchtungeKIZ_Beleuchtung_Hauptbeleuchtung,) ["Point"] {channel=""} 
+Contact iKinderzimmer_R_Hauptbeleuchtung_Status _Sperre "Status Sperre KIZ Hauptbeleuchtung" <ikL> (gBeleuchtungeKIZ_Beleuchtung_Hauptbeleuchtung,) ["Point"] {channel=""} 
+Switch iKinderzimmer_RW_Hauptbeleuchtung_Sperre1 "Sperre1" <ikL> (gBeleuchtungeKIZ_Beleuchtung_Hauptbeleuchtung,) ["Point"] {channel=""} 
+Switch iKinderzimmer_RW_Hauptbeleuchtung_Sperre2 "Sperre2" <ikL> (gBeleuchtungeKIZ_Beleuchtung_Hauptbeleuchtung,) ["Point"] {channel=""} 
+
+Group eWOZ_Glasttaster_Couch "Glastaster im Wohnzimmer neben der Couch" <ikG> (gGlastaster) ["Equipment"] 
+
+Number iWohnzimmer_R_Glasttaster_Couch_Temperatur "Temperatur Glastaster im WOZ Couch [%.1f °C]" <ikT> (gTemperatureWOZ_Glasttaster_Couch,) ["Point"] {channel=""} 
+Contact iWohnzimmer_R_Glasttaster_Couch_Betriebsstatus "Status Glastaster im WOZ Couch" <ikS> (gStatuseWOZ_Glasttaster_Couch,) ["Point"] {channel=""} 
+Contact iWohnzimmer_R_Glasttaster_Couch_Tastenbetaetigung "Tastenbetätigung Glastaster im WOZ Couch" <ikS> (gStatuseWOZ_Glasttaster_Couch,) ["Point"] {channel=""} 
+String iWohnzimmer_RW_Glasttaster_Couch_Status_Text_1 "Statustext #1 für Glasttaster im WOZ Couch" <ikS> (gStatuseWOZ_Glasttaster_Couch,) ["Point"] {channel=""} 
+String iWohnzimmer_RW_Glasttaster_Couch_Status_Text_2 "Statustext #2 für Glasttaster im WOZ Couch" <ikS> (gStatuseWOZ_Glasttaster_Couch,) ["Point"] {channel=""} 
+
+Group eWOZ_Glasttaster_Südfenster "Glastaster im Wohnzimmer neben dem Südfenster" <ikG> (gGlastaster) ["Equipment"] 
+
+
+Group eKUE_Glasttaster "Glastaster im Küche" <ikG> (gGlastaster) ["Equipment"] 
+
+Number iKueche_R_Glasttaster_Kueche_Temperatur "Temperatur Glastaster in der Küche [%.1f °C]" <ikT> (gTemperatureKUE_Glasttaster,) ["Point"] {channel=""} 
+Contact iKueche_R_Glasttaster_Kueche_Betriebsstatus "Status Glastaster in der Küche" <ikS> (gStatuseKUE_Glasttaster,) ["Point"] {channel=""} 
+Contact iKueche_R_Glasttaster_Kueche_Tastenbetaetigung "Tastenbetätigung Glastaster in der Küche" <ikS> (gStatuseKUE_Glasttaster,) ["Point"] {channel=""} 
+String iKueche_RW_Glasttaster_Kueche_Status_Text_1 "Statustext #1 für Glasttaster in der Küche" <ikS> (gStatuseKUE_Glasttaster,) ["Point"] {channel=""} 
+String iKueche_RW_Glasttaster_Kueche_Status_Text_2 "Statustext #2 für Glasttaster in der Küche" <ikS> (gStatuseKUE_Glasttaster,) ["Point"] {channel=""} 
+
+Group eGWC_Glasttaster "Glastaster im GWC" <ikG> (gGlastaster) ["Equipment"] 
+
+Number iGWC_R_Glasttaster_GWC_Temperatur "Temperatur Glastaster im GWC [%.1f °C]" <ikT> (gTemperatureGWC_Glasttaster,) ["Point"] {channel=""} 
+Contact iGWC_R_Glasttaster_GWC_Betriebsstatus "Status Glastaster im GWC" <ikS> (gStatuseGWC_Glasttaster,) ["Point"] {channel=""} 
+Contact iGWC_R_Glasttaster_GWC_Tastenbetaetigung "Tastenbetätigung Glastaster im GWC" <ikS> (gStatuseGWC_Glasttaster,) ["Point"] {channel=""} 
+String iGWC_RW_Glasttaster_GWC_Status_Text_1 "Statustext #1 für Glasttaster im GWC" <ikS> (gStatuseGWC_Glasttaster,) ["Point"] {channel=""} 
+String iGWC_RW_Glasttaster_GWC_Status_Text_2 "Statustext #2 für Glasttaster im GWC" <ikS> (gStatuseGWC_Glasttaster,) ["Point"] {channel=""} 
+
+Group eHWR_Glasttaster "Glastaster im HWR" <ikG> (gGlastaster) ["Equipment"] 
+
+Number iHWR_R_Glasttaster_HWR_Temperatur "Temperatur Glastaster im HWR [%.1f °C]" <ikT> (gTemperatureHWR_Glasttaster,) ["Point"] {channel=""} 
+Contact iHWR_R_Glasttaster_HWR_Betriebsstatus "Status Glastaster im HWR" <ikS> (gStatuseHWR_Glasttaster,) ["Point"] {channel=""} 
+Contact iHWR_R_Glasttaster_HWR_Tastenbetaetigung "Tastenbetätigung Glastaster im HWR" <ikS> (gStatuseHWR_Glasttaster,) ["Point"] {channel=""} 
+String iHWR_RW_Glasttaster_HWR_Status_Text_1 "Statustext #1 für Glasttaster im HWR" <ikS> (gStatuseHWR_Glasttaster,) ["Point"] {channel=""} 
+String iHWR_RW_Glasttaster_HWR_Status_Text_2 "Statustext #2 für Glasttaster im HWR" <ikS> (gStatuseHWR_Glasttaster,) ["Point"] {channel=""} 
+
+Group eFLUEG_Glasttaster "Glastaster im Flur EG" <ikG> (gGlastaster) ["Equipment"] 
+
+Number iFlur EG_R_Glasttaster_FLUEG_Temperatur "Temperatur Glastaster im Flur EG [%.1f °C]" <ikT> (gTemperatureFLUEG_Glasttaster,) ["Point"] {channel=""} 
+Contact iFlur EG_R_Glasttaster_FLUEG_Betriebsstatus "Status Glastaster im Flur EG" <ikS> (gStatuseFLUEG_Glasttaster,) ["Point"] {channel=""} 
+Contact iFlur EG_R_Glasttaster_FLUEG_Tastenbetaetigung "Tastenbetätigung Glastaster im Flur EG" <ikS> (gStatuseFLUEG_Glasttaster,) ["Point"] {channel=""} 
+String iFlur EG_RW_Glasttaster_FLUEG_Status_Text_1 "Statustext #1 für Glasttaster im Flur EG" <ikS> (gStatuseFLUEG_Glasttaster,) ["Point"] {channel=""} 
+String iFlur EG_RW_Glasttaster_FLUEG_Status_Text_2 "Statustext #2 für Glasttaster im Flur EG" <ikS> (gStatuseFLUEG_Glasttaster,) ["Point"] {channel=""} 
+
+Group eKIZ_Glasttaster "Glastaster im Kinderzimmer" <ikG> (gGlastaster) ["Equipment"] 
+
+Number iKinderzimmer_R_Glasttaster_KIZ_Temperatur "Temperatur Glastaster im Kinderzimmer [%.1f °C]" <ikT> (gTemperatureKIZ_Glasttaster,) ["Point"] {channel=""} 
+Contact iKinderzimmer_R_Glasttaster_KIZ_Betriebsstatus "Status Glastaster im Kinderzimmer" <ikS> (gStatuseKIZ_Glasttaster,) ["Point"] {channel=""} 
+Contact iKinderzimmer_R_Glasttaster_KIZ_Tastenbetaetigung "Tastenbetätigung Glastaster im Kinderzimmer" <ikS> (gStatuseKIZ_Glasttaster,) ["Point"] {channel=""} 
+String iKinderzimmer_RW_Glasttaster_KIZ_Status_Text_1 "Statustext #1 für Glasttaster im Kinderzimmer" <ikS> (gStatuseKIZ_Glasttaster,) ["Point"] {channel=""} 
+String iKinderzimmer_RW_Glasttaster_KIZ_Status_Text_2 "Statustext #2 für Glasttaster im Kinderzimmer" <ikS> (gStatuseKIZ_Glasttaster,) ["Point"] {channel=""} 
+
+Group eSLZ_Glasttaster "Glastaster im Schlafzimmer" <ikG> (gGlastaster) ["Equipment"] 
+
+Number iSchlafzimmer_R_Glasttaster_SLZ_Temperatur "Temperatur Glastaster im Schlafzimmer [%.1f °C]" <ikT> (gTemperatureSLZ_Glasttaster,) ["Point"] {channel=""} 
+Contact iSchlafzimmer_R_Glasttaster_SLZ_Betriebsstatus "Status Glastaster im Schlafzimmer" <ikS> (gStatuseSLZ_Glasttaster,) ["Point"] {channel=""} 
+Contact iSchlafzimmer_R_Glasttaster_SLZ_Tastenbetaetigung "Tastenbetätigung Glastaster im Schlafzimmer" <ikS> (gStatuseSLZ_Glasttaster,) ["Point"] {channel=""} 
+String iSchlafzimmer_RW_Glasttaster_SLZ_Status_Text_1 "Statustext #1 für Glasttaster im Schlafzimmer" <ikS> (gStatuseSLZ_Glasttaster,) ["Point"] {channel=""} 
+String iSchlafzimmer_RW_Glasttaster_SLZ_Status_Text_2 "Statustext #2 für Glasttaster im Schlafzimmer" <ikS> (gStatuseSLZ_Glasttaster,) ["Point"] {channel=""} 
+
+Group eBAD_Glasttaster "Glastaster im Bad" <ikG> (gGlastaster) ["Equipment"] 
+
+Number iBad_R_Glasttaster_Bad_Temperatur "Temperatur Glastaster im Bad [%.1f °C]" <ikT> (gTemperatureBAD_Glasttaster,) ["Point"] {channel=""} 
+Contact iBad_R_Glasttaster_Bad_Betriebsstatus "Status Glastaster im Bad" <ikS> (gStatuseBAD_Glasttaster,) ["Point"] {channel=""} 
+Contact iBad_R_Glasttaster_Bad_Tastenbetaetigung "Tastenbetätigung Glastaster im Bad" <ikS> (gStatuseBAD_Glasttaster,) ["Point"] {channel=""} 
+String iBad_RW_Glasttaster_Bad_Status_Text_1 "Statustext #1 für Glasttaster im Bad" <ikS> (gStatuseBAD_Glasttaster,) ["Point"] {channel=""} 
+String iBad_RW_Glasttaster_Bad_Status_Text_2 "Statustext #2 für Glasttaster im Bad" <ikS> (gStatuseBAD_Glasttaster,) ["Point"] {channel=""} 
+Switch iBad_RW_Glasttaster_Bad_Praesens "Präsenzinformationen aus dem Bad" <ikP> (gPraesenzeBAD_Glasttaster,) ["Point"] {channel=""} 
+
+Group eBUR_Glasttaster "Glastaster im Büro" <ikG> (gGlastaster) ["Equipment"] 
+
+Number iBuero_R_Glasttaster_Buero_Temperatur "Temperatur Glastaster im Büro [%.1f °C]" <ikT> (gTemperatureBUR_Glasttaster,) ["Point"] {channel=""} 
+Contact iBuero_R_Glasttaster_Buero_Betriebsstatus "Status Glastaster im Büro" <ikS> (gStatuseBUR_Glasttaster,) ["Point"] {channel=""} 
+Contact iBuero_R_Glasttaster_Buero_Tastenbetaetigung "Tastenbetätigung Glastaster im Büro" <ikS> (gStatuseBUR_Glasttaster,) ["Point"] {channel=""} 
+String iBuero_RW_Glasttaster_Buero_Status_Text_1 "Statustext #1 für Glasttaster im Büro" <ikS> (gStatuseBUR_Glasttaster,) ["Point"] {channel=""} 
+String iBuero_RW_Glasttaster_Buero_Status_Text_2 "Statustext #2 für Glasttaster im Büro" <ikS> (gStatuseBUR_Glasttaster,) ["Point"] {channel=""} 
+
+Group eSLZ_Präsenzmelder "Präsenzmelder Schlafzimmer" <ikP> (gPraesenzmelder) ["Equipment"] 
+
+
+Group eKIZ_Präsenzmelder "Präsenzmelder Kinderzimmer" <ikP> (gPraesenzmelder) ["Equipment"] 
+
+
+Group eFLUDG_Präsenzmelder "Präsenzmelder Flur DG" <ikP> (gPraesenzmelder) ["Equipment"] 
+
+
+Group eFLUEG_Beleuchtung_Akzent "Akzentbeleuchtung Flur EG" <ikL> (gBeleuchtung) ["Equipment"] 
+
+Switch iFlur EG_RW_Akzentbeleeuchtung_Schalten "Flur EG Akzentbeleuchtungschalten" <ikL> (gBeleuchtungeFLUEG_Beleuchtung_Akzent,) ["Point"] {channel=""} 
+Contact iFlur EG_R_Akzentbeleeuchtung_Status_Schalten "Status Flur EG Akzentbeleuchtung" <ikL> (gBeleuchtungeFLUEG_Beleuchtung_Akzent,) ["Point"] {channel=""} 
+Number iFlur EG_RW_Akzentbeleeuchtung_absolut_Dimmen "Flur EG Akzentbeleuchtung  absolut Dimmen" <ikL> (gBeleuchtungeFLUEG_Beleuchtung_Akzent,) ["Point"] {channel=""} 
+Number iFlur EG_R_Akzentbeleeuchtung_Status_Helligkeit "Flur EG Akzentbeleuchtung  Dimmwert" <ikL> (gBeleuchtungeFLUEG_Beleuchtung_Akzent,) ["Point"] {channel=""} 
+Number iFlur EG_RW_Akzentbeleeuchtung_relativ_Dimmen "Flur EG Akzentbeleuchtung  reltativ Dimmen" <ikL> (gBeleuchtungeFLUEG_Beleuchtung_Akzent,) ["Point"] {channel=""} 
+
+Group eTKR_Lüftung "Lüftung" <ikL> (gLueftung) ["Equipment"] 
+
+
+Group eZEN_Rollladen_Erdgeschoss "Rollladen im Erdgeschoss" <ikR> (gRollladen) ["Equipment"] 
+
+Rollershutter iZentral_RW_Rollladen_Erdgeschoss_Auf_Ab "Verfahren Rollladen" <ikR> (gRollladeneZEN_Rollladen_Erdgeschoss,) ["Point"] {channel=""} 
+Switch iZentral_RW_Rollladen_Erdgeschoss_Stop "Stop Rollladen" <ikR> (gRollladeneZEN_Rollladen_Erdgeschoss,) ["Point"] {channel=""} 
+Switch iZentral_R_Rollladen_Erdgeschoss_Aktuelle Richtung "Anzeige der Verfahrrichtung" <ikR> (gRollladeneZEN_Rollladen_Erdgeschoss,) ["Point"] {channel=""} 
+Number iZentral_RW_Rollladen_Erdgeschoss_Absolute Position "Absolute Position" <ikR> (gRollladeneZEN_Rollladen_Erdgeschoss,) ["Point"] {channel=""} 
+Switch iZentral_R_Rollladen_Erdgeschoss_Status_aktuelle_Position "Status aktuelle Position" <ikR> (gRollladeneZEN_Rollladen_Erdgeschoss,) ["Point"] {channel=""} 
+Switch iZentral_R_Rollladen_Erdgeschoss_Status obere Position "Status obere Position" <ikR> (gRollladeneZEN_Rollladen_Erdgeschoss,) ["Point"] {channel=""} 
+Switch iZentral_R_Rollladen_Erdgeschoss_Status untere Position "Status untere Position" <ikR> (gRollladeneZEN_Rollladen_Erdgeschoss,) ["Point"] {channel=""} 
+Switch iZentral_RW_Rollladen_Erdgeschoss_Sperre "Rollladen sperren" <ikR> (gRollladeneZEN_Rollladen_Erdgeschoss,) ["Point"] {channel=""} 
+String iZentral_R_Rollladen_Erdgeschoss_Diagnosetext "Diagnosetext" <ikR> (gRollladeneZEN_Rollladen_Erdgeschoss,) ["Point"] {channel=""} 
+
+Group eZEN_Rollladen_Dachgeschoss "Rollladen im Dachgeschoss" <ikR> (gRollladen) ["Equipment"] 
+
+Rollershutter iZentral_RW_Rollladen_Dachgeschoss_Auf_Ab "Verfahren Rollladen" <ikR> (gRollladeneZEN_Rollladen_Dachgeschoss,) ["Point"] {channel=""} 
+Switch iZentral_RW_Rollladen_Dachgeschoss_Stop "Stop Rollladen" <ikR> (gRollladeneZEN_Rollladen_Dachgeschoss,) ["Point"] {channel=""} 
+Switch iZentral_R_Rollladen_Dachgeschoss_Aktuelle Richtung "Anzeige der Verfahrrichtung" <ikR> (gRollladeneZEN_Rollladen_Dachgeschoss,) ["Point"] {channel=""} 
+Number iZentral_RW_Rollladen_Dachgeschoss_Absolute Position "Absolute Position" <ikR> (gRollladeneZEN_Rollladen_Dachgeschoss,) ["Point"] {channel=""} 
+Switch iZentral_R_Rollladen_Dachgeschoss_Status_aktuelle_Position "Status aktuelle Position" <ikR> (gRollladeneZEN_Rollladen_Dachgeschoss,) ["Point"] {channel=""} 
+Switch iZentral_R_Rollladen_Dachgeschoss_Status obere Position "Status obere Position" <ikR> (gRollladeneZEN_Rollladen_Dachgeschoss,) ["Point"] {channel=""} 
+Switch iZentral_R_Rollladen_Dachgeschoss_Status untere Position "Status untere Position" <ikR> (gRollladeneZEN_Rollladen_Dachgeschoss,) ["Point"] {channel=""} 
+Switch iZentral_RW_Rollladen_Dachgeschoss_Sperre "Rollladen sperren" <ikR> (gRollladeneZEN_Rollladen_Dachgeschoss,) ["Point"] {channel=""} 
+String iZentral_R_Rollladen_Dachgeschoss_Diagnosetext "Diagnosetext" <ikR> (gRollladeneZEN_Rollladen_Dachgeschoss,) ["Point"] {channel=""} 
+
+Group eFLUDG_Beleuchtung_Akzent "Akzentbeleuchtung Flur DG" <ikL> (gBeleuchtung) ["Equipment"] 
+
+Switch iFlur DG_RW_Akzentbeleeuchtung_Schalten "Flur DG Akzentbeleuchtung schalten" <ikL> (gBeleuchtungeFLUDG_Beleuchtung_Akzent,) ["Point"] {channel=""} 
+Contact iFlur DG_R_Akzentbeleeuchtung_Status_Schalten "Status Flur EG Akzentbeleuchtung" <ikL> (gBeleuchtungeFLUDG_Beleuchtung_Akzent,) ["Point"] {channel=""} 
+Number iFlur DG_RW_Akzentbeleeuchtung_absolut_Dimmen "Flur DG Akzentbeleuchtung  absolut Dimmen" <ikL> (gBeleuchtungeFLUDG_Beleuchtung_Akzent,) ["Point"] {channel=""} 
+Number iFlur DG_R_Akzentbeleeuchtung_Status_Helligkeit "Flur DG Akzentbeleuchtung  Dimmwert" <ikL> (gBeleuchtungeFLUDG_Beleuchtung_Akzent,) ["Point"] {channel=""} 
+Number iFlur DG_RW_Akzentbeleeuchtung_relativ_Dimmen "Flur DG Akzentbeleuchtung  reltativ Dimmen" <ikL> (gBeleuchtungeFLUDG_Beleuchtung_Akzent,) ["Point"] {channel=""} 
+
+Group eZEN_Beleuchtung_Flur "zentrale Flur Beleuchtung" <ikL> (gBeleuchtung) ["Equipment"] 
+
+Switch iZentral_RW_Beleuchtung Flur_Schalten "Zentrale Flur Beleuchtung schalten" <ikL> (gBeleuchtungeZEN_Beleuchtung_Flur,) ["Point"] {channel=""} 
+Contact iZentral_R_Beleuchtung Flur_Status_Schalten "Status zentrale Flur Beleuchtung" <ikL> (gBeleuchtungeZEN_Beleuchtung_Flur,) ["Point"] {channel=""} 
+Number iZentral_RW_Beleuchtung Flur_absolut_Dimmen "Zentrale Flur Beleuchtung absolut Dimmen" <ikL> (gBeleuchtungeZEN_Beleuchtung_Flur,) ["Point"] {channel=""} 
+Number iZentral_R_Beleuchtung Flur_Status_Helligkeit "Zentrale Flur Beleuchtung Dimmwert" <ikL> (gBeleuchtungeZEN_Beleuchtung_Flur,) ["Point"] {channel=""} 
+Number iZentral_RW_Beleuchtung Flur_relativ_Dimmen "Zentrale Flur Beleuchtung relativ Dimmen" <ikL> (gBeleuchtungeZEN_Beleuchtung_Flur,) ["Point"] {channel=""} 
+
+Group eTKR_Photovoltaik "Photovoltaik" <ikP> (gPhotovoltaik) ["Equipment"] 
+
+Number iR_PV "Solarproduktion" <ikP> (gStatus,gPhotovoltaikeTKR_Photovoltaik,) ["Point"] 

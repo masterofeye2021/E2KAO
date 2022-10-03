@@ -1,6 +1,5 @@
 from item_mapping import LOCALATION
 
-
 NAME = 4
 LABEL = 5
 ICON = 6
