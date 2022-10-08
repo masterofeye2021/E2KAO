@@ -2,13 +2,12 @@ from dataclasses import dataclass
 
 @dataclass
 class OpenChannel:
-    uid : str = ""
-    uid_hex_value : str = ""
-    id : str = ""
-    item_type : str = ""
-    channel_type : str = ""
-    label : str = ""
-    description : str = ""
+    uuid : str
+    id : str
+    item_type : str
+    channel_type : str
+    label : str
+    description : str
     default_tags : list[str] = None
     property : dict = None 
     configuration : dict = None
@@ -18,9 +17,6 @@ class OpenChannel:
 
     def __init__(self) -> None:
         pass
-
-    def __set_uid__(self, prefix, uid_hex_value , suffix):
-        return prefix + ":" + uid_hex_value 
 
     def __set_item_type__(self,item_type) -> str:
         if item_type:

@@ -17,24 +17,23 @@ class ItemNameProcessor(Precessor) :
 
         var += item_prefix
 
-        if place:
+        if place and not place == 'None':
             var += place + delimiter
 
         #nur wenn auch der erste Prefix gesetzt ist, wird auch der zweite genutzt
-        if access:
+        if access and not access== 'None':
             var += access + delimiter
 
-        if name:
+        if name and not name == 'None':
             var += name
 
-        if extention:
+        if extention and not extention == 'None':
             var += delimiter
             var += extention
 
         #nur wenn auch der erste Suffix gesetzt ist, wird auch der zweite genutzt
-        if function:
+        if function and not function == 'None':
             var += delimiter
             var += function
 
-        var = var.replace("#","_")
         return OpenhabGeneric.__remove_umlaut__(var)

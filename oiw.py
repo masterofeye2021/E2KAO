@@ -11,7 +11,7 @@ class OpenhabItemWritter:
         self.pid = None
         self.delimiter = " "
     
-    def write_items(self, list_of_equipment, list_of_items):
+    def write_items(self, list_of_equipment, item_map):
         #File öffnen
         self.pid = open(self.file, 'w',encoding="utf-8")
         
@@ -19,10 +19,20 @@ class OpenhabItemWritter:
         for equipment in list_of_equipment:
             self.write_equipment(equipment)
             item : OpenhabItem
-            for item in list_of_items : 
+
+            for item in item_map["knx"]:
                 if(item.equipment in equipment.name):
                     item.add_group(equipment.name)
                     self.write_item(item)
+            for item in item_map["modbus"]:
+                if(item.equipment in equipment.name):
+                    item.add_group(equipment.name)
+                    self.write_item(item)
+                pass
+            for item in item_map["ekey"]:
+                pass
+            for item in item_map["network"]:
+                pass
 
         self.pid.close()
 
@@ -47,8 +57,8 @@ class OpenhabItemWritter:
         self.__write_icon(openhabitem.icon)
         self.__write_group(openhabitem.group)
         self.__write_tag(openhabitem.tag)
-        if type(openhabitem) == KnxItem:
-            self.__write_bound_to(openhabitem.bound_to)
+        #if type(openhabitem) == KnxItem:
+        self.__write_bound_to(openhabitem.bound_to)
 
         #Itemdefintion abgeschlossen. Das nächste Item startet in der nächsten Zeile
         self.pid.write("\n")

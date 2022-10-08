@@ -8,6 +8,7 @@ import item_mapping
 from knx.knx_csv import KnxCsvWritter
 from oiw import OpenhabItem, OpenhabItemWritter
 from openhab.channel.knx_channel import KnxChannel
+from openhab.channel.modbus_channel import ModbusChannel
 from openhab.equipment.equipment import Equipment
 from openhab.items.ekey_item import EkeyItem
 from openhab.items.knx_item import KnxItem
@@ -15,6 +16,9 @@ from openhab.items.modbus_item import ModbusItem
 from openhab.items.network_item import NetworkItem
 
 from openhab.openhab_generic import OpenhabGeneric
+from openhab.persistence import Persistence
+import api_caller
+from openhab.thing_map import ThingMap
 
 
 sheet_name_point : str = "KNX"
@@ -26,7 +30,7 @@ def xls2item(path :str):
    items = handle_items()
 
    #Einlesen und verarbeiten der Equipment Definitionen
-   equipments=  handle_equipment()
+   equipments = handle_equipment()
 
    #KNX ETS CSV Format erzeugen
    kcw = KnxCsvWritter()
@@ -37,37 +41,62 @@ def xls2item(path :str):
    writter = OpenhabItemWritter()
    writter.write_items(equipments, items)
 
-   #api_caller.delete_channels(uid,OpenhabGeneric.__remove_umlaut__(json.dumps(thing,ensure_ascii=False)))   
-   #api_caller.change_thing(uid,OpenhabGeneric.__remove_umlaut__(json.dumps(thing,ensure_ascii=False)))
+   per = Persistence()
+   per.write_persisence(items)
 
-def handle_items() -> list[OpenhabItem]:
+
+      
+   
+
+def handle_items() -> dict:
       start = time.time()
-      items = []
+      knxItems = []
+      modbusItems = []
+      ekeyItems = []
+      networkItems = []
+      
+      thingMap = ThingMap()
+      itemMap = dict()
 
       workbook = load_workbook(filename="source/knx.xlsx", data_only=True)
       sheet = workbook[sheet_name_point]
 
       for row in sheet.iter_rows(min_row=2, values_only=True):
          i = []
-         if row[item_mapping.DATENTYP] == "KNX":
+         if row[item_mapping.BINDING] == "KNX":
             i = KnxItem(row)
-            c = KnxChannel(row, i.adresses)
-            i.set_bound_to(c.uid,row[item_mapping.TRANSFORM])
-            
-         elif row[item_mapping.DATENTYP] == "MODBUS":
+            c = KnxChannel(row, i, thingMap)
+            i.set_bound_to(c.uuidChannel,row[item_mapping.TRANSFORM])
+            knxItems.append(i)    
+         elif row[item_mapping.BINDING] == "MODBUS":
             i = ModbusItem(row)
-         elif row[item_mapping.DATENTYP] == "EKEY":
-            i = EkeyItem(row)
-         elif row[item_mapping.DATENTYP] == "NETWORK":
-            i = NetworkItem(row)
-         items.append(i)
-      
+            c = ModbusChannel(row)
+            i.set_bound_to(c.uuidChannel,row[item_mapping.TRANSFORM])
+            modbusItems.append(i)
+         elif row[item_mapping.BINDING] == "EKEY":
+            ekeyItems.append(EkeyItem(row))
+         elif row[item_mapping.BINDING] == "NETWORK":
+            networkItems.append(NetworkItem(row))
+
       workbook.close()
+
+      itemMap["knx"] = knxItems
+      itemMap["modbus"] = modbusItems
+      itemMap["ekey"] = ekeyItems
+      itemMap["network"] = networkItems
+
+
+      thing = thingMap.get_thing("knx")
+      uid = thing["UID"]
+
+      api_caller.delete_channels(uid,OpenhabGeneric.__remove_umlaut__(json.dumps(thing,ensure_ascii=False)))
+      api_caller.delete_channels(uid,OpenhabGeneric.__remove_umlaut__(json.dumps(thing,ensure_ascii=False)))
+      api_caller.change_thing(uid,OpenhabGeneric.__remove_umlaut__(json.dumps(thing,ensure_ascii=False)))
 
       ende = time.time()
       print('Handle Items finished in {:5.3f}s'.format(ende-start))
    
-      return items
+      return itemMap
    
 def handle_equipment() -> list[Equipment]:
       start = time.time()

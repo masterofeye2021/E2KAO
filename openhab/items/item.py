@@ -16,6 +16,7 @@ class OpenhabItem():
     equipment : str
     item_prefix : str = "i"
     transform : str = ""
+    persistence : bool = False
     
     def get_group(self) -> str :
         return self.group
@@ -41,4 +42,4 @@ class OpenhabItem():
         return group
 
     def add_group(self,group:str):
-        self.group = self.group + group + ","
+        self.group = self.group + ","+ group

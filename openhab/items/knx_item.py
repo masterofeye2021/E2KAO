@@ -19,11 +19,11 @@ class KnxItem(OpenhabItem,ItemNameProcessor,Validator):
 
         self.start = time.time()
         
-        location = data[item_mapping.LOCALATION]
-        access = data[item_mapping.ACCESS]
-        name = data[item_mapping.NAME]
-        extention =data[item_mapping.EXTENTION]
-        function = data[item_mapping.FUNCTION]     
+        location = str(data[item_mapping.LOCALATION]).replace(" ","_") 
+        access = str(data[item_mapping.ACCESS]).replace(" ","_") 
+        name = str(data[item_mapping.NAME]).replace(" ","_") 
+        extention =str(data[item_mapping.EXTENTION]).replace(" ","_") 
+        function = str(data[item_mapping.FUNCTION]).replace(" ","_") 
 
         self.name = self.__create_item_name__(location, access, name, extention, function, "i")
 
@@ -44,6 +44,9 @@ class KnxItem(OpenhabItem,ItemNameProcessor,Validator):
         self.adresses.append(GroupAddress(data[item_mapping.MAIN2],data[item_mapping.MIDDLE2],data[item_mapping.SUB2]))
         self.adresses.append(GroupAddress(data[item_mapping.MAIN3],data[item_mapping.MIDDLE3],data[item_mapping.SUB3]))
 
+        if data[item_mapping.PERSISTENCE] == "x": self.persistence= True 
+        else:self.persistence=False
+        
         ItemNameProcessor.__init__(self)
         Validator.__init__(self)
 
@@ -58,7 +61,7 @@ class KnxItem(OpenhabItem,ItemNameProcessor,Validator):
         print(self.name + ' {:5.3f}s'.format(self.end-self.start))
 
     
-    def set_bound_to(self, channel_uid, transform):
+    def set_bound_to(self, channel_uid : str, transform):
 
         if not transform:
             self.bound_to = "{channel=\""+channel_uid+"\"}"

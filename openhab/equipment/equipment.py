@@ -19,6 +19,7 @@ class Equipment:
             data[equipment_mapping.GROUP3],
             data[equipment_mapping.GROUP4])
 
+        self.name = OpenhabGeneric.__remove_umlaut__(self.name)
         self.icon =  OpenhabGeneric.__remove_umlaut__(self.icon)
         self.location =  OpenhabGeneric.__remove_umlaut__(self.location)
         self.group =  OpenhabGeneric.__remove_umlaut__(self.group)

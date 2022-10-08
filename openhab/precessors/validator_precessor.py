@@ -33,11 +33,14 @@ class Validator (Precessor):
             raise TypeError("Datenfeld für den Namen darf nicht leer sein!")
         if len(str.split(self.name,"_")) <= 2:
             raise TypeError("Ungültige Syntax für den Namen entdeckt!")
+        if "#" in self.name:
+            self.name = self.name.replace("#", "_") 
     
     def __check_label__(self):
         if not self.label:
             raise TypeError("Datenfeld für das Label darf nicht leer sein!")
-
+        if type(self.label) != str:
+            raise TypeError("Label sollte vom Typ String sein!")
     def __check_group__(self):
         if not self.group:
             raise TypeError("Datenfeld für die Gruppe darf nicht leer sein!")

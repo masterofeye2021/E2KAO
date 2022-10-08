@@ -25,16 +25,12 @@ class ModbusItem(OpenhabItem,ItemNameProcessor,Validator):
         self.tag = data[item_mapping.TAG]
         self.boundto = data[item_mapping.BOUND_TO]
         self.equipment = data[item_mapping.EQUIPMENT]
+        self.boundto = data[item_mapping.BOUND_TO]
         self.group = self.set_group(data[item_mapping.GROUP1],
             data[item_mapping.GROUP2],
             data[item_mapping.GROUP3],
             data[item_mapping.GROUP4])
 
-
-        return super().__init__()
-
-        
-    def __post_init__(self):
         self.__check_type__()
         self.__check_name__()
         self.__check_group__()
@@ -42,5 +38,11 @@ class ModbusItem(OpenhabItem,ItemNameProcessor,Validator):
         self.__check_icon__()
         self.__check_tag__()
         self.__check_equipment__()
-        return super().__post_init__()
+
+        return super().__init__()
+
+
+    def set_bound_to(self, channel_uid, transform):
+        if not transform:
+            self.bound_to = "{channel=\""+channel_uid+"\"}"
     

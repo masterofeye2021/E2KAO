@@ -32,7 +32,7 @@ def get_knx_device_uid():
 
 def get_thing_by_uid(uid:str)-> dict:
     r= requests.get(
-        srv + thing_by_uid + uid["UID"], 
+        srv + thing_by_uid + uid, 
         auth=HTTPBasicAuth(username,password))
    
     if r.status_code == 200:
@@ -51,7 +51,7 @@ def delete_link(itemname:str,channeluid:str):
 def change_thing(uid, channel_config):
 
         r= requests.put(
-        srv + thing_by_uid + uid["UID"], 
+        srv + thing_by_uid + uid, 
         headers={"Content-Type": "application/json"},
         auth=HTTPBasicAuth(username, password),
         data=channel_config)
@@ -67,11 +67,10 @@ def delete_channels(uid, channel_config : str):
     d["channels"] = []
     dump =json.dumps(d)
     r= requests.put(
-        srv + thing_by_uid + uid["UID"], 
+        srv + thing_by_uid + uid, 
         headers={"Content-Type": "application/json"},
         auth=HTTPBasicAuth(username, password),
         data=dump)
-
 
     if r.status_code == 200:
         r.close()
