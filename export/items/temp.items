@@ -1,0 +1,10 @@
+Number iDCH_R_PV_Stromverbrauch "Stromverbrauch [%.1f W]" <fa-bolt> (gStatus,gPhotovoltaik,eTKR_Photovoltaik) ["Point"] 
+Number iDCH_R_PV_Eigenverbrauch "Eigenverbrauch [%.1f W]" <fa-bolt> (gStatus,gPhotovoltaik,eTKR_Photovoltaik) ["Point"]
+Number iDCH_R_PV_Netzeinspeisung "Netzeinspeisung [%.1f W]" <fa-bolt> (gStatus,gPhotovoltaik,eTKR_Photovoltaik) ["Point"]
+Number iDCH_R_PV_StromImport "Stromimport [%.1f W]" <fa-bolt> (gStatus,gPhotovoltaik,eTKR_Photovoltaik) ["Point"]
+
+Number iDCH_R_PV_DailyPowerConsumption "Tagesverbrauch [%.1f kWh]" <fa-bolt> (gStatus,gPhotovoltaik,eTKR_Photovoltaik) ["Point"]
+Number iDCH_R_PV_DailyOwnConsumption "Tages-Eigenverbrauch [%.1f kWh]" <fa-bolt> (gStatus,gPhotovoltaik,eTKR_Photovoltaik) ["Point"]
+Number iDCH_R_PV_DailyGridFeed "Tages-Einspeisung [%.1f kWh]" <fa-bolt> (gStatus,gPhotovoltaik,eTKR_Photovoltaik) ["Point"]
+Number iDCH_R_PV_DailyPowerImport "Tages-Stromimport [%.1f kWh]" <fa-bolt> (gStatus,gPhotovoltaik,eTKR_Photovoltaik) ["Point"]
+Number iDCH_R_PV_DailyPowerProduction "Tages-Stromproduktion [%.1f kWh]" <fa-bolt> (gStatus,gPhotovoltaik,eTKR_Photovoltaik) ["Point"]

@@ -1,0 +1,5 @@
+Number Action "Last action [MAP(ekey_action.map):%d]"                          { channel="ekey:cvlan:f766481776:action" }
+Number FingerID "User used finger [MAP(ekey_finger.map):%d]"                   { channel="ekey:cvlan:f766481776:fingerId" }
+Number RelayID "Last relay that has been swiched [%d]"                         { channel="ekey:cvlan:f766481776:relayId" }
+Number Serialnumber "Serialnumber [%d]"                                        { channel="ekey:cvlan:f766481776:fsSerial" }
+Number UserID "Last user that accessed the house was [MAP(ekey_names.map):%d]" { channel="ekey:cvlan:f766481776:userId" }

@@ -16,7 +16,7 @@ class KnxCsvWritter:
         self.read_maingroup()
     	
     def write(self,name, main, middle, sub):
-        self.spamwriter.writerow([name,main,middle,sub,"","","","","Auto"])
+        self.spamwriter.writerow([OpenhabGeneric.__remove_umlaut__(name),main,middle,sub,"","","","","Auto"])
 
     def close(self):
         self.pid.close()

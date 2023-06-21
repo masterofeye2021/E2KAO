@@ -35,6 +35,7 @@ class KnxItem(OpenhabItem,ItemNameProcessor,Validator):
         self.tag = data[item_mapping.TAG]
         self.boundto = data[item_mapping.BOUND_TO]
         self.equipment = data[item_mapping.EQUIPMENT]
+        self.transform = data[item_mapping.TRANSFORM]
         self.group = self.set_group(data[item_mapping.GROUP1],
             data[item_mapping.GROUP2],
             data[item_mapping.GROUP3],
@@ -65,7 +66,10 @@ class KnxItem(OpenhabItem,ItemNameProcessor,Validator):
 
         if not transform:
             self.bound_to = "{channel=\""+channel_uid+"\"}"
+        elif  ".js" in transform:
+            self.bound_to = "{channel=\""+channel_uid+"\"[profile=\"transform:JS\", function=\""+transform+"\"]}"
         else:
             self.bound_to = "{channel=\""+channel_uid+"\"[profile=\"transform:MAP\", function=\""+transform+"\"]}"
+    
         if self.type == "DateTime":
             self.bound_to = "{channel=\""+channel_uid +  "\" [profile=\"follow\"],channel=\"ntp:ntp:local:dateTime\""+"}"

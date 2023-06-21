@@ -1,0 +1,13 @@
+Number iDCH_R_PV_Photovoltaik_Fehlercode "Photovoltaik Fehlercode" <fa-triangle-exclamation> (Error,_Photovoltaik) ["Point"] { channel = "modbus:data:pv:cDCH_R_PV_Photovoltaik_Fehlercode:cDCH_R_PV_Photovoltaik_Fehlercode:number"}
+Number iDCH_R_PV_Powermeter "Powermeter" <fa-bolt> (Power,_Photovoltaik) ["Point"] { channel = "modbus:data:pv:cDCH_R_PV_Powermeter:cDCH_R_PV_Powermeter:number"}
+Number iDCH_R_PV_AC_Power "AC Power" <fa-bolt> (Power,_Photovoltaik) ["Point"] { channel = "modbus:data:pv:cDCH_R_PV_AC_Power:cDCH_R_PV_AC_Power:number"}
+Number iDCH_R_PV_Taegliche_Stromproduktion "Taegliche Stromproduktion" <fa-square-plus> (Power,_Photovoltaik) ["Point"] { channel = "modbus:data:pv:cDCH_R_PV_Taegliche_Stromproduktion:cDCH_R_PV_Taegliche_Stromproduktion:number"}
+Number iDCH_R_PV_Akkumulierte_Stromproduktion "Akkumulierte Stromproduktion" <fa-plus> (Power,_Photovoltaik) ["Point"] { channel = "modbus:data:pv:cDCH_R_PV_Akkumulierte_Stromproduktion:cDCH_R_PV_Akkumulierte_Stromproduktion:number"}
+Number iDCH_R_PV_Start_Time "Start Time" <fa-clock> (Timestamp,_Photovoltaik) ["Point"] { channel = "modbus:data:pv:cDCH_R_PV_Start_Time:cDCH_R_PV_Start_Time:number"}
+Number iDCH_R_PV_Shutdown_Time "Shutdown Time" <fa-clock> (Timestamp,_Photovoltaik) ["Point"] { channel = "modbus:data:pv:cDCH_R_PV_Shutdown_Time:cDCH_R_PV_Shutdown_Time:number"}
+Number iDCH_R_PV_Geraetestatus "Geraetestatus" <fa-shield-heart> (Status,_Photovoltaik) ["Point"] { channel = "modbus:data:pv:cDCH_R_PV_Geraetestatus:cDCH_R_PV_Geraetestatus:number"}
+Number iDCH_R_PV_Blindleistung "Blindleistung" <fa-bolt> (Power,_Photovoltaik) ["Point"] { channel = "modbus:data:pv:cDCH_R_PV_Blindleistung:cDCH_R_PV_Blindleistung:number"}
+Number iDCH_R_PV_Eingangsleistung "Eingangsleistung" <fa-bolt> (Power,_Photovoltaik) ["Point"] { channel = "modbus:data:pv:cDCH_R_PV_Eingangsleistung:cDCH_R_PV_Eingangsleistung:number"}
+Number iDCH_R_PV_Start "Start" <fa-play> (Timestamp,_Photovoltaik) ["Point"] { channel = "modbus:data:pv:cDCH_R_PV_Start:cDCH_R_PV_Start:number"}
+Number iDCH_R_PV_Ende "Ende" <fa-flag-checkered> (Timestamp,_Photovoltaik) ["Point"] { channel = "modbus:data:pv:cDCH_R_PV_Ende:cDCH_R_PV_Ende:number"}
+Number iDCH_R_PV_Systemzeit "Systemzeit" <fa-flag-checkered> (Timestamp,_Photovoltaik) ["Point"] { channel = "modbus:data:pv:cDCH_R_PV_Systemzeit:cDCH_R_PV_Systemzeit:number"}

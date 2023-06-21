@@ -1,0 +1,106 @@
+Bridge modbus:tcp:pv "Photovoltaik Modbus TCP Slave" [ host="192.168.178.33", port=502, id=1, timeBetweenTransactionsMillis=1500 ] {
+		Bridge poller cDCH_R_PV_Eingangsleistung "Photovoltaik Fehlercode" [ start=32064, length=2, refresh=500, type="holding"]{
+			Thing data cDCH_R_PV_Eingangsleistung "Eingangsleistung" [ readStart="32064", readValueType="int32" ]
+
+		}
+		Bridge poller cDCH_R_PV_AC_Power "AC Power" [ start=32080, length=2, refresh=500, type="holding"]{
+			Thing data cDCH_R_PV_AC_Power "AC Power" [ readStart="32080", readValueType="int32" ]
+
+		}
+		Bridge poller cDCH_R_PV_Blindleistung "Blindleistung" [ start=32082, length=2, refresh=500, type="holding"]{
+			Thing data cDCH_R_PV_Blindleistung "Blindleistung" [ readStart="32082", readValueType="int32" ]
+
+		}
+		Bridge poller cDCH_R_PV_Geraetestatus "Geraetestatus" [ start=32089, length=1, refresh=500, type="holding"]{
+			Thing data cDCH_R_PV_Geraetestatus "Geraetestatus" [ readStart="32089", readValueType="uint16" ]
+
+		}
+		Bridge poller cDCH_R_PV_Photovoltaik_Fehlercode "Fehler" [ start=32090, length=1, refresh=500, type="holding"]{
+			Thing data cDCH_R_PV_Photovoltaik_Fehlercode "Photovoltaik Fehlercode" [ readStart="32090", readValueType="uint16" ]
+
+		}
+		Bridge poller cDCH_R_PV_Start_Time "Start Time" [ start=32091, length=2, refresh=500, type="holding"]{
+			Thing data cDCH_R_PV_Start_Time "Start Time" [ readStart="32091", readValueType="uint32" ]
+
+		}
+		Bridge poller cDCH_R_PV_Shutdown_Time "Shutdown Time" [ start=32093, length=2, refresh=500, type="holding"]{
+			Thing data cDCH_R_PV_Shutdown_Time "Shutdown Time" [ readStart="32093", readValueType="uint32" ]
+
+		}
+		Bridge poller cDCH_R_PV_Akkumulierte_Stromproduktion "kummulierte Stromproduktion" [ start=32106, length=2, refresh=500, type="holding"]{
+			Thing data cDCH_R_PV_Akkumulierte_Stromproduktion "Akkumulierte Stromproduktion" [ readStart="32106", readValueType="uint32" ]
+
+		}
+		Bridge poller cDCH_R_PV_Taegliche_Stromproduktion "Taegliche Stromproduktion" [ start=32114, length=2, refresh=500, type="holding"]{
+			Thing data cDCH_R_PV_Taegliche_Stromproduktion "Taegliche Stromproduktion" [ readStart="32114", readValueType="uint32" ]
+
+		}
+		Bridge poller cDCH_R_PV_Powermeter "Powermeter" [ start=37113, length=2, refresh=500, type="holding"]{
+			Thing data cDCH_R_PV_Powermeter "Powermeter" [ readStart="37113", readValueType="int32" ]
+
+		}
+		Bridge poller cDCH_RW_PV_Systemzeit "Systemzeit" [ start=40000, length=2, refresh=500, type="holding"]{
+			Thing data cDCH_R_PV_Systemzeit "Systemzeit" [ readStart="40000", readValueType="uint32" ]
+
+		}
+		Bridge poller cDCH_WO_PV_Startup "Start" [ start=40200, length=1, refresh=500, type="holding"]{
+			Thing data cDCH_R_PV_Start "Start" [ readStart="40200", readValueType="uint16" ]
+
+		}
+		Bridge poller cDCH_WO_PV_Shutdown "Ende" [ start=40201, length=1, refresh=500, type="holding"]{
+			Thing data cDCH_R_PV_Ende "Ende" [ readStart="40201", readValueType="uint16" ]
+
+		}
+		Bridge poller cDCH_R_PV_Eingangsleistung "Photovoltaik Fehlercode" [ start=32064, length=2, refresh=500, type="holding"]{
+			Thing data cDCH_R_PV_Eingangsleistung "Eingangsleistung" [ readStart="32064", readValueType="int32" ]
+
+		}
+		Bridge poller cDCH_R_PV_AC_Power "AC Power" [ start=32080, length=2, refresh=500, type="holding"]{
+			Thing data cDCH_R_PV_AC_Power "AC Power" [ readStart="32080", readValueType="int32" ]
+
+		}
+		Bridge poller cDCH_R_PV_Blindleistung "Blindleistung" [ start=32082, length=2, refresh=500, type="holding"]{
+			Thing data cDCH_R_PV_Blindleistung "Blindleistung" [ readStart="32082", readValueType="int32" ]
+
+		}
+		Bridge poller cDCH_R_PV_Geraetestatus "Geraetestatus" [ start=32089, length=1, refresh=500, type="holding"]{
+			Thing data cDCH_R_PV_Geraetestatus "Geraetestatus" [ readStart="32089", readValueType="uint16" ]
+
+		}
+		Bridge poller cDCH_R_PV_Photovoltaik_Fehlercode "Fehler" [ start=32090, length=1, refresh=500, type="holding"]{
+			Thing data cDCH_R_PV_Photovoltaik_Fehlercode "Photovoltaik Fehlercode" [ readStart="32090", readValueType="uint16" ]
+
+		}
+		Bridge poller cDCH_R_PV_Start_Time "Start Time" [ start=32091, length=2, refresh=500, type="holding"]{
+			Thing data cDCH_R_PV_Start_Time "Start Time" [ readStart="32091", readValueType="uint32" ]
+
+		}
+		Bridge poller cDCH_R_PV_Shutdown_Time "Shutdown Time" [ start=32093, length=2, refresh=500, type="holding"]{
+			Thing data cDCH_R_PV_Shutdown_Time "Shutdown Time" [ readStart="32093", readValueType="uint32" ]
+
+		}
+		Bridge poller cDCH_R_PV_Akkumulierte_Stromproduktion "kummulierte Stromproduktion" [ start=32106, length=2, refresh=500, type="holding"]{
+			Thing data cDCH_R_PV_Akkumulierte_Stromproduktion "Akkumulierte Stromproduktion" [ readStart="32106", readValueType="uint32" ]
+
+		}
+		Bridge poller cDCH_R_PV_Taegliche_Stromproduktion "Taegliche Stromproduktion" [ start=32114, length=2, refresh=500, type="holding"]{
+			Thing data cDCH_R_PV_Taegliche_Stromproduktion "Taegliche Stromproduktion" [ readStart="32114", readValueType="uint32" ]
+
+		}
+		Bridge poller cDCH_R_PV_Powermeter "Powermeter" [ start=37113, length=2, refresh=500, type="holding"]{
+			Thing data cDCH_R_PV_Powermeter "Powermeter" [ readStart="37113", readValueType="int32" ]
+
+		}
+		Bridge poller cDCH_RW_PV_Systemzeit "Systemzeit" [ start=40000, length=2, refresh=500, type="holding"]{
+			Thing data cDCH_R_PV_Systemzeit "Systemzeit" [ readStart="40000", readValueType="uint32" ]
+
+		}
+		Bridge poller cDCH_WO_PV_Startup "Start" [ start=40200, length=1, refresh=500, type="holding"]{
+			Thing data cDCH_R_PV_Start "Start" [ readStart="40200", readValueType="uint16" ]
+
+		}
+		Bridge poller cDCH_WO_PV_Shutdown "Ende" [ start=40201, length=1, refresh=500, type="holding"]{
+			Thing data cDCH_R_PV_Ende "Ende" [ readStart="40201", readValueType="uint16" ]
+
+		}
+}

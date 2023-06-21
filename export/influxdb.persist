@@ -122,8 +122,8 @@ Items {
 	iWohnzimmer_R_TV_Spots_Status_Schalten,
 	iWohnzimmer_RW_Esstisch_Spots_Schalten,
 	iWohnzimmer_R_Esstisch_Spots_Status_Schalten,
-	iWohnzimmer_RW_Spots_Schalten,
-	iWohnzimmer_R_Spots_Status_Schalten,
+	iKueche_RW_Spots_Schalten,
+	iKueche_R_Spots_Status_Schalten,
 	iBad_RW_LED_Stripe_Schalten,
 	iBad_R_LED_Stripe_Status_Schalten,
 	iBad_RW_Dusche_Schalten,
@@ -186,6 +186,11 @@ Items {
 	iKinderzimmer_R_Glasttaster_KIZ_Temperatur,
 	iSchlafzimmer_R_Glasttaster_SLZ_Temperatur,
 	iBuero_R_Glasttaster_Buero_Temperatur,
+	iSchlafzimmer_R_Praesenzmelder_Luftfeuchtigkeit,
+	iSchlafzimmer_R_Praesenzmelder_Relativer_Luftdruck,
+	iSchlafzimmer_R_Praesenzmelder_Absoluter_Luftdruck,
+	iKinderzimmer_R_Praesenzmelder_Luftfeuchtigkeit,
+	iFlur_DG_R_Praesenzmelder_Luftfeuchtigkeit,
 	iFlur_EG_RW_Akzentbeleeuchtung_Schalten,
 	iFlur_EG_R_Akzentbeleeuchtung_Status_Schalten,
 	iTechnikraum_R_Lueftung_Status_Betriebsmodus,
@@ -193,6 +198,21 @@ Items {
 	iFlur_DG_RW_Akzentbeleeuchtung_Schalten,
 	iFlur_DG_R_Akzentbeleeuchtung_Status_Schalten,
 	iZentral_RW_Beleuchtung_Flur_Schalten,
-	iZentral_R_Beleuchtung_Flur_Status_Schalten
-: strategy = everyChange
+	iZentral_R_Beleuchtung_Flur_Status_Schalten,
+	iSchlafzimmer_RW_Hauptbeleuchtung_Schalten,
+	iSchlafzimmer_R_Hauptbeleuchtung_Status_Schalten
+	iDach_R_PV_MaximumActivePower,
+	iDach_R_PV_Errorcode,
+	iDach_R_PV_Powermeter,
+	iDach_R_PV_AC_Power,
+	iDach_R_PV_Daily_Energy_Yield,
+	iDach_R_PV_Accumilated_Energy_Yield,
+	iDach_R_PV_Device_Status,
+	iDach_R_PV_PeakActiveCurrent,
+	iDach_R_PV_ReactivePower,
+	iDach_R_PV_InputPower,
+	iDach_R_PV_RatedPower,
+	iDach_R_PV_ActivePower,
+	iDach_R_PV_PeakActivePower
+: strategy = everyChange, restoreOnStartup
 }

@@ -1,0 +1,2 @@
+Switch iTKR_R_ServiceDevice_Openhab "Online Status des WLAN Accesspoint im Erdgeschoss" <fa-signal> (Status) ["Point"] { channel = "network:servicedevice:cTKR_R_ServiceDevice_Openhab:online"}
+DateTime iTKR_R_ServiceDevice_Openhab_Last_Seen "Online Status des WLAN Accesspoint im Erdgeschoss" <fa-signal> (Status) ["Point"] channel = "ntp:ntp:local:dateTime",{ channel = "network:servicedevice:cTKR_R_ServiceDevice_Openhab:lastseen"}[profile=“follow”]
