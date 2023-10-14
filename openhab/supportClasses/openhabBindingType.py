@@ -8,3 +8,4 @@ class OpenhabBindingType(Enum):
     PING_LAST_SEEN = 4
     SERVICE_LAST_SEEN =5
     MODBUS = 6
+    WETTER = 7

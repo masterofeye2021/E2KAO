@@ -213,7 +213,6 @@ Items {
 	iDach_R_PV_InputPower,
 	iDach_R_PV_RatedPower,
 	iDach_R_PV_ActivePower,
-	iDach_R_PV_PeakActivePower,
-	iTKR_R_Waermepumpe_Aussentemperatur
+	iDach_R_PV_PeakActivePower
 : strategy = everyChange, restoreOnStartup
 }

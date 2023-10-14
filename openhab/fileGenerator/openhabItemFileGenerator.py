@@ -2,6 +2,8 @@ from ast import List
 from openhab.fileGenerator.fileGenerator import FileGenerator
 from openhab.items.item_ import Item
 from openhab.supportClasses.openhabItemType import OpenhabItemType
+from openhab.supportClasses.openhabBindingType import OpenhabBindingType
+
 
 
 class OpenhabItemFileGenerator(FileGenerator):
@@ -38,13 +40,13 @@ class OpenhabItemFileGenerator(FileGenerator):
         self.item_file.write(item.type + self.item_file_deliminiter)
 
     def writeName(self, item: Item):
-        self.item_file.write(item.name + self.item_file_deliminiter)
+            self.item_file.write(item.name + self.item_file_deliminiter)  
 
     def writeLabel(self, item: Item):
-        self.item_file.write(item.label + self.item_file_deliminiter)
+            self.item_file.write(item.label + self.item_file_deliminiter)
 
     def writeIcon(self, item: Item):
-        self.item_file.write(item.icon + self.item_file_deliminiter)
+        self.item_file.write(item.icon  + self.item_file_deliminiter)
 
     def writeGroup(self, item: Item):
         self.item_file.write(item.groups +
@@ -55,8 +57,9 @@ class OpenhabItemFileGenerator(FileGenerator):
 
     def writeBindTo(self, item: Item):
         if item.bound_to:
-            if item.type == OpenhabItemType.DATETIME:
-                 self.item_file.write("channel = \"ntp:ntp:local:dateTime\","  +item.bound_to + "[profile=“follow”]")
+
+            if item.type == OpenhabItemType.DATETIME and item.bindingType() != OpenhabBindingType.WETTER:
+                 self.item_file.write("{channel = \"ntp:ntp:local:dateTime\","  +item.bound_to.replace("{","").replace("}","") + " [profile=\"follow\"]" + "}")
             else:
                 self.item_file.write(item.bound_to)
         else:

@@ -2,7 +2,7 @@ from ast import List
 import datetime
 
 from openhab.configParser.mapping.networkMapping import NetworkMapping
-from openhab.configParser.genericParser import GenericParser
+from openhab.configParser.mapping.genericParser import GenericParser
 from openhab.items.item_ import Item
 
 from openhab.supportClasses.knxItemType import KnxItemType
@@ -10,6 +10,8 @@ from openhab.supportClasses.openhabBindingType import OpenhabBindingType
 from openhab.supportClasses.openhabGroup import OpenhabGroup
 from openhab.supportClasses.openhabBinding import OpenhabBinding
 from openhab.supportClasses.openhabItemType import OpenhabItemType
+from openhab.supportClasses.openhabOutputFormat import OpenhabOutputFormat
+from openhab.supportClasses.openhabPhysicalUnit import OpenhabPhysicalUnit
 from openhab.supportClasses.openhabTag import OpenhabTag
 from openhab.supportClasses.fontAweSomeIcon import FontAweSomeIcon
 from openhab.things.networkThing import NetworkThing
@@ -44,8 +46,8 @@ class PingDeviceParser(GenericParser):
                 FontAweSomeIcon(row[NetworkMapping.ICON]),
                 group,
                 OpenhabTag(row[NetworkMapping.TAG]),
-                None,
-                None,
+                OpenhabPhysicalUnit(""),
+                OpenhabOutputFormat(""),
                 OpenhabBinding(OpenhabBindingType.PING_ONLINE),
                 row[NetworkMapping.PERSISTENCE]
             ))
@@ -60,8 +62,8 @@ class PingDeviceParser(GenericParser):
                 FontAweSomeIcon(row[NetworkMapping.ICON]),
                 group,
                 OpenhabTag(row[NetworkMapping.TAG]),
-                None,
-                None,
+               OpenhabPhysicalUnit(""),
+                OpenhabOutputFormat(""),
                 OpenhabBinding(OpenhabBindingType.PING_LAST_SEEN),
                 ""
             ))

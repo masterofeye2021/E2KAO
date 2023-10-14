@@ -1,24 +1,24 @@
 Switch iFLUEG_R_PingDevice_Soul_Stone "Online Status des WLAN Accesspoint im Erdgeschoss" <fa-signal> (Status) ["Point"] { channel = "network:pingdevice:cFLUEG_R_PingDevice_Soul_Stone:online"}
-DateTime iFLUEG_R_PingDevice_Soul_Stone_Last_Seen "Online Status des WLAN Accesspoint im Erdgeschoss" <fa-signal> (Status) ["Point"] channel = "ntp:ntp:local:dateTime",{ channel = "network:pingdevice:cFLUEG_R_PingDevice_Soul_Stone:lastseen"}[profile=“follow”]
+DateTime iFLUEG_R_PingDevice_Soul_Stone_Last_Seen "Online Status des WLAN Accesspoint im Erdgeschoss" <fa-signal> (Status) ["Point"] {channel = "ntp:ntp:local:dateTime", channel = "network:pingdevice:cFLUEG_R_PingDevice_Soul_Stone:lastseen" [profile="follow"]}
 Switch iFLUDG_R_PingDevice_Space_Stone "Online Status des WLAN Accesspoint im Dachgeschoss" <fa-signal> (Status) ["Point"] { channel = "network:pingdevice:cFLUDG_R_PingDevice_Space_Stone:online"}
-DateTime iFLUDG_R_PingDevice_Space_Stone_Last_Seen "Online Status des WLAN Accesspoint im Dachgeschoss" <fa-signal> (Status) ["Point"] channel = "ntp:ntp:local:dateTime",{ channel = "network:pingdevice:cFLUDG_R_PingDevice_Space_Stone:lastseen"}[profile=“follow”]
+DateTime iFLUDG_R_PingDevice_Space_Stone_Last_Seen "Online Status des WLAN Accesspoint im Dachgeschoss" <fa-signal> (Status) ["Point"] {channel = "ntp:ntp:local:dateTime", channel = "network:pingdevice:cFLUDG_R_PingDevice_Space_Stone:lastseen" [profile="follow"]}
 Switch iWOZ_R_PingDevice_Drax "Handy Ivo " <fa-signal> (Status) ["Point"] { channel = "network:pingdevice:cWOZ_R_PingDevice_Drax:online"}
-DateTime iWOZ_R_PingDevice_Drax_Last_Seen "Handy Ivo " <fa-signal> (Status) ["Point"] channel = "ntp:ntp:local:dateTime",{ channel = "network:pingdevice:cWOZ_R_PingDevice_Drax:lastseen"}[profile=“follow”]
+DateTime iWOZ_R_PingDevice_Drax_Last_Seen "Handy Ivo " <fa-signal> (Status) ["Point"] {channel = "ntp:ntp:local:dateTime", channel = "network:pingdevice:cWOZ_R_PingDevice_Drax:lastseen" [profile="follow"]}
 Switch iWOZ_R_PingDevice_Rocket "Surface Ivo" <fa-signal> (Status) ["Point"] { channel = "network:pingdevice:cWOZ_R_PingDevice_Rocket:online"}
-DateTime iWOZ_R_PingDevice_Rocket_Last_Seen "Surface Ivo" <fa-signal> (Status) ["Point"] channel = "ntp:ntp:local:dateTime",{ channel = "network:pingdevice:cWOZ_R_PingDevice_Rocket:lastseen"}[profile=“follow”]
+DateTime iWOZ_R_PingDevice_Rocket_Last_Seen "Surface Ivo" <fa-signal> (Status) ["Point"] {channel = "ntp:ntp:local:dateTime", channel = "network:pingdevice:cWOZ_R_PingDevice_Rocket:lastseen" [profile="follow"]}
 Switch iTKR_R_PingDevice_Ironman "NAS" <fa-signal> (Status) ["Point"] { channel = "network:pingdevice:cTKR_R_PingDevice_Ironman:online"}
-DateTime iTKR_R_PingDevice_Ironman_Last_Seen "NAS" <fa-signal> (Status) ["Point"] channel = "ntp:ntp:local:dateTime",{ channel = "network:pingdevice:cTKR_R_PingDevice_Ironman:lastseen"}[profile=“follow”]
+DateTime iTKR_R_PingDevice_Ironman_Last_Seen "NAS" <fa-signal> (Status) ["Point"] {channel = "ntp:ntp:local:dateTime", channel = "network:pingdevice:cTKR_R_PingDevice_Ironman:lastseen" [profile="follow"]}
 Switch iAUS_R_PingDevice_Nebula "Sprechanlage" <fa-signal> (Status) ["Point"] { channel = "network:pingdevice:cAUS_R_PingDevice_Nebula:online"}
-DateTime iAUS_R_PingDevice_Nebula_Last_Seen "Sprechanlage" <fa-signal> (Status) ["Point"] channel = "ntp:ntp:local:dateTime",{ channel = "network:pingdevice:cAUS_R_PingDevice_Nebula:lastseen"}[profile=“follow”]
+DateTime iAUS_R_PingDevice_Nebula_Last_Seen "Sprechanlage" <fa-signal> (Status) ["Point"] {channel = "ntp:ntp:local:dateTime", channel = "network:pingdevice:cAUS_R_PingDevice_Nebula:lastseen" [profile="follow"]}
 Switch iTKR_R_PingDevice_Captain_America "Openhab" <fa-signal> (Status) ["Point"] { channel = "network:pingdevice:cTKR_R_PingDevice_Captain_America:online"}
-DateTime iTKR_R_PingDevice_Captain_America_Last_Seen "Openhab" <fa-signal> (Status) ["Point"] channel = "ntp:ntp:local:dateTime",{ channel = "network:pingdevice:cTKR_R_PingDevice_Captain_America:lastseen"}[profile=“follow”]
+DateTime iTKR_R_PingDevice_Captain_America_Last_Seen "Openhab" <fa-signal> (Status) ["Point"] {channel = "ntp:ntp:local:dateTime", channel = "network:pingdevice:cTKR_R_PingDevice_Captain_America:lastseen" [profile="follow"]}
 Switch iWOZ_R_PingDevice_Gamora "Handy Vanessa" <fa-signal> (Status) ["Point"] { channel = "network:pingdevice:cWOZ_R_PingDevice_Gamora:online"}
-DateTime iWOZ_R_PingDevice_Gamora_Last_Seen "Handy Vanessa" <fa-signal> (Status) ["Point"] channel = "ntp:ntp:local:dateTime",{ channel = "network:pingdevice:cWOZ_R_PingDevice_Gamora:lastseen"}[profile=“follow”]
+DateTime iWOZ_R_PingDevice_Gamora_Last_Seen "Handy Vanessa" <fa-signal> (Status) ["Point"] {channel = "ntp:ntp:local:dateTime", channel = "network:pingdevice:cWOZ_R_PingDevice_Gamora:lastseen" [profile="follow"]}
 Switch iWOZ_R_PingDevice_Ultron "LG TV im Wohnzimmer" <fa-signal> (Status) ["Point"] { channel = "network:pingdevice:cWOZ_R_PingDevice_Ultron:online"}
-DateTime iWOZ_R_PingDevice_Ultron_Last_Seen "LG TV im Wohnzimmer" <fa-signal> (Status) ["Point"] channel = "ntp:ntp:local:dateTime",{ channel = "network:pingdevice:cWOZ_R_PingDevice_Ultron:lastseen"}[profile=“follow”]
+DateTime iWOZ_R_PingDevice_Ultron_Last_Seen "LG TV im Wohnzimmer" <fa-signal> (Status) ["Point"] {channel = "ntp:ntp:local:dateTime", channel = "network:pingdevice:cWOZ_R_PingDevice_Ultron:lastseen" [profile="follow"]}
 Switch iWOZ_R_PingDevice_Kingpin "Arbeitshandy Vanessa" <fa-signal> (Status) ["Point"] { channel = "network:pingdevice:cWOZ_R_PingDevice_Kingpin:online"}
-DateTime iWOZ_R_PingDevice_Kingpin_Last_Seen "Arbeitshandy Vanessa" <fa-signal> (Status) ["Point"] channel = "ntp:ntp:local:dateTime",{ channel = "network:pingdevice:cWOZ_R_PingDevice_Kingpin:lastseen"}[profile=“follow”]
-Switch iTKR_R_PingDevice_Colossus "Waermpepumpe" <fa-signal> (Status) ["Point"] { channel = "network:pingdevice:cTKR_R_PingDevice_Colossus:online"}
-DateTime iTKR_R_PingDevice_Colossus_Last_Seen "Waermpepumpe" <fa-signal> (Status) ["Point"] channel = "ntp:ntp:local:dateTime",{ channel = "network:pingdevice:cTKR_R_PingDevice_Colossus:lastseen"}[profile=“follow”]
+DateTime iWOZ_R_PingDevice_Kingpin_Last_Seen "Arbeitshandy Vanessa" <fa-signal> (Status) ["Point"] {channel = "ntp:ntp:local:dateTime", channel = "network:pingdevice:cWOZ_R_PingDevice_Kingpin:lastseen" [profile="follow"]}
+Switch iTKR_R_PingDevice_Colossus "Waermepumpe" <fa-signal> (Status) ["Point"] { channel = "network:pingdevice:cTKR_R_PingDevice_Colossus:online"}
+DateTime iTKR_R_PingDevice_Colossus_Last_Seen "Waermepumpe" <fa-signal> (Status) ["Point"] {channel = "ntp:ntp:local:dateTime", channel = "network:pingdevice:cTKR_R_PingDevice_Colossus:lastseen" [profile="follow"]}
 Switch iBUR_R_PingDevice_Thanos "Ivos Pc" <fa-signal> (Status) ["Point"] { channel = "network:pingdevice:cBUR_R_PingDevice_Thanos:online"}
-DateTime iBUR_R_PingDevice_Thanos_Last_Seen "Ivos Pc" <fa-signal> (Status) ["Point"] channel = "ntp:ntp:local:dateTime",{ channel = "network:pingdevice:cBUR_R_PingDevice_Thanos:lastseen"}[profile=“follow”]
+DateTime iBUR_R_PingDevice_Thanos_Last_Seen "Ivos Pc" <fa-signal> (Status) ["Point"] {channel = "ntp:ntp:local:dateTime", channel = "network:pingdevice:cBUR_R_PingDevice_Thanos:lastseen" [profile="follow"]}

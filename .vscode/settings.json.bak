@@ -1,5 +1,0 @@
-{\n
-    "openhab.connection.basicAuth.password": "Wiggles12",    "openhab.connection.basicAuth.username": "admin",
-    "openhab.connection.host": "openhabian",
-    "openhab.useRestApi": false
-}

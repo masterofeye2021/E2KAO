@@ -20,8 +20,8 @@ class Item():
                  icon: FontAweSomeIcon,
                  groups: OpenhabGroup,
                  tag: OpenhabTag,
-                 unit: OpenhabPhysicalUnit = None,
-                 state_format: OpenhabOutputFormat = None,
+                 unit: OpenhabPhysicalUnit = OpenhabPhysicalUnit(""),
+                 state_format: OpenhabOutputFormat = OpenhabOutputFormat(""),
                  bound_to: OpenhabBinding = None,
                  persist: bool = False):
 
@@ -63,15 +63,21 @@ class Item():
 
     @property
     def state_format(self) -> str:
-        return self._name.toString()
+        return self._state_format.toString()
 
     @property
     def bound_to(self) -> str:
         return self._bound_to.toString(self)
 
+    def bindingType(self):
+        return self._bound_to.openhabItemType
+
     @property
     def label(self) -> str:
-        return "\"" + self._label + "\""
+        if self.state_format and self.unit:
+            return "\"" +  self._label  + " ["+ self.state_format + " " + self.unit + "]" + "\""
+        else:
+            return "\"" + self._label + "\""
     
     @property
     def tag(self) -> str:

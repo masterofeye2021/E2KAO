@@ -8,8 +8,13 @@ class OpenhabPhysicalUnit(StrEnum):
     C = "°C",
     PPM = "ppm",
     LUX = "lux",
-    W = "w",
+    W = "W",
     KW = "kW"
+    WH = "Wh"
+    KWH = "kWh"
+    H = "h"
+    PROZENT = "%"
+    UNIT = "%unit%"
 
     @classmethod
     def _missing_(cls, value):

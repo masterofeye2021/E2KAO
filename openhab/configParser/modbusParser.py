@@ -2,7 +2,7 @@ from ast import List
 import datetime
 from openpyxl import Workbook
 
-from openhab.configParser.genericParser import GenericParser
+from openhab.configParser.mapping.genericParser import GenericParser
 from openhab.configParser.mapping.modusbusItemMapping import ModbusItemMapping
 from openhab.configParser.mapping.modusbusPollerMapping import ModbusPollerMapping
 from openhab.items.item_ import Item

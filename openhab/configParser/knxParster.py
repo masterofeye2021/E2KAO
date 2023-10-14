@@ -4,7 +4,7 @@ from openpyxl import Workbook
 from knx.knx_csv import KnxCsvWritter
 
 from openhab.configParser.mapping.knxMapping import KnxMapping
-from openhab.configParser.genericParser import GenericParser
+from openhab.configParser.mapping.genericParser import GenericParser
 from openhab.items.item_ import Item
 from openhab.supportClasses.knxGroupAddress import KnxGroupAddress
 from openhab.supportClasses.knxItemType import KnxItemType
@@ -55,7 +55,7 @@ class KnxParser(GenericParser):
                 group,
                 OpenhabTag(row[KnxMapping.TAG]),
                 OpenhabPhysicalUnit(row[KnxMapping.EINHEIT]),
-                OpenhabOutputFormat(""),
+                OpenhabOutputFormat(row[KnxMapping.FORMAT]),
                 OpenhabBinding(OpenhabBindingType.KNX),
                 row[KnxMapping.PERSISTENCE]
             ))
